@@ -7,7 +7,11 @@ class DatabaseHelper
 {
     static QSqlDatabase db;
 
+
+
 public:
+
+
     enum class ColumnsOfDepartment        {ID, name};
     enum class ColumnsOfSpesiality        {ID, department, name};
     enum class ColumnsOfSubject           {ID, name};
@@ -20,36 +24,41 @@ public:
 
     DatabaseHelper();
 
-    // set------------------------------------------
+    static bool exec(QString);
+    static void chek(QSqlQuery*);
+
+
+    // add------------------------------------------
     static void addDepartment(QString);
-    static void addStudent(QString, QString, QString, int, bool);
-    static void addSpecialty(QString, int);
+    static void addStudent(int, QString, QString, QString, bool);
+    static void addSpecialty(int, QString);
     static void addGrup(int, QString, int, int);
-
-
     static void addLecturer(QString, QString, QString);
     static void addSubject(QString);
-
-
-    static void addLesson(int, int, int, int, int, QString);
+    static void addLesson(int, int, int, int, int, int, QString);
     static void addMark(int, int, bool, int, int, int, int);
 
 
+    //get------------------------------------------
+    static QSqlQuery* getStudent(QString);
+    static QSqlQuery* getSpecialty(QString);
+    static QSqlQuery* getGrup(QString);
+    static QSqlQuery* getLecturer(QString);
+    static QSqlQuery* getSubject(QString);
+    static QSqlQuery* getLesson(QString);
+    static QSqlQuery* getMark(QString);
 
 
-    //get-------------------------------------------
+    //set------------------------------------------
+    static void setDepartment(QString);
+    static void setStudent(int, QString, QString, QString, bool);
+    static void setSpecialty(int, QString);
+    static void setGrup(int, QString, int, int);
+    static void setLecturer(QString, QString, QString);
+    static void setSubject(QString);
+    static void setLesson(int, int, int, int, int, int, QString);
+    static void setMark(int, int, bool, int, int, int, int);
 
-    static QSqlQuery getStudent(QString);
-    static QSqlQuery getSpecialty(QString);
-    static QSqlQuery getGrup(QString);
-
-
-    static QSqlQuery getLecturer(QString);
-    static QSqlQuery getSubject(QString);
-
-
-    static QSqlQuery getLesson(QString);
-    static QSqlQuery getMark(QString);
 
 
 

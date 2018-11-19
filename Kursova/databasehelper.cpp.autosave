@@ -1,14 +1,10 @@
 #include "databasehelper.h"
 #include <QMessageBox>
 
-
-
 DatabaseHelper::DatabaseHelper(){
     db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName(DatabasePath);
 }
-
-
 bool DatabaseHelper::exec(QString e){
 
     QSqlQuery query(db);
@@ -21,8 +17,6 @@ bool DatabaseHelper::exec(QString e){
 
 
 }
-
-
 void DatabaseHelper::chek(QSqlQuery* query){
     if(! query->exec()){
         QMessageBox::warning(nullptr, "Error", query->lastError().text());
@@ -117,9 +111,6 @@ void DatabaseHelper::addMark(int student, int grup, bool semester, int subject, 
     chek(&query);
 }
 
-
-
-
 //get------------------------------------------------
 QSqlQuery* DatabaseHelper::getStudent(QString where = "1"){
     QSqlQuery*  query = new QSqlQuery(db);
@@ -171,9 +162,15 @@ QSqlQuery* DatabaseHelper::getMark(QString where= "1"){
     return query;
 }
 
-
 //set------------------------------------------------
-
+void DatabaseHelper::setDepartment(int, QString);
+void DatabaseHelper::setStudent(int, int, QString, QString, QString, bool);
+void DatabaseHelper::setSpecialty(int, int, QString);
+void DatabaseHelper::setGrup(int, int, QString, int, int);
+void DatabaseHelper::setLecturer(int, QString, QString, QString);
+void DatabaseHelper::setSubject(int, QString);
+void DatabaseHelper::setLesson(int, int, int, int, int, int, int, QString);
+void DatabaseHelper::setMark(int, int, int, bool, int, int, int, int);
 
 
 

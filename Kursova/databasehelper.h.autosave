@@ -6,8 +6,12 @@
 class DatabaseHelper
 {
     static QSqlDatabase db;
+   
+
 
 public:
+    
+    
     enum class ColumnsOfDepartment        {ID, name};
     enum class ColumnsOfSpesiality        {ID, department, name};
     enum class ColumnsOfSubject           {ID, name};
@@ -25,12 +29,8 @@ public:
     static void addStudent(QString, QString, QString, int, bool);
     static void addSpecialty(QString, int);
     static void addGrup(int, QString, int, int);
-
-
     static void addLecturer(QString, QString, QString);
     static void addSubject(QString);
-
-
     static void addLesson(int, int, int, int, int, QString);
     static void addMark(int, int, bool, int, int, int, int);
 

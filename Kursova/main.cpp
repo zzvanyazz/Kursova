@@ -7,13 +7,7 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-
-
-
-    QString path = "college.db";
-    QSqlDatabase db = QSqlDatabase::addDatabase("QSQLITE");
-    db.setDatabaseName(path);
-
+    DatabaseHelper DatabaseHelperInit;
 
     MainWindow w;
     w.show();

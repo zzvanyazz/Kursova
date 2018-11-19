@@ -4,7 +4,7 @@
 
 
 DatabaseHelper::DatabaseHelper(){
-    db = QSqlDatabase::addDatabase("QSQLITE");
+ //   db = QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName(DatabasePath);
 }
 
@@ -137,7 +137,7 @@ void DatabaseHelper::addMark(int student, int grup, bool semester, int subject, 
 //get------------------------------------------------
 
 QSqlQuery* DatabaseHelper::getStudent(QString where = "1"){
-    QSqlQuery*  query = new QSqlQuery(db);
+    QSqlQuery*  query = new QSqlQuery( db);
 
     query->exec("SELECT * FROM student WHERE " + where);
 

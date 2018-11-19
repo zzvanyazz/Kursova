@@ -205,6 +205,7 @@ Makefile: ..\Kursova\Kursova.pro E:\Qt\5.11.2\winrt_x86_msvc2017\mkspecs\winrt-x
 		E:\Qt\5.11.2\winrt_x86_msvc2017\mkspecs\common\winrt_winphone\qmake.conf \
 		E:\Qt\5.11.2\winrt_x86_msvc2017\mkspecs\winrt-x86-msvc2017\qmake.conf \
 		E:\Qt\5.11.2\winrt_x86_msvc2017\mkspecs\features\spec_post.prf \
+		.qmake.stash \
 		E:\Qt\5.11.2\winrt_x86_msvc2017\mkspecs\features\exclusive_builds.prf \
 		E:\Qt\5.11.2\winrt_x86_msvc2017\mkspecs\common\msvc-version.conf \
 		E:\Qt\5.11.2\winrt_x86_msvc2017\mkspecs\features\toolchain.prf \
@@ -370,6 +371,7 @@ E:\Qt\5.11.2\winrt_x86_msvc2017\mkspecs\features\qt_config.prf:
 E:\Qt\5.11.2\winrt_x86_msvc2017\mkspecs\common\winrt_winphone\qmake.conf:
 E:\Qt\5.11.2\winrt_x86_msvc2017\mkspecs\winrt-x86-msvc2017\qmake.conf:
 E:\Qt\5.11.2\winrt_x86_msvc2017\mkspecs\features\spec_post.prf:
+.qmake.stash:
 E:\Qt\5.11.2\winrt_x86_msvc2017\mkspecs\features\exclusive_builds.prf:
 E:\Qt\5.11.2\winrt_x86_msvc2017\mkspecs\common\msvc-version.conf:
 E:\Qt\5.11.2\winrt_x86_msvc2017\mkspecs\features\toolchain.prf:

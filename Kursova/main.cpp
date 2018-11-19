@@ -7,7 +7,8 @@ int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    DatabaseHelper DatabaseHelperInit;
+    QSqlDatabase db =  QSqlDatabase::addDatabase("QSQLITE");
+    db.setDatabaseName(DatabasePath);
 
     MainWindow w;
     w.show();

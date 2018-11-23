@@ -27,14 +27,17 @@ CONFIG += c++11
 SOURCES += \
         main.cpp \
         mainwindow.cpp \
-    databasehelper.cpp
+    databasehelper.cpp \
+    EducationProgressForms/educationprogressmainwindow.cpp
 
 HEADERS += \
         mainwindow.h \
-    databasehelper.h
+    databasehelper.h \
+    EducationProgressForms/educationprogressmainwindow.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    EducationProgressForms/educationprogressmainwindow.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

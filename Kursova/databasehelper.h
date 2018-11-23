@@ -6,10 +6,10 @@
 class DatabaseHelper
 {
 
-
+    QSqlDatabase db ;
+    void chek(QSqlQuery*);
 
 public:
-     QSqlDatabase db ;
 
 
 
@@ -23,42 +23,43 @@ public:
     enum class ColumnsOfEducationProgress {ID, student, grup, semester, subject, form_of_control, lecturer, mark};
 
 
+
     DatabaseHelper();
 
     bool exec(QString);
-    void chek(QSqlQuery*);
+
 
 
     // add------------------------------------------
-     void addDepartment(QString);
-     void addStudent(int, QString, QString, QString, bool);
-     void addSpecialty(int, QString);
-     void addGrup(int, QString, int, int);
-     void addLecturer(QString, QString, QString);
-     void addSubject(QString);
-     void addLesson(int, int, int, int, int, int, QString);
-     void addMark(int, int, bool, int, int, int, int);
+    void addDepartment(QString);
+    void addStudent(int, QString, QString, QString, bool);
+    void addSpecialty(int, QString);
+    void addGrup(int, QString, int, int);
+    void addLecturer(QString, QString, QString);
+    void addSubject(QString);
+    void addLesson(int, int, int, int, int, int, QString);
+    void addMark(int, int, bool, int, int, int, int);
 
 
     //get------------------------------------------
-     QSqlQuery* getStudent(QString);
-     QSqlQuery* getSpecialty(QString);
-     QSqlQuery* getGrup(QString);
-     QSqlQuery* getLecturer(QString);
-     QSqlQuery* getSubject(QString);
-     QSqlQuery* getLesson(QString);
-     QSqlQuery* getMark(QString);
+    QSqlQuery* getStudent(QString = "1");
+    QSqlQuery* getSpecialty(QString= "1");
+    QSqlQuery* getGrup(QString= "1");
+    QSqlQuery* getLecturer(QString= "1");
+    QSqlQuery* getSubject(QString= "1");
+    QSqlQuery* getLesson(QString= "1");
+    QSqlQuery* getMark(QString= "1");
 
 
     //set------------------------------------------
-    void setDepartment(QString);
-    void setStudent(int, QString, QString, QString, bool);
-    void setSpecialty(int, QString);
-    void setGrup(int, QString, int, int);
-    void setLecturer(QString, QString, QString);
-    void setSubject(QString);
-    void setLesson(int, int, int, int, int, int, QString);
-    void setMark(int, int, bool, int, int, int, int);
+    void setDepartment(int, QString);
+    void setStudent(int, int, QString, QString, QString, bool);
+    void setSpecialty(int, int, QString);
+    void setGrup(int, int, QString, int, int);
+    void setLecturer(int, QString, QString, QString);
+    void setSubject(int, QString);
+    void setLesson(int, int, int, int, int, int, int, QString);
+    void setMark(int, int, int, bool, int, int, int, int);
 
 
 

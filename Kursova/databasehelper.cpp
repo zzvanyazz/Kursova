@@ -18,6 +18,9 @@ DatabaseHelper::DatabaseHelper(){
 
 
 }
+DatabaseHelper::~DatabaseHelper(){
+    db.close();
+}
 
 
 bool DatabaseHelper::exec(QString e){
@@ -139,6 +142,13 @@ void DatabaseHelper::addMark(int student, int grup, bool semester, int subject, 
 
 
 //get------------------------------------------------
+QSqlQuery* DatabaseHelper::getDepartment(QString where ){
+    QSqlQuery*  query = new QSqlQuery( db);
+
+    query->exec("SELECT * FROM departments WHERE " + where);
+
+    return query;
+}
 
 QSqlQuery* DatabaseHelper::getStudent(QString where ){
     QSqlQuery*  query = new QSqlQuery( db);

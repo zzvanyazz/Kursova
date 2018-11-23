@@ -4,15 +4,13 @@
 #include <QtSql>
 #include <databasehelper.h>
 #include <QDebug>
+#include <EducationProgressForms/educationprogressmainwindow.h>
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
 
-    DatabaseHelper help;
- //   help.setStudent(22, 22, "test", "test", "test", 0);
-//   help.addDepartment( "test12aaa");
-    help.setSpecialty(1, 1, "vb");
-        MainWindow w;
+
+        EducationProgressMainWindow w;
     w.show();
 
     return a.exec();

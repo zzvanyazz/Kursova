@@ -14,6 +14,10 @@ class EducationProgressMainWindow : public QMainWindow
 public:
     explicit EducationProgressMainWindow(QWidget *parent = nullptr);
     ~EducationProgressMainWindow();
+private slots:
+
+    void addItemQuickAccessPanel();
+
 
 private:
     Ui::EducationProgressMainWindow *ui;

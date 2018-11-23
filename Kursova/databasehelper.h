@@ -13,6 +13,7 @@ public:
 
 
 
+
     enum class ColumnsOfDepartment        {ID, name};
     enum class ColumnsOfSpesiality        {ID, department, name};
     enum class ColumnsOfSubject           {ID, name};
@@ -25,6 +26,7 @@ public:
 
 
     DatabaseHelper();
+    ~DatabaseHelper();
 
     bool exec(QString);
 
@@ -42,13 +44,14 @@ public:
 
 
     //get------------------------------------------
-    QSqlQuery* getStudent(QString = "1");
-    QSqlQuery* getSpecialty(QString= "1");
-    QSqlQuery* getGrup(QString= "1");
-    QSqlQuery* getLecturer(QString= "1");
-    QSqlQuery* getSubject(QString= "1");
-    QSqlQuery* getLesson(QString= "1");
-    QSqlQuery* getMark(QString= "1");
+    QSqlQuery* getDepartment(QString WHERE = "1");
+    QSqlQuery* getStudent(QString WHERE = "1");
+    QSqlQuery* getSpecialty(QString WHERE= "1");
+    QSqlQuery* getGrup(QString WHERE= "1");
+    QSqlQuery* getLecturer(QString WHERE= "1");
+    QSqlQuery* getSubject(QString WHERE= "1");
+    QSqlQuery* getLesson(QString WHERE= "1");
+    QSqlQuery* getMark(QString WHERE= "1");
 
 
     //set------------------------------------------

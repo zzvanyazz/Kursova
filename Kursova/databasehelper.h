@@ -54,6 +54,9 @@ public:
     QSqlQuery* getMark(QString WHERE= "1");
 
 
+
+
+
     //set------------------------------------------
     void setDepartment(int, QString);
     void setStudent(int, int, QString, QString, QString, bool);
@@ -63,6 +66,7 @@ public:
     void setSubject(int, QString);
     void setLesson(int, int, int, int, int, int, int, QString);
     void setMark(int, int, int, bool, int, int, int, int);
+
 
 
 

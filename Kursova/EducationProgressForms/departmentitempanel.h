@@ -1,6 +1,6 @@
 #ifndef DEPARTMENTITEMPANEL_H
 #define DEPARTMENTITEMPANEL_H
-
+#include <databasehelper.h>
 #include <QWidget>
 
 namespace Ui {
@@ -10,6 +10,7 @@ class DepartmentItemPanel;
 class DepartmentItemPanel : public QWidget
 {
     Q_OBJECT
+    DatabaseHelper dbHelper;
 
 public:
      enum Status{college, department, spesiality};

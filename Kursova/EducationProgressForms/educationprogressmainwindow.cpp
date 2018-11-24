@@ -2,7 +2,7 @@
 #include "ui_educationprogressmainwindow.h"
 #include <QtWidgets>
 #include <databasehelper.h>
-#include <EducationProgressForms/departmentitempanel.h>
+#include <EducationProgressForms/quickaccesspanelitem.h>
 EducationProgressMainWindow::EducationProgressMainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::EducationProgressMainWindow)
@@ -16,7 +16,7 @@ EducationProgressMainWindow::EducationProgressMainWindow(QWidget *parent) :
 
 
 void EducationProgressMainWindow::addItemQuickAccessPanel(){
-    DepartmentItemPanel *d;
+    QuickAccessPanelItem *d;
     QString name = "College";
     DatabaseHelper dbHelper;
     QSqlQuery *query = dbHelper.getDepartment();
@@ -26,7 +26,7 @@ void EducationProgressMainWindow::addItemQuickAccessPanel(){
             listID.append(query->value((int)DatabaseHelper::ColumnsOfDepartment::ID).toInt());
         }while (query->next());
     }
-    d = new DepartmentItemPanel(name, listID, DepartmentItemPanel::Status::college, this );
+    d = new QuickAccessPanelItem(name, listID, QuickAccessPanelItem::Status::college, this );
     ui->QuickAccessPanel->layout()->addWidget(d);
 
 }

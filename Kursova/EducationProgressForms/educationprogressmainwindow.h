@@ -1,6 +1,6 @@
 #ifndef EDUCATIONPROGRESSMAINWINDOW_H
 #define EDUCATIONPROGRESSMAINWINDOW_H
-
+#include <databasehelper.h>
 #include <QMainWindow>
 
 namespace Ui {
@@ -20,6 +20,7 @@ private slots:
 
 
 private:
+    DatabaseHelper dbHelper;
     Ui::EducationProgressMainWindow *ui;
 };
 

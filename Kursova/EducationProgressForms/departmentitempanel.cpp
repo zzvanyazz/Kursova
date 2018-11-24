@@ -12,7 +12,7 @@ DepartmentItemPanel::DepartmentItemPanel(QString name, QList<int> _itemsID, Stat
     status = _status;
     for(int ID : itemsID){
         QPushButton* pushButton = new QPushButton(this);
-        pushButton->setText((DatabaseHelper().getDepartment("ID = "+QString().number(ID))->value((int)DatabaseHelper::ColumnsOfDepartment::name)).toString());
+        pushButton->setText((dbHelper.getDepartment("ID = "+QString().number(ID))->value((int)DatabaseHelper::ColumnsOfDepartment::name)).toString());
         ui->SubItemsWidget->layout()->addWidget(pushButton);
     }
 

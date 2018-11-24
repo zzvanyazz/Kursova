@@ -29,18 +29,18 @@ SOURCES += \
         mainwindow.cpp \
     databasehelper.cpp \
     EducationProgressForms/educationprogressmainwindow.cpp \
-    EducationProgressForms/departmentitempanel.cpp
+    EducationProgressForms/quickaccesspanelitem.cpp
 
 HEADERS += \
         mainwindow.h \
     databasehelper.h \
     EducationProgressForms/educationprogressmainwindow.h \
-    EducationProgressForms/departmentitempanel.h
+    EducationProgressForms/quickaccesspanelitem.h
 
 FORMS += \
         mainwindow.ui \
     EducationProgressForms/educationprogressmainwindow.ui \
-    EducationProgressForms/departmentitempanel.ui
+    EducationProgressForms/quickaccesspanelitem.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

@@ -48,7 +48,7 @@ public:
         if (EducationProgressMainWindow->objectName().isEmpty())
             EducationProgressMainWindow->setObjectName(QStringLiteral("EducationProgressMainWindow"));
         EducationProgressMainWindow->resize(1074, 600);
-        QSizePolicy sizePolicy(QSizePolicy::MinimumExpanding, QSizePolicy::MinimumExpanding);
+        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(EducationProgressMainWindow->sizePolicy().hasHeightForWidth());
@@ -67,7 +67,7 @@ public:
         scrollArea->setWidgetResizable(true);
         QuickAccessContainer = new QWidget();
         QuickAccessContainer->setObjectName(QStringLiteral("QuickAccessContainer"));
-        QuickAccessContainer->setGeometry(QRect(0, 0, 171, 526));
+        QuickAccessContainer->setGeometry(QRect(0, 0, 172, 538));
         QSizePolicy sizePolicy2(QSizePolicy::Minimum, QSizePolicy::Minimum);
         sizePolicy2.setHorizontalStretch(0);
         sizePolicy2.setVerticalStretch(0);
@@ -140,7 +140,7 @@ public:
         EducationProgressMainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(EducationProgressMainWindow);
         menubar->setObjectName(QStringLiteral("menubar"));
-        menubar->setGeometry(QRect(0, 0, 1074, 25));
+        menubar->setGeometry(QRect(0, 0, 1074, 20));
         EducationProgressMainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(EducationProgressMainWindow);
         statusbar->setObjectName(QStringLiteral("statusbar"));

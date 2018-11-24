@@ -37,7 +37,7 @@ public:
         if (QuickAccessPanelItem->objectName().isEmpty())
             QuickAccessPanelItem->setObjectName(QStringLiteral("QuickAccessPanelItem"));
         QuickAccessPanelItem->resize(400, 300);
-        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum);
+        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(QuickAccessPanelItem->sizePolicy().hasHeightForWidth());
@@ -47,19 +47,22 @@ public:
         verticalLayout->setContentsMargins(2, 2, 2, 2);
         ToolBar = new QWidget(QuickAccessPanelItem);
         ToolBar->setObjectName(QStringLiteral("ToolBar"));
-        sizePolicy.setHeightForWidth(ToolBar->sizePolicy().hasHeightForWidth());
-        ToolBar->setSizePolicy(sizePolicy);
+        QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Maximum);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(ToolBar->sizePolicy().hasHeightForWidth());
+        ToolBar->setSizePolicy(sizePolicy1);
         horizontalLayout_2 = new QHBoxLayout(ToolBar);
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
         horizontalLayout_2->setContentsMargins(3, 3, 3, 3);
         ButtonBack = new QPushButton(ToolBar);
         ButtonBack->setObjectName(QStringLiteral("ButtonBack"));
         ButtonBack->setEnabled(true);
-        QSizePolicy sizePolicy1(QSizePolicy::Fixed, QSizePolicy::Fixed);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(ButtonBack->sizePolicy().hasHeightForWidth());
-        ButtonBack->setSizePolicy(sizePolicy1);
+        QSizePolicy sizePolicy2(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(ButtonBack->sizePolicy().hasHeightForWidth());
+        ButtonBack->setSizePolicy(sizePolicy2);
 
         horizontalLayout_2->addWidget(ButtonBack);
 
@@ -73,8 +76,8 @@ public:
 
         Name = new QLabel(QuickAccessPanelItem);
         Name->setObjectName(QStringLiteral("Name"));
-        sizePolicy.setHeightForWidth(Name->sizePolicy().hasHeightForWidth());
-        Name->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(Name->sizePolicy().hasHeightForWidth());
+        Name->setSizePolicy(sizePolicy1);
         QFont font;
         font.setFamily(QStringLiteral("Franklin Gothic Demi Cond"));
         font.setPointSize(10);
@@ -89,11 +92,8 @@ public:
 
         SubItemsWidget = new QWidget(QuickAccessPanelItem);
         SubItemsWidget->setObjectName(QStringLiteral("SubItemsWidget"));
-        QSizePolicy sizePolicy2(QSizePolicy::Minimum, QSizePolicy::Minimum);
-        sizePolicy2.setHorizontalStretch(0);
-        sizePolicy2.setVerticalStretch(0);
-        sizePolicy2.setHeightForWidth(SubItemsWidget->sizePolicy().hasHeightForWidth());
-        SubItemsWidget->setSizePolicy(sizePolicy2);
+        sizePolicy.setHeightForWidth(SubItemsWidget->sizePolicy().hasHeightForWidth());
+        SubItemsWidget->setSizePolicy(sizePolicy);
         verticalLayout_2 = new QVBoxLayout(SubItemsWidget);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
         verticalLayout_2->setContentsMargins(2, -1, 2, -1);

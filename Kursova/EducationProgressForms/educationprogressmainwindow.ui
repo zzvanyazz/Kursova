@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="sizePolicy">
-   <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+   <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
     <horstretch>0</horstretch>
     <verstretch>0</verstretch>
    </sizepolicy>
@@ -37,8 +37,8 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>171</width>
-         <height>526</height>
+         <width>172</width>
+         <height>538</height>
         </rect>
        </property>
        <property name="sizePolicy">
@@ -164,7 +164,7 @@
      <x>0</x>
      <y>0</y>
      <width>1074</width>
-     <height>25</height>
+     <height>20</height>
     </rect>
    </property>
   </widget>

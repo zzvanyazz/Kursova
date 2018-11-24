@@ -20,14 +20,18 @@ void EducationProgressMainWindow::addItemQuickAccessPanel(){
     QString name = "College";
     DatabaseHelper dbHelper;
     QSqlQuery *query = dbHelper.getDepartment();
+        qDebug() << 7 <<'\n';
     QList<int> listID;
     if(query->first()){
         do{
             listID.append(query->value((int)DatabaseHelper::ColumnsOfDepartment::ID).toInt());
         }while (query->next());
+        qDebug() << 12 << '\n';
     }
+        qDebug() << 8 <<'\n';
     d = new QuickAccessPanelItem(name, listID, QuickAccessPanelItem::Status::college, this );
     ui->QuickAccessPanel->layout()->addWidget(d);
+        qDebug() << 9 <<'\n';
 
 }
 

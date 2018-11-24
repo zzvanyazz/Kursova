@@ -35,7 +35,7 @@ public:
     // add------------------------------------------
     void addDepartment(QString);
     void addStudent(int, QString, QString, QString, bool);
-    void addSpecialty(int, QString);
+    void addSpesialty(int, QString);
     void addGrup(int, QString, int, int);
     void addLecturer(QString, QString, QString);
     void addSubject(QString);
@@ -46,7 +46,7 @@ public:
     //get------------------------------------------
     QSqlQuery* getDepartment(QString WHERE = "1");
     QSqlQuery* getStudent(QString WHERE = "1");
-    QSqlQuery* getSpecialty(QString WHERE= "1");
+    QSqlQuery* getSpesialty(QString WHERE= "1");
     QSqlQuery* getGrup(QString WHERE= "1");
     QSqlQuery* getLecturer(QString WHERE= "1");
     QSqlQuery* getSubject(QString WHERE= "1");
@@ -60,7 +60,7 @@ public:
     //set------------------------------------------
     void setDepartment(int, QString);
     void setStudent(int, int, QString, QString, QString, bool);
-    void setSpecialty(int, int, QString);
+    void setSpesialty(int, int, QString);
     void setGrup(int, int, QString, int, int);
     void setLecturer(int, QString, QString, QString);
     void setSubject(int, QString);

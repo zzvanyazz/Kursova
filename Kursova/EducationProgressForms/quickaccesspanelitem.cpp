@@ -3,15 +3,30 @@
 #include <databasehelper.h>
 #include <QPushButton>
 #include <QDebug>
+
 QuickAccessPanelItem::QuickAccessPanelItem(QString name, QList<int> _itemsID, Status _status, QWidget *parent) :
     QWidget(parent),
     ui(new Ui::QuickAccessPanelItem)
 {
 
     ui->setupUi(this);
+    Init(name, _itemsID, _status);
+
+
+
+
+}
+
+
+void QuickAccessPanelItem::Init(QString name, QList<int> _itemsID, Status _status){
     itemsID = _itemsID;
     ui->Name->setText(name);
     status = _status;
+    qDebug() << 0 <<'\n';
+   /* QWidget *w =  new QWidget(this);
+    w->setLayout(new QVBoxLayout());
+    ui->SubItemsWidget = w;
+    w->show();*/
     if(status == college){
         for(int ID : itemsID){
             QPushButton* pushButton = new QPushButton(this);
@@ -19,18 +34,17 @@ QuickAccessPanelItem::QuickAccessPanelItem(QString name, QList<int> _itemsID, St
             connect(pushButton, SIGNAL (pressed()),this, SLOT (changeChild()));
             QString text = dbHelper.getDepartment("ID = "+QString().number(ID))->value((int)DatabaseHelper::ColumnsOfDepartment::name).toString();
             pushButton->setText(text);
-            qDebug() << text << '\n';
-
+                qDebug() << 1 <<'\n';
             ui->SubItemsWidget->layout()->addWidget(pushButton);
         }
     }else if(status == department){
         for(int ID : itemsID){
             QPushButton* pushButton = new QPushButton(this);
- childs.append(QPair<QPushButton*, int>(pushButton, ID));
-          connect(pushButton, SIGNAL (pressed()),this, SLOT (changeChild()));
-            QString text = dbHelper.getSpecialty("ID = "+QString().number(ID))->value((int)DatabaseHelper::ColumnsOfDepartment::name).toString();
+            childs.append(QPair<QPushButton*, int>(pushButton, ID));
+            connect(pushButton, SIGNAL (pressed()),this, SLOT (changeChild()));
+            QString text = dbHelper.getSpesialty("ID = "+QString().number(ID))->value((int)DatabaseHelper::ColumnsOfDepartment::name).toString();
             pushButton->setText(text);
-            qDebug() << text << '\n';
+                qDebug() << 2 <<'\n';
 
             ui->SubItemsWidget->layout()->addWidget(pushButton);
         }
@@ -38,40 +52,42 @@ QuickAccessPanelItem::QuickAccessPanelItem(QString name, QList<int> _itemsID, St
         for(int ID : itemsID){
             QPushButton* pushButton = new QPushButton(this);
             childs.append(QPair<QPushButton*, int>(pushButton, ID));
-     connect(pushButton, SIGNAL (pressed()),this, SLOT (changeChild()));
+            connect(pushButton, SIGNAL (pressed()),this, SLOT (changeChild()));
             QString text = dbHelper.getGrup("ID = "+QString().number(ID))->value((int)DatabaseHelper::ColumnsOfDepartment::name).toString();
             pushButton->setText(text);
-            qDebug() << text << '\n';
+                qDebug() << 3 <<'\n';
 
             ui->SubItemsWidget->layout()->addWidget(pushButton);
         }
     }
+     qDebug() << 4 <<'\n';
 
 }
 
 void QuickAccessPanelItem::changeChild(){
     QuickAccessPanelItem *newItem;
-    for(QPair<QPushButton*, int> p : childs){
-        if(QObject::sender() == p.first){
-            DatabaseHelper dbHelper;
-            QSqlQuery *query = dbHelper.getDepartment();
-            QList<int> listID;
-            if(query->first()){
-                do{
-                    listID.append(query->value((int)DatabaseHelper::ColumnsOfDepartment::ID).toInt());
-                }while (query->next());
+    qDebug() << 13 << endl;
+            if (status == college){
+        for(QPair<QPushButton*, int> p : childs){
+            if(QObject::sender() == p.first){
+                DatabaseHelper dbHelper;
+                QSqlQuery *query = dbHelper.getSpesialty(" department = " + QString().number(p.second));
+                QList<int> listID;
+                 qDebug() << 14 << endl;
+                if(query->first()){
+
+                    do{
+                                qDebug() << 15 << endl;
+                        listID.append(query->value((int)DatabaseHelper::ColumnsOfSpesiality::ID).toInt());
+                    }while (query->next());
+                }
+               Init(p.first->text(), listID, QuickAccessPanelItem::Status::college );
+               return;
+
             }
-            d = new QuickAccessPanelItem(name, listID, QuickAccessPanelItem::Status::college, this );
-            ui->QuickAccessPanel->layout()->addWidget(d);
 
-            *newItem =
         }
-
     }
-
-
-
-
 
 }
 

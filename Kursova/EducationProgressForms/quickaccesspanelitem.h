@@ -1,5 +1,5 @@
-#ifndef QuickAccessPanelItem_H
-#define QuickAccessPanelItem_H
+#ifndef QUICKACCESSPANELITEM_H
+#define QUICKACCESSPANELITEM_H
 #include <databasehelper.h>
 #include <QWidget>
 #include <QPushButton>
@@ -26,7 +26,12 @@ private:
     QList<int> itemsID;
     DatabaseHelper dbHelper;
     Status status;
+
+
+     void Init(QString name, QList<int> itemsID, Status status);
+
+
     Ui::QuickAccessPanelItem *ui;
 };
 
-#endif // QuickAccessPanelItem_H
+#endif // QUICKACCESSPANELITEM_H

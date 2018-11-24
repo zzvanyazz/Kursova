@@ -67,9 +67,9 @@ void DatabaseHelper::addStudent(int grup, QString name, QString surname, QString
     chek(&query);
 }
 
-void DatabaseHelper::addSpecialty(int department, QString name){
+void DatabaseHelper::addSpesialty(int department, QString name){
     QSqlQuery query(db);
-    query.prepare("INSERT INTO specialty (department, name) "
+    query.prepare("INSERT INTO spesialty (department, name) "
                   "VALUES (:department, :name)");
     query.bindValue(":department", department);
     query.bindValue(":name", name);
@@ -157,10 +157,10 @@ QSqlQuery* DatabaseHelper::getStudent(QString where ){
     if(!query->first())return nullptr;
     return query;
 }
-QSqlQuery* DatabaseHelper::getSpecialty(QString where ){
+QSqlQuery* DatabaseHelper::getSpesialty(QString where ){
     QSqlQuery*  query = new QSqlQuery(db);
 
-    query->exec("SELECT * FROM specialty WHERE " + where);
+    query->exec("SELECT * FROM spesialty WHERE " + where);
     if(!query->first())return nullptr;
     return query;
 }
@@ -222,9 +222,9 @@ void DatabaseHelper::setStudent(int ID, int grup, QString name, QString surname,
 
     chek(&query);
 }
-void DatabaseHelper::setSpecialty(int ID, int department, QString name){
+void DatabaseHelper::setSpesialty(int ID, int department, QString name){
     QSqlQuery query(db);
-    query.prepare("UPDATE specialty SET department = 1,   name = :name  WHERE ID = "+QString().number(ID));
+    query.prepare("UPDATE spesialty SET department = 1,   name = :name  WHERE ID = "+QString().number(ID));
 
 
     query.bindValue(":department", department);

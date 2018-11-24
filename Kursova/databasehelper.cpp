@@ -154,7 +154,7 @@ QSqlQuery* DatabaseHelper::getStudent(QString where ){
     QSqlQuery*  query = new QSqlQuery( db);
 
     query->exec("SELECT * FROM students WHERE " + where);
-    if(!query->first())return nullptr;
+
     return query;
 }
 QSqlQuery* DatabaseHelper::getSpesialty(QString where ){

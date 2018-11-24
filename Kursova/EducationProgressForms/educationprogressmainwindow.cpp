@@ -29,7 +29,7 @@ void EducationProgressMainWindow::addItemQuickAccessPanel(){
         qDebug() << 12 << '\n';
     }
         qDebug() << 8 <<'\n';
-    d = new QuickAccessPanelItem(name, listID, QuickAccessPanelItem::Status::college, this );
+    d = new QuickAccessPanelItem(name, listID, QuickAccessPanelItem::Status::college,0, this );
     ui->QuickAccessPanel->layout()->addWidget(d);
         qDebug() << 9 <<'\n';
 

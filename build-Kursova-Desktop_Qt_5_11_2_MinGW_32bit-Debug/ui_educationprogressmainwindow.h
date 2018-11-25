@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
@@ -33,7 +34,7 @@ public:
     QVBoxLayout *verticalLayout_3;
     QWidget *widget;
     QHBoxLayout *horizontalLayout_2;
-    QSpacerItem *horizontalSpacer;
+    QLineEdit *SearchLine;
     QPushButton *AddButton;
     QWidget *QuickAccessPanel;
     QVBoxLayout *verticalLayout;
@@ -59,7 +60,7 @@ public:
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         scrollArea = new QScrollArea(centralwidget);
         scrollArea->setObjectName(QStringLiteral("scrollArea"));
-        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::MinimumExpanding);
+        QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Minimum);
         sizePolicy1.setHorizontalStretch(1);
         sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(scrollArea->sizePolicy().hasHeightForWidth());
@@ -67,12 +68,13 @@ public:
         scrollArea->setWidgetResizable(true);
         QuickAccessContainer = new QWidget();
         QuickAccessContainer->setObjectName(QStringLiteral("QuickAccessContainer"));
-        QuickAccessContainer->setGeometry(QRect(0, 0, 172, 538));
+        QuickAccessContainer->setGeometry(QRect(0, 0, 221, 509));
         QSizePolicy sizePolicy2(QSizePolicy::Minimum, QSizePolicy::Minimum);
         sizePolicy2.setHorizontalStretch(0);
         sizePolicy2.setVerticalStretch(0);
         sizePolicy2.setHeightForWidth(QuickAccessContainer->sizePolicy().hasHeightForWidth());
         QuickAccessContainer->setSizePolicy(sizePolicy2);
+        QuickAccessContainer->setMaximumSize(QSize(16777215, 16777215));
         verticalLayout_3 = new QVBoxLayout(QuickAccessContainer);
         verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
         widget = new QWidget(QuickAccessContainer);
@@ -85,14 +87,22 @@ public:
         horizontalLayout_2 = new QHBoxLayout(widget);
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
         horizontalLayout_2->setContentsMargins(2, 2, 2, 2);
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+        SearchLine = new QLineEdit(widget);
+        SearchLine->setObjectName(QStringLiteral("SearchLine"));
+        sizePolicy2.setHeightForWidth(SearchLine->sizePolicy().hasHeightForWidth());
+        SearchLine->setSizePolicy(sizePolicy2);
+        SearchLine->setEchoMode(QLineEdit::Normal);
+        SearchLine->setCursorMoveStyle(Qt::LogicalMoveStyle);
 
-        horizontalLayout_2->addItem(horizontalSpacer);
+        horizontalLayout_2->addWidget(SearchLine);
 
         AddButton = new QPushButton(widget);
         AddButton->setObjectName(QStringLiteral("AddButton"));
-        sizePolicy2.setHeightForWidth(AddButton->sizePolicy().hasHeightForWidth());
-        AddButton->setSizePolicy(sizePolicy2);
+        QSizePolicy sizePolicy4(QSizePolicy::Maximum, QSizePolicy::Minimum);
+        sizePolicy4.setHorizontalStretch(0);
+        sizePolicy4.setVerticalStretch(0);
+        sizePolicy4.setHeightForWidth(AddButton->sizePolicy().hasHeightForWidth());
+        AddButton->setSizePolicy(sizePolicy4);
 
         horizontalLayout_2->addWidget(AddButton);
 
@@ -101,11 +111,8 @@ public:
 
         QuickAccessPanel = new QWidget(QuickAccessContainer);
         QuickAccessPanel->setObjectName(QStringLiteral("QuickAccessPanel"));
-        QSizePolicy sizePolicy4(QSizePolicy::Minimum, QSizePolicy::Minimum);
-        sizePolicy4.setHorizontalStretch(1);
-        sizePolicy4.setVerticalStretch(0);
-        sizePolicy4.setHeightForWidth(QuickAccessPanel->sizePolicy().hasHeightForWidth());
-        QuickAccessPanel->setSizePolicy(sizePolicy4);
+        sizePolicy1.setHeightForWidth(QuickAccessPanel->sizePolicy().hasHeightForWidth());
+        QuickAccessPanel->setSizePolicy(sizePolicy1);
         verticalLayout = new QVBoxLayout(QuickAccessPanel);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         verticalLayout->setContentsMargins(1, 1, -1, -1);
@@ -132,15 +139,15 @@ public:
 
         widget_3 = new QWidget(centralwidget);
         widget_3->setObjectName(QStringLiteral("widget_3"));
-        sizePolicy4.setHeightForWidth(widget_3->sizePolicy().hasHeightForWidth());
-        widget_3->setSizePolicy(sizePolicy4);
+        sizePolicy1.setHeightForWidth(widget_3->sizePolicy().hasHeightForWidth());
+        widget_3->setSizePolicy(sizePolicy1);
 
         horizontalLayout->addWidget(widget_3);
 
         EducationProgressMainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(EducationProgressMainWindow);
         menubar->setObjectName(QStringLiteral("menubar"));
-        menubar->setGeometry(QRect(0, 0, 1074, 20));
+        menubar->setGeometry(QRect(0, 0, 1074, 25));
         EducationProgressMainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(EducationProgressMainWindow);
         statusbar->setObjectName(QStringLiteral("statusbar"));

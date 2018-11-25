@@ -5,13 +5,22 @@
 #include <databasehelper.h>
 #include <QDebug>
 #include <EducationProgressForms/educationprogressmainwindow.h>
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
+    QStack<int> stack;
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        while (!stack.isEmpty())
+
+    qDebug() << stack.pop() << endl;
 
 
         EducationProgressMainWindow w;
     w.show();
+
 
     return a.exec();
 }

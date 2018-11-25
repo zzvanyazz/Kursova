@@ -29,18 +29,39 @@ SOURCES += \
         mainwindow.cpp \
     databasehelper.cpp \
     EducationProgressForms/educationprogressmainwindow.cpp \
-    EducationProgressForms/quickaccesspanelitem.cpp
+    EducationProgressForms/quickaccesspanelitem.cpp \
+    EducationProgressForms/adddatawindow.cpp \
+    EducationProgressForms/studenrinputform.cpp \
+    EducationProgressForms/lecturerinputform.cpp \
+    EducationProgressForms/subjectinputform.cpp \
+    EducationProgressForms/departmentsinputform.cpp \
+    EducationProgressForms/groupinputform.cpp \
+    EducationProgressForms/specialiyinputform.cpp
 
 HEADERS += \
         mainwindow.h \
     databasehelper.h \
     EducationProgressForms/educationprogressmainwindow.h \
-    EducationProgressForms/quickaccesspanelitem.h
+    EducationProgressForms/quickaccesspanelitem.h \
+    EducationProgressForms/adddatawindow.h \
+    EducationProgressForms/studenrinputform.h \
+    EducationProgressForms/lecturerinputform.h \
+    EducationProgressForms/subjectinputform.h \
+    EducationProgressForms/departmentsinputform.h \
+    EducationProgressForms/groupinputform.h \
+    EducationProgressForms/specialiyinputform.h
 
 FORMS += \
         mainwindow.ui \
     EducationProgressForms/educationprogressmainwindow.ui \
-    EducationProgressForms/quickaccesspanelitem.ui
+    EducationProgressForms/quickaccesspanelitem.ui \
+    EducationProgressForms/adddatawindow.ui \
+    EducationProgressForms/studenrinputform.ui \
+    EducationProgressForms/lecturerinputform.ui \
+    EducationProgressForms/subjectinputform.ui \
+    EducationProgressForms/departmentsinputform.ui \
+    EducationProgressForms/groupinputform.ui \
+    EducationProgressForms/specialiyinputform.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

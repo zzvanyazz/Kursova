@@ -9,7 +9,7 @@ SubjectInputForm::SubjectInputForm(QWidget *parent) :
     ui->setupUi(this);
     connect(ui->btn_ok,SIGNAL(pressed()),this,SLOT(completed()));
     connect(ui->btn_cancel,SIGNAL(pressed()),this,SLOT(cancel()));
-    connect((ui->subjectCount,SIGNAL(valueChanged(int)),this,SLOT())
+    connect(ui->subjectCount,SIGNAL(valueChanged(int)),this,SLOT(subjectValueChanged(int)));
 }
 
 SubjectInputForm::~SubjectInputForm()
@@ -25,9 +25,9 @@ void SubjectInputForm::cancel(){
 
 void SubjectInputForm::subjectValueChanged(int value){
     for(int i = 0;i<value;i++){
-        QHBoxLayout *p=new QHBoxLayout(ui->scrollArea);
-        QLabel *text=new QLabel(ui->scrollArea);
-        QLineEdit *line=new QLineEdit(ui->scrollArea);
+        QHBoxLayout *p=new QHBoxLayout(ui->scrollAreaWidgetContents);
+        QLabel *text=new QLabel(ui->scrollAreaWidgetContents);
+        QLineEdit *line=new QLineEdit(ui->scrollAreaWidgetContents);
         lines.push_back(line);
         p->addWidget(text);
         p->addWidget(line);

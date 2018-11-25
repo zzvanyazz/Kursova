@@ -13,6 +13,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
@@ -26,8 +27,8 @@ public:
     QWidget *ToolBar;
     QHBoxLayout *horizontalLayout_2;
     QPushButton *ButtonBack;
+    QLineEdit *LineSearch;
     QLabel *Name;
-    QWidget *widget;
     QWidget *SubItemsWidget;
     QVBoxLayout *verticalLayout_2;
 
@@ -57,20 +58,26 @@ public:
         ButtonBack = new QPushButton(ToolBar);
         ButtonBack->setObjectName(QStringLiteral("ButtonBack"));
         ButtonBack->setEnabled(true);
-        QSizePolicy sizePolicy2(QSizePolicy::Maximum, QSizePolicy::Maximum);
+        QSizePolicy sizePolicy2(QSizePolicy::Fixed, QSizePolicy::Fixed);
         sizePolicy2.setHorizontalStretch(0);
         sizePolicy2.setVerticalStretch(0);
         sizePolicy2.setHeightForWidth(ButtonBack->sizePolicy().hasHeightForWidth());
         ButtonBack->setSizePolicy(sizePolicy2);
-        ButtonBack->setMaximumSize(QSize(25, 25));
 
         horizontalLayout_2->addWidget(ButtonBack);
 
-        Name = new QLabel(ToolBar);
+        LineSearch = new QLineEdit(ToolBar);
+        LineSearch->setObjectName(QStringLiteral("LineSearch"));
+
+        horizontalLayout_2->addWidget(LineSearch);
+
+
+        verticalLayout->addWidget(ToolBar);
+
+        Name = new QLabel(QuickAccessPanelItem);
         Name->setObjectName(QStringLiteral("Name"));
-        Name->setEnabled(true);
-        sizePolicy.setHeightForWidth(Name->sizePolicy().hasHeightForWidth());
-        Name->setSizePolicy(sizePolicy);
+        sizePolicy1.setHeightForWidth(Name->sizePolicy().hasHeightForWidth());
+        Name->setSizePolicy(sizePolicy1);
         QFont font;
         font.setFamily(QStringLiteral("Franklin Gothic Demi Cond"));
         font.setPointSize(10);
@@ -81,16 +88,7 @@ public:
         Name->setTextFormat(Qt::AutoText);
         Name->setAlignment(Qt::AlignCenter);
 
-        horizontalLayout_2->addWidget(Name);
-
-        widget = new QWidget(ToolBar);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setMaximumSize(QSize(25, 25));
-
-        horizontalLayout_2->addWidget(widget);
-
-
-        verticalLayout->addWidget(ToolBar);
+        verticalLayout->addWidget(Name);
 
         SubItemsWidget = new QWidget(QuickAccessPanelItem);
         SubItemsWidget->setObjectName(QStringLiteral("SubItemsWidget"));

@@ -146,14 +146,14 @@ QSqlQuery* DatabaseHelper::getDepartment(QString where ){
     QSqlQuery*  query = new QSqlQuery( db);
 
     query->exec("SELECT * FROM departments WHERE " + where);
-    if(!query->first())return nullptr;
+
     return query;
 }
 
 QSqlQuery* DatabaseHelper::getStudent(QString where ){
     QSqlQuery*  query = new QSqlQuery( db);
 
-    query->exec("SELECT * FROM students WHERE " + where);
+    query->exec("SELECT * FROM student WHERE " + where);
 
     return query;
 }
@@ -161,14 +161,14 @@ QSqlQuery* DatabaseHelper::getSpesialty(QString where ){
     QSqlQuery*  query = new QSqlQuery(db);
 
     query->exec("SELECT * FROM spesialty WHERE " + where);
-    if(!query->first())return nullptr;
+
     return query;
 }
 QSqlQuery* DatabaseHelper::getGrup(QString where ){
     QSqlQuery*  query = new QSqlQuery(db);
 
     query->exec("SELECT * FROM grups WHERE " + where);
-    if(!query->first())return nullptr;
+
     return query;
 }
 QSqlQuery* DatabaseHelper::getLecturer(QString where ){
@@ -182,21 +182,21 @@ QSqlQuery* DatabaseHelper::getSubject(QString where ){
     QSqlQuery*  query = new QSqlQuery(db);
 
     query->exec("SELECT * FROM subjects WHERE " + where);
-    if(!query->first())return nullptr;
+
     return query;
 }
 QSqlQuery* DatabaseHelper::getLesson(QString where ){
     QSqlQuery*  query = new QSqlQuery(db);
 
     query->exec("SELECT * FROM schedule WHERE " + where);
-    if(!query->first())return nullptr;
+
     return query;
 }
 QSqlQuery* DatabaseHelper::getMark(QString where ){
     QSqlQuery*  query = new QSqlQuery(db);
 
     query->exec("SELECT * FROM education_progress WHERE " + where);
-    if(!query->first())return nullptr;
+
     return query;
 }
 

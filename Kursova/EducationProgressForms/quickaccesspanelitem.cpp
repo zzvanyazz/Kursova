@@ -4,15 +4,16 @@
 #include <QPushButton>
 #include <QDebug>
 
-QuickAccessPanelItem::QuickAccessPanelItem(QString name, QList<int> _itemsID, Status _status, int thisID, QWidget *parent) :
+QuickAccessPanelItem::QuickAccessPanelItem(QString name,  Status _status, int thisID, QWidget *parent) :
     QWidget(parent),
     ui(new Ui::QuickAccessPanelItem)
 {
     
     ui->setupUi(this);
     ui->SubItemsWidget->setAutoFillBackground(true);
-    Init(name, _itemsID, _status, thisID);
-   // connect(ui->ButtonBack, SIGNAL(pressed()), this,SLOT(Back()) );
+
+    connect(ui->ButtonBack, SIGNAL(pressed()), this,SLOT(Back()) );
+    Init(name, _status, thisID);
 
     
     
@@ -21,14 +22,43 @@ QuickAccessPanelItem::QuickAccessPanelItem(QString name, QList<int> _itemsID, St
 }
 
 
-void QuickAccessPanelItem::Init(QString name, QList<int> _itemsID, Status _status, int _thisID){
-    parent.push_front(QPair<Status, int>(status, thisID));
-    itemsID = _itemsID;
+void QuickAccessPanelItem::Init(QString name, Status _status, int _thisID){
+    QSqlQuery *query;
+    switch (_status) {
+    case college:
+
+        query =  dbHelper.getDepartment();
+
+        break;
+
+    case department:
+        query =  dbHelper.getSpesialty(" department = " + QString().number(_thisID));
+
+        break;
+
+    case spesiality:
+        query =  dbHelper.getGrup(" spesiality = " + QString().number(_thisID));
+
+        break;
+    case grup:
+        return;
+    }
+
+
     ui->Name->setText(name);
     status = _status;
     thisID = _thisID;
+    parent.push(QPair<Status, int>(status, thisID));
 
-    qDebug() << 0 <<'\n';
+    itemsID.clear();
+
+    if(query->first()){
+        do{
+            itemsID.append(query->value("ID").toInt());
+        }while (query->next());
+    }else {return;}
+
+
 
     for(QPair<QPushButton*, int> p: childs){
         ui->SubItemsWidget->layout()->removeWidget(p.first);
@@ -44,7 +74,7 @@ void QuickAccessPanelItem::Init(QString name, QList<int> _itemsID, Status _statu
         childs.append(QPair<QPushButton*, int>(pushButton, ID));
         connect(pushButton, SIGNAL (pressed()),this, SLOT (changeChild()));
         QString text;
-        QSqlQuery *query;
+
         switch (status) {
         case college:
             query = dbHelper.getDepartment("ID = "+QString().number(ID));
@@ -72,59 +102,41 @@ void QuickAccessPanelItem::Init(QString name, QList<int> _itemsID, Status _statu
         ui->SubItemsWidget->layout()->addWidget(pushButton);
     }
 
-}/*
+}
 void QuickAccessPanelItem::Back(){
-   // parent.pop()
-    DatabaseHelper dbHelper;
-    QSqlQuery *query ;
-    qDebug()<<0.7, endl;
-    qDebug() << "p.second "<< p.second << endl;
-    switch (status) {
-    case college:
+    QSqlQuery *q;
+    QString name;
 
-        query =  dbHelper.getSpesialty(" department = " + QString().number(p.second));
-        qDebug() << 13.3 << endl;
+    QPair<Status, int>p = parent.pop();
+    switch(p.first) {
+    case college:
+        Init("college", college, p.second);
         break;
 
     case department:
-        query =  dbHelper.getGrup(" spesiality = " + QString().number(p.second));
-        qDebug() << 13.4 << endl;
+
+        q = dbHelper.getDepartment("ID = "+QString().number(p.second));
+        q->first();
+
+        name =  q->value((int)DatabaseHelper::ColumnsOfDepartment::name).toString();
+        Init(name, department, p.second);
         break;
-
     case spesiality:
-        query =  dbHelper.getStudent(" grup = " + QString().number(p.second));
-        qDebug() << 13.5 << endl;
-        break;
-    }
 
-    QList<int> listID;
-    qDebug() << 14 << endl;
-    //   if(query == nullptr) qDebug() << "!!!!!" << endl;;
+        q = dbHelper.getSpesialty("ID = "+QString().number(p.second));
+        q->first();
+        name=  q->value((int)DatabaseHelper::ColumnsOfSpesiality::name).toString();
+        Init(name, department, p.second);
 
-
-    if(query->first()){
-        qDebug() << 14.5 << endl;
-        do{
-            qDebug() << 15 << endl;
-            listID.append(query->value("ID").toInt());
-        }while (query->next());
-    }else {qDebug() << 15.5 << endl;return;}
-    switch (status) {
-    case college:
-        Init(p.first->text(), listID, QuickAccessPanelItem::Status::department, p.second);
-        return;
-
-    case department:
-        Init(p.first->text(), listID, QuickAccessPanelItem::Status::spesiality, p.second);
-        return;
-
-    case spesiality:
-        Init(p.first->text(), listID, QuickAccessPanelItem::Status::grup, p.second);
-        return;
     }
 
 
-}*/
+
+
+
+
+
+}
 
 
 
@@ -134,51 +146,22 @@ void QuickAccessPanelItem::changeChild(){
 
     for(QPair<QPushButton*, int> p : childs){
         if(QObject::sender() == p.first){
-            DatabaseHelper dbHelper;
+
             QSqlQuery *query ;
-            qDebug()<<0.7, endl;
-            qDebug() << "p.second "<< p.second << endl;
+
+
+
             switch (status) {
             case college:
-
-                query =  dbHelper.getSpesialty(" department = " + QString().number(p.second));
-                qDebug() << 13.3 << endl;
-                break;
-
-            case department:
-                query =  dbHelper.getGrup(" spesiality = " + QString().number(p.second));
-                qDebug() << 13.4 << endl;
-                break;
-
-            case spesiality:
-                query =  dbHelper.getStudent(" grup = " + QString().number(p.second));
-                qDebug() << 13.5 << endl;
-                break;
-            }
-
-            QList<int> listID;
-            qDebug() << 14 << endl;
-            //   if(query == nullptr) qDebug() << "!!!!!" << endl;;
-
-
-            if(query->first()){
-                qDebug() << 14.5 << endl;
-                do{
-                    qDebug() << 15 << endl;
-                    listID.append(query->value("ID").toInt());
-                }while (query->next());
-            }else {qDebug() << 15.5 << endl;return;}
-            switch (status) {
-            case college:
-                Init(p.first->text(), listID, QuickAccessPanelItem::Status::department, p.second);
+                Init(p.first->text(), QuickAccessPanelItem::Status::department, p.second);
                 return;
 
             case department:
-                Init(p.first->text(), listID, QuickAccessPanelItem::Status::spesiality, p.second);
+                Init(p.first->text(),  QuickAccessPanelItem::Status::spesiality, p.second);
                 return;
 
             case spesiality:
-                Init(p.first->text(), listID, QuickAccessPanelItem::Status::grup, p.second);
+                Init(p.first->text(),  QuickAccessPanelItem::Status::grup, p.second);
                 return;
             }
 

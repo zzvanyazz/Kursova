@@ -21,7 +21,7 @@ public:
 private slots:
 
     void changeChild();
-    //void Back();
+    void Back();
 
 private:
     int thisID;

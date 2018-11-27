@@ -104,8 +104,10 @@ void QuickAccessPanelItem::Init(QString name, Status _status, int _thisID){
 
 }
 void QuickAccessPanelItem::Back(){
+    if(parent.length() == 1) return;
     QSqlQuery *q;
     QString name;
+parent.pop();
 
     QPair<Status, int>p = parent.pop();
     switch(p.first) {

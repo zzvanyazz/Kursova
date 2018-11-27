@@ -31,12 +31,12 @@ SOURCES += \
     EducationProgressForms/educationprogressmainwindow.cpp \
     EducationProgressForms/quickaccesspanelitem.cpp \
     EducationProgressForms/adddatawindow.cpp \
-    EducationProgressForms/studenrinputform.cpp \
-    EducationProgressForms/lecturerinputform.cpp \
-    EducationProgressForms/subjectinputform.cpp \
-    EducationProgressForms/departmentsinputform.cpp \
-    EducationProgressForms/groupinputform.cpp \
-    EducationProgressForms/specialiyinputform.cpp
+    EducationProgressForms/InputForms/studenrinputform.cpp \
+    EducationProgressForms/InputForms/lecturerinputform.cpp \
+    EducationProgressForms/InputForms/subjectinputform.cpp \
+    EducationProgressForms/InputForms/departmentsinputform.cpp \
+    EducationProgressForms/InputForms/groupinputform.cpp \
+    EducationProgressForms/InputForms/specialiyinputform.cpp
 
 HEADERS += \
         mainwindow.h \
@@ -44,24 +44,24 @@ HEADERS += \
     EducationProgressForms/educationprogressmainwindow.h \
     EducationProgressForms/quickaccesspanelitem.h \
     EducationProgressForms/adddatawindow.h \
-    EducationProgressForms/studenrinputform.h \
-    EducationProgressForms/lecturerinputform.h \
-    EducationProgressForms/subjectinputform.h \
-    EducationProgressForms/departmentsinputform.h \
-    EducationProgressForms/groupinputform.h \
-    EducationProgressForms/specialiyinputform.h
+    EducationProgressForms/InputForms/studenrinputform.h \
+    EducationProgressForms/InputForms/lecturerinputform.h \
+    EducationProgressForms/InputForms/subjectinputform.h \
+    EducationProgressForms/InputForms/departmentsinputform.h \
+    EducationProgressForms/InputForms/groupinputform.h \
+    EducationProgressForms/InputForms/specialiyinputform.h
 
 FORMS += \
         mainwindow.ui \
     EducationProgressForms/educationprogressmainwindow.ui \
     EducationProgressForms/quickaccesspanelitem.ui \
     EducationProgressForms/adddatawindow.ui \
-    EducationProgressForms/studenrinputform.ui \
-    EducationProgressForms/lecturerinputform.ui \
-    EducationProgressForms/subjectinputform.ui \
-    EducationProgressForms/departmentsinputform.ui \
-    EducationProgressForms/groupinputform.ui \
-    EducationProgressForms/specialiyinputform.ui
+    EducationProgressForms/InputForms/studenrinputform.ui \
+    EducationProgressForms/InputForms/lecturerinputform.ui \
+    EducationProgressForms/InputForms/subjectinputform.ui \
+    EducationProgressForms/InputForms/departmentsinputform.ui \
+    EducationProgressForms/InputForms/groupinputform.ui \
+    EducationProgressForms/InputForms/specialiyinputform.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

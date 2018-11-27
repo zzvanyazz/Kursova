@@ -16,7 +16,7 @@ class QuickAccessPanelItem : public QWidget
 
 public:
     enum Status{college, department, spesiality, grup};
-    explicit QuickAccessPanelItem(QString name, QList<int> itemsID, Status status, int thisID, QWidget *parent = nullptr);
+    explicit QuickAccessPanelItem(QString name, Status status, int thisID, QWidget *parent = nullptr);
     ~QuickAccessPanelItem();
 private slots:
 
@@ -32,7 +32,7 @@ private:
     Status status;
 
 
-     void Init(QString name, QList<int> itemsID, Status status,int thisID);
+     void Init(QString name,  Status status,int thisID);
 
 
     Ui::QuickAccessPanelItem *ui;

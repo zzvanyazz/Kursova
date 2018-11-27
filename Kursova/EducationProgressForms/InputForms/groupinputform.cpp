@@ -7,7 +7,7 @@ GroupInputForm::GroupInputForm(QWidget *parent) :
 {
     ui->setupUi(this);
     connect(ui->btn_ok,SIGNAL(pressed()),this,SLOT(completed()));
-    connect(ui->btn_concel,SIGNAL(pressed()),this,SLOT(cancel()));
+    connect(ui->btn_cancel,SIGNAL(pressed()),this,SLOT(cancel()));
 }
 
 GroupInputForm::~GroupInputForm()

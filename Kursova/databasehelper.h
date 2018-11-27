@@ -33,14 +33,15 @@ public:
 
 
     // add------------------------------------------
-    void addDepartment(QString);
-    void addStudent(int, QString, QString, QString, bool);
-    void addSpesialty(int, QString);
-    void addGrup(int, QString, int, int);
-    void addLecturer(QString, QString, QString);
-    void addSubject(QString);
-    void addLesson(int, int, int, int, int, int, QString);
-    void addMark(int, int, bool, int, int, int, int);
+    void addDepartment(QString name);
+    void addStudent(int grup, QString name, QString surname, QString lastname,  bool form_of_education);
+    void addSpesialty(int department, QString name);
+    void addGrup(int number, QString name, int spesiality, int curator);
+    void addLecturer(QString name, QString surname, QString lastname);
+    void addSubject(QString name);
+    void addLesson(int grup, int day_of_week, int number_of_week, int number_of_lesson,
+                   int subject, int lecturer,  QString classroom);
+    void addMark(int student, int grup, bool semester, int subject, int form_of_control, int lecturer, int mark);
 
 
     //get------------------------------------------
@@ -58,14 +59,15 @@ public:
 
 
     //set------------------------------------------
-    void setDepartment(int, QString);
-    void setStudent(int, int, QString, QString, QString, bool);
-    void setSpesialty(int, int, QString);
-    void setGrup(int, int, QString, int, int);
-    void setLecturer(int, QString, QString, QString);
-    void setSubject(int, QString);
-    void setLesson(int, int, int, int, int, int, int, QString);
-    void setMark(int, int, int, bool, int, int, int, int);
+    void setDepartment(int  ID, QString name);
+    void setStudent(int ID, int grup, QString name, QString surname, QString lastname,  bool form_of_education);
+    void setSpesialty(int ID, int department, QString name);
+    void setGrup(int ID, int number, QString name, int spesiality, int curator);
+    void setLecturer(int ID, QString name, QString surname, QString lastname);
+    void setSubject(int ID, QString name);
+    void setLesson(int ID , int grup, int day_of_week, int number_of_week, int number_of_lesson,
+                   int subject, int lecturer,  QString classroom);
+    void setMark(int ID, int student, int grup, bool semester, int subject, int form_of_control, int lecturer, int mark);
 
 
 

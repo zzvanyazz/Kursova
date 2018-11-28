@@ -92,7 +92,7 @@
             </widget>
            </item>
            <item>
-            <widget class="QPushButton" name="AddButton">
+            <widget class="QPushButton" name="ButtonAddPanelItem">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Maximum" vsizetype="Minimum">
                <horstretch>0</horstretch>
@@ -175,7 +175,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="ButtonAdd">
+           <widget class="QPushButton" name="ButtonShowAddWindow">
             <property name="text">
              <string>Add</string>
             </property>

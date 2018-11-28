@@ -61,6 +61,7 @@ public:
 
         subjectCount = new QSpinBox(horizontalWidget_3);
         subjectCount->setObjectName(QStringLiteral("subjectCount"));
+        subjectCount->setMinimum(1);
 
         horizontalLayout_3->addWidget(subjectCount);
 
@@ -72,7 +73,7 @@ public:
         scrollArea->setWidgetResizable(true);
         scrollAreaWidgetContents = new QWidget();
         scrollAreaWidgetContents->setObjectName(QStringLiteral("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 380, 220));
+        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 376, 188));
         verticalLayout_2 = new QVBoxLayout(scrollAreaWidgetContents);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
         scrollArea->setWidget(scrollAreaWidgetContents);

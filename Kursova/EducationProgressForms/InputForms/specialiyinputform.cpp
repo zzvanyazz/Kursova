@@ -19,6 +19,6 @@ void SpecialiyInputForm::completed(){
 
 }
 void SpecialiyInputForm::cancel(){
-    ((QMainWindow*) parent())->close();
+    ((QMainWindow*)((QWidget*)parent())->parent())->hide();
 }
 

@@ -5,7 +5,7 @@
 #include <databasehelper.h>
 #include <QDebug>
 #include <EducationProgressForms/educationprogressmainwindow.h>
-
+#include <EducationProgressForms/adddatawindow.h>
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -18,7 +18,9 @@ int main(int argc, char *argv[])
     qDebug() << stack.pop() << endl;
 
 
-        EducationProgressMainWindow w;
+        EducationProgressMainWindow
+                w;
+
     w.show();
 
 

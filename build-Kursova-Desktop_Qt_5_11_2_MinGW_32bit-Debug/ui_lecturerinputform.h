@@ -16,6 +16,7 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QSpinBox>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -25,6 +26,10 @@ class Ui_LecturerInputForm
 {
 public:
     QVBoxLayout *verticalLayout;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout_5;
+    QLabel *label_4;
+    QSpinBox *Counter;
     QHBoxLayout *horizontalLayout_2;
     QLabel *label;
     QLineEdit *lectureSurname;
@@ -46,6 +51,24 @@ public:
         LecturerInputForm->resize(400, 300);
         verticalLayout = new QVBoxLayout(LecturerInputForm);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        widget = new QWidget(LecturerInputForm);
+        widget->setObjectName(QStringLiteral("widget"));
+        horizontalLayout_5 = new QHBoxLayout(widget);
+        horizontalLayout_5->setObjectName(QStringLiteral("horizontalLayout_5"));
+        label_4 = new QLabel(widget);
+        label_4->setObjectName(QStringLiteral("label_4"));
+
+        horizontalLayout_5->addWidget(label_4);
+
+        Counter = new QSpinBox(widget);
+        Counter->setObjectName(QStringLiteral("Counter"));
+        Counter->setMinimum(1);
+
+        horizontalLayout_5->addWidget(Counter);
+
+
+        verticalLayout->addWidget(widget);
+
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
         label = new QLabel(LecturerInputForm);
@@ -119,6 +142,7 @@ public:
     void retranslateUi(QWidget *LecturerInputForm)
     {
         LecturerInputForm->setWindowTitle(QApplication::translate("LecturerInputForm", "Form", nullptr));
+        label_4->setText(QApplication::translate("LecturerInputForm", "\320\232\320\273\321\214\320\272\321\226\321\201\321\202\321\214 \320\262\320\270\320\272\320\273\320\260\320\264\320\260\321\207\321\226\320\262 \320\264\320\273\321\217 \320\262\320\262\320\265\320\264\320\265\320\275\320\275\321\217", nullptr));
         label->setText(QApplication::translate("LecturerInputForm", "\320\237\321\200\321\226\320\267\320\262\320\270\321\211\320\265", nullptr));
         label_3->setText(QApplication::translate("LecturerInputForm", "\320\206\320\274'\321\217", nullptr));
         lectureName->setText(QString());

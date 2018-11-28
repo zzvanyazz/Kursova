@@ -15,6 +15,12 @@ public:
     explicit addDataWindow(QWidget *parent = nullptr);
     ~addDataWindow();
 
+
+private slots:
+    void setInputForm();
+
+
+
 private:
     Ui::addDataWindow *ui;
 };

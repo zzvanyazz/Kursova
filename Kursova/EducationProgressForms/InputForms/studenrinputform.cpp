@@ -20,5 +20,5 @@ void StudenrInputForm::completed(){
 
 }
 void StudenrInputForm::cancel(){
-    ((QMainWindow*) parent())->close();
+     ((QMainWindow*)((QWidget*)parent())->parent())->hide();
 }

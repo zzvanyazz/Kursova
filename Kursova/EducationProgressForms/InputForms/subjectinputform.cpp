@@ -20,7 +20,7 @@ void SubjectInputForm::completed(){
 
 }
 void SubjectInputForm::cancel(){
-    ((QMainWindow*) parent())->close();
+     ((QMainWindow*)((QWidget*)parent())->parent())->hide();
 }
 
 void SubjectInputForm::subjectValueChanged(int value){

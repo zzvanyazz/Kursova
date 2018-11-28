@@ -15,13 +15,16 @@ class QuickAccessPanelItem : public QWidget
 
 
 public:
-    enum Status{college, department, spesiality, grup};
+    enum Status{college, department, spesiality, group};
     explicit QuickAccessPanelItem(QString name, Status status, int thisID, QWidget *parent = nullptr);
     ~QuickAccessPanelItem();
 private slots:
 
     void changeChild();
     void Back();
+    void Remove();
+
+
 
 private:
     int thisID;
@@ -30,7 +33,6 @@ private:
     QList<int> itemsID;
     DatabaseHelper dbHelper;
     Status status;
-
 
      void Init(QString name,  Status status,int thisID);
 

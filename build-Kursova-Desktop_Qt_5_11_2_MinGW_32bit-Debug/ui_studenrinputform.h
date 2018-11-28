@@ -18,6 +18,7 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QSpinBox>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -27,6 +28,10 @@ class Ui_StudenrInputForm
 {
 public:
     QVBoxLayout *verticalLayout;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout_9;
+    QLabel *label_2;
+    QSpinBox *spinBox;
     QHBoxLayout *horizontalLayout_7;
     QHBoxLayout *horizontalLayout_6;
     QLabel *label_3;
@@ -43,6 +48,7 @@ public:
     QComboBox *comboBox;
     QHBoxLayout *horizontalLayout;
     QCheckBox *studyTypeCheck;
+    QWidget *widget1;
     QHBoxLayout *horizontalLayout_4;
     QSpacerItem *horizontalSpacer;
     QPushButton *btn_ok;
@@ -52,9 +58,33 @@ public:
     {
         if (StudenrInputForm->objectName().isEmpty())
             StudenrInputForm->setObjectName(QStringLiteral("StudenrInputForm"));
-        StudenrInputForm->resize(439, 262);
+        StudenrInputForm->resize(440, 292);
         verticalLayout = new QVBoxLayout(StudenrInputForm);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        widget = new QWidget(StudenrInputForm);
+        widget->setObjectName(QStringLiteral("widget"));
+        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Maximum);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(widget->sizePolicy().hasHeightForWidth());
+        widget->setSizePolicy(sizePolicy);
+        horizontalLayout_9 = new QHBoxLayout(widget);
+        horizontalLayout_9->setObjectName(QStringLiteral("horizontalLayout_9"));
+        horizontalLayout_9->setContentsMargins(1, 1, 1, 1);
+        label_2 = new QLabel(widget);
+        label_2->setObjectName(QStringLiteral("label_2"));
+
+        horizontalLayout_9->addWidget(label_2);
+
+        spinBox = new QSpinBox(widget);
+        spinBox->setObjectName(QStringLiteral("spinBox"));
+        spinBox->setMinimum(1);
+
+        horizontalLayout_9->addWidget(spinBox);
+
+
+        verticalLayout->addWidget(widget);
+
         horizontalLayout_7 = new QHBoxLayout();
         horizontalLayout_7->setObjectName(QStringLiteral("horizontalLayout_7"));
         horizontalLayout_6 = new QHBoxLayout();
@@ -135,24 +165,28 @@ public:
 
         verticalLayout->addLayout(horizontalLayout_8);
 
-        horizontalLayout_4 = new QHBoxLayout();
+        widget1 = new QWidget(StudenrInputForm);
+        widget1->setObjectName(QStringLiteral("widget1"));
+        sizePolicy.setHeightForWidth(widget1->sizePolicy().hasHeightForWidth());
+        widget1->setSizePolicy(sizePolicy);
+        horizontalLayout_4 = new QHBoxLayout(widget1);
         horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
         horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout_4->addItem(horizontalSpacer);
 
-        btn_ok = new QPushButton(StudenrInputForm);
+        btn_ok = new QPushButton(widget1);
         btn_ok->setObjectName(QStringLiteral("btn_ok"));
 
         horizontalLayout_4->addWidget(btn_ok);
 
-        btn_cancel = new QPushButton(StudenrInputForm);
+        btn_cancel = new QPushButton(widget1);
         btn_cancel->setObjectName(QStringLiteral("btn_cancel"));
 
         horizontalLayout_4->addWidget(btn_cancel);
 
 
-        verticalLayout->addLayout(horizontalLayout_4);
+        verticalLayout->addWidget(widget1);
 
 
         retranslateUi(StudenrInputForm);
@@ -163,6 +197,7 @@ public:
     void retranslateUi(QWidget *StudenrInputForm)
     {
         StudenrInputForm->setWindowTitle(QApplication::translate("StudenrInputForm", "Form", nullptr));
+        label_2->setText(QApplication::translate("StudenrInputForm", "\320\232\321\226\320\273\321\214\320\272\321\226\321\201\321\202\321\214 \321\201\321\202\321\203\320\264\320\265\320\275\321\202\321\226\320\262 \320\264\320\273\321\217 \320\262\320\262\320\265\320\264\320\265\320\275\320\275\321\217", nullptr));
         label_3->setText(QApplication::translate("StudenrInputForm", "\320\237\321\200\321\226\320\267\320\262\320\270\321\211\320\265", nullptr));
         label_4->setText(QApplication::translate("StudenrInputForm", "\320\206\320\274'\321\217", nullptr));
         label->setText(QApplication::translate("StudenrInputForm", "\320\237\320\276 \320\261\320\260\321\202\321\214\320\272\320\276\320\262\321\226", nullptr));

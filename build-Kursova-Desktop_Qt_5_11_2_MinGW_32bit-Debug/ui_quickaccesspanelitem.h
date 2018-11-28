@@ -27,7 +27,7 @@ public:
     QHBoxLayout *horizontalLayout_2;
     QPushButton *ButtonBack;
     QLabel *Name;
-    QWidget *widget;
+    QPushButton *ButtonRemove;
     QWidget *SubItemsWidget;
     QVBoxLayout *verticalLayout_2;
 
@@ -83,11 +83,11 @@ public:
 
         horizontalLayout_2->addWidget(Name);
 
-        widget = new QWidget(ToolBar);
-        widget->setObjectName(QStringLiteral("widget"));
-        widget->setMaximumSize(QSize(25, 25));
+        ButtonRemove = new QPushButton(ToolBar);
+        ButtonRemove->setObjectName(QStringLiteral("ButtonRemove"));
+        ButtonRemove->setMaximumSize(QSize(25, 25));
 
-        horizontalLayout_2->addWidget(widget);
+        horizontalLayout_2->addWidget(ButtonRemove);
 
 
         verticalLayout->addWidget(ToolBar);
@@ -113,6 +113,7 @@ public:
         QuickAccessPanelItem->setWindowTitle(QApplication::translate("QuickAccessPanelItem", "Form", nullptr));
         ButtonBack->setText(QString());
         Name->setText(QApplication::translate("QuickAccessPanelItem", "text", nullptr));
+        ButtonRemove->setText(QString());
     } // retranslateUi
 
 };

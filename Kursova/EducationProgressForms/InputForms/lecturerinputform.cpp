@@ -19,5 +19,5 @@ void LecturerInputForm::completed(){
 
 }
 void LecturerInputForm::cancel(){
-    ((QMainWindow*) parent())->close();
+     ((QMainWindow*)((QWidget*)parent())->parent())->hide();
 }

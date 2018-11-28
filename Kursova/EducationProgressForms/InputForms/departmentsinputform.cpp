@@ -21,7 +21,8 @@ void DepartmentsInputForm::completed(){
 
 }
 void DepartmentsInputForm::cancel(){
-    ((QMainWindow*) parent())->close();
+
+    ((QMainWindow*)((QWidget*)parent())->parent())->hide();
 }
 void DepartmentsInputForm::departmentValueChanged(int value){
     for(int i = 0;i<value;i++){

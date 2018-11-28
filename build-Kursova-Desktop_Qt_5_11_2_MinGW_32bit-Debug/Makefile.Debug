@@ -2580,7 +2580,8 @@ debug/main.o: ../Kursova/main.cpp ../Kursova/mainwindow.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qtsqlversion.h \
 		../Kursova/databasehelper.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
-		../Kursova/EducationProgressForms/educationprogressmainwindow.h
+		../Kursova/EducationProgressForms/educationprogressmainwindow.h \
+		../Kursova/EducationProgressForms/adddatawindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\main.o ..\Kursova\main.cpp
 
 debug/mainwindow.o: ../Kursova/mainwindow.cpp ../Kursova/mainwindow.h \
@@ -3235,6 +3236,9 @@ debug/educationprogressmainwindow.o: ../Kursova/EducationProgressForms/education
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QCheckBox \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
@@ -3253,7 +3257,6 @@ debug/educationprogressmainwindow.o: ../Kursova/EducationProgressForms/education
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QScrollArea \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qscrollarea.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
@@ -3364,7 +3367,6 @@ debug/educationprogressmainwindow.o: ../Kursova/EducationProgressForms/education
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qaccessiblewidget.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qbuttongroup.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcalendarwidget.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcolordialog.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdialog.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcolormap.h \
@@ -3462,7 +3464,8 @@ debug/educationprogressmainwindow.o: ../Kursova/EducationProgressForms/education
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qwizard.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtwidgetsversion.h \
 		../Kursova/EducationProgressForms/quickaccesspanelitem.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/QPair
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/QPair \
+		../Kursova/EducationProgressForms/adddatawindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\educationprogressmainwindow.o ..\Kursova\EducationProgressForms\educationprogressmainwindow.cpp
 
 debug/quickaccesspanelitem.o: ../Kursova/EducationProgressForms/quickaccesspanelitem.cpp ../Kursova/EducationProgressForms/quickaccesspanelitem.h \
@@ -3856,13 +3859,9 @@ debug/adddatawindow.o: ../Kursova/EducationProgressForms/adddatawindow.cpp ../Ku
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMenuBar \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmenubar.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmenu.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QStatusBar \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstatusbar.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
@@ -4019,6 +4018,8 @@ debug/studenrinputform.o: ../Kursova/EducationProgressForms/InputForms/studenrin
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpinBox \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qspinbox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QtWidgets \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QtWidgetsDepends \
@@ -4311,7 +4312,6 @@ debug/studenrinputform.o: ../Kursova/EducationProgressForms/InputForms/studenrin
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/QMetaType \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qshortcut.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsizegrip.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qspinbox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsplashscreen.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsplitter.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstackedlayout.h \
@@ -4473,6 +4473,11 @@ debug/lecturerinputform.o: ../Kursova/EducationProgressForms/InputForms/lecturer
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpinBox \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qspinbox.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractspinbox.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qvalidator.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/qregularexpression.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QtWidgets \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QtWidgetsDepends \
@@ -4552,7 +4557,6 @@ debug/lecturerinputform.o: ../Kursova/EducationProgressForms/InputForms/lecturer
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qqueue.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qrandom.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qreadwritelock.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/qregularexpression.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qresource.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qsavefile.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qscopedvaluerollback.h \
@@ -4685,11 +4689,9 @@ debug/lecturerinputform.o: ../Kursova/EducationProgressForms/InputForms/lecturer
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextdocumentwriter.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextlist.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtexttable.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qvalidator.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtguiversion.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyleoption.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractspinbox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qslider.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractslider.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyle.h \
@@ -4779,7 +4781,6 @@ debug/lecturerinputform.o: ../Kursova/EducationProgressForms/InputForms/lecturer
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/QMetaType \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qshortcut.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsizegrip.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qspinbox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsplashscreen.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsplitter.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstackedlayout.h \
@@ -5741,6 +5742,7 @@ debug/departmentsinputform.o: ../Kursova/EducationProgressForms/InputForms/depar
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QScrollArea \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpinBox \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout
@@ -5892,6 +5894,8 @@ debug/groupinputform.o: ../Kursova/EducationProgressForms/InputForms/groupinputf
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpinBox \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qspinbox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QtWidgets \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QtWidgetsDepends \
@@ -6185,7 +6189,6 @@ debug/groupinputform.o: ../Kursova/EducationProgressForms/InputForms/groupinputf
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/QMetaType \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qshortcut.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsizegrip.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qspinbox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsplashscreen.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsplitter.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstackedlayout.h \
@@ -6361,6 +6364,8 @@ debug/specialiyinputform.o: ../Kursova/EducationProgressForms/InputForms/special
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpinBox \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qspinbox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QtWidgets \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QtWidgetsDepends \
@@ -6654,7 +6659,6 @@ debug/specialiyinputform.o: ../Kursova/EducationProgressForms/InputForms/special
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/QMetaType \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qshortcut.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsizegrip.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qspinbox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsplashscreen.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsplitter.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstackedlayout.h \

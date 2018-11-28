@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
@@ -35,12 +36,18 @@ public:
     QWidget *widget;
     QHBoxLayout *horizontalLayout_2;
     QLineEdit *SearchLine;
-    QPushButton *AddButton;
+    QPushButton *ButtonAddPanelItem;
     QWidget *QuickAccessPanel;
     QVBoxLayout *verticalLayout;
     QSpacerItem *verticalSpacer;
     QWidget *widget_2;
-    QWidget *widget_3;
+    QWidget *FunctionalPanelConteiner;
+    QVBoxLayout *verticalLayout_2;
+    QWidget *FunctionalPanel;
+    QVBoxLayout *verticalLayout_4;
+    QCheckBox *CheckFormOfEducation;
+    QPushButton *ButtonShowAddWindow;
+    QSpacerItem *verticalSpacer_2;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -68,7 +75,7 @@ public:
         scrollArea->setWidgetResizable(true);
         QuickAccessContainer = new QWidget();
         QuickAccessContainer->setObjectName(QStringLiteral("QuickAccessContainer"));
-        QuickAccessContainer->setGeometry(QRect(0, 0, 221, 509));
+        QuickAccessContainer->setGeometry(QRect(0, 0, 221, 526));
         QSizePolicy sizePolicy2(QSizePolicy::Minimum, QSizePolicy::Minimum);
         sizePolicy2.setHorizontalStretch(0);
         sizePolicy2.setVerticalStretch(0);
@@ -96,15 +103,15 @@ public:
 
         horizontalLayout_2->addWidget(SearchLine);
 
-        AddButton = new QPushButton(widget);
-        AddButton->setObjectName(QStringLiteral("AddButton"));
+        ButtonAddPanelItem = new QPushButton(widget);
+        ButtonAddPanelItem->setObjectName(QStringLiteral("ButtonAddPanelItem"));
         QSizePolicy sizePolicy4(QSizePolicy::Maximum, QSizePolicy::Minimum);
         sizePolicy4.setHorizontalStretch(0);
         sizePolicy4.setVerticalStretch(0);
-        sizePolicy4.setHeightForWidth(AddButton->sizePolicy().hasHeightForWidth());
-        AddButton->setSizePolicy(sizePolicy4);
+        sizePolicy4.setHeightForWidth(ButtonAddPanelItem->sizePolicy().hasHeightForWidth());
+        ButtonAddPanelItem->setSizePolicy(sizePolicy4);
 
-        horizontalLayout_2->addWidget(AddButton);
+        horizontalLayout_2->addWidget(ButtonAddPanelItem);
 
 
         verticalLayout_3->addWidget(widget);
@@ -137,12 +144,35 @@ public:
 
         horizontalLayout->addWidget(widget_2);
 
-        widget_3 = new QWidget(centralwidget);
-        widget_3->setObjectName(QStringLiteral("widget_3"));
-        sizePolicy1.setHeightForWidth(widget_3->sizePolicy().hasHeightForWidth());
-        widget_3->setSizePolicy(sizePolicy1);
+        FunctionalPanelConteiner = new QWidget(centralwidget);
+        FunctionalPanelConteiner->setObjectName(QStringLiteral("FunctionalPanelConteiner"));
+        sizePolicy1.setHeightForWidth(FunctionalPanelConteiner->sizePolicy().hasHeightForWidth());
+        FunctionalPanelConteiner->setSizePolicy(sizePolicy1);
+        verticalLayout_2 = new QVBoxLayout(FunctionalPanelConteiner);
+        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        FunctionalPanel = new QWidget(FunctionalPanelConteiner);
+        FunctionalPanel->setObjectName(QStringLiteral("FunctionalPanel"));
+        verticalLayout_4 = new QVBoxLayout(FunctionalPanel);
+        verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
+        CheckFormOfEducation = new QCheckBox(FunctionalPanel);
+        CheckFormOfEducation->setObjectName(QStringLiteral("CheckFormOfEducation"));
 
-        horizontalLayout->addWidget(widget_3);
+        verticalLayout_4->addWidget(CheckFormOfEducation);
+
+        ButtonShowAddWindow = new QPushButton(FunctionalPanel);
+        ButtonShowAddWindow->setObjectName(QStringLiteral("ButtonShowAddWindow"));
+
+        verticalLayout_4->addWidget(ButtonShowAddWindow);
+
+
+        verticalLayout_2->addWidget(FunctionalPanel);
+
+        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_2->addItem(verticalSpacer_2);
+
+
+        horizontalLayout->addWidget(FunctionalPanelConteiner);
 
         EducationProgressMainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(EducationProgressMainWindow);
@@ -161,7 +191,9 @@ public:
     void retranslateUi(QMainWindow *EducationProgressMainWindow)
     {
         EducationProgressMainWindow->setWindowTitle(QApplication::translate("EducationProgressMainWindow", "MainWindow", nullptr));
-        AddButton->setText(QApplication::translate("EducationProgressMainWindow", "+", nullptr));
+        ButtonAddPanelItem->setText(QApplication::translate("EducationProgressMainWindow", "+", nullptr));
+        CheckFormOfEducation->setText(QApplication::translate("EducationProgressMainWindow", "\320\233\320\270\321\210\320\265 \320\264\320\265\321\200\320\266\320\260\320\262\320\275\320\270\320\272\320\270", nullptr));
+        ButtonShowAddWindow->setText(QApplication::translate("EducationProgressMainWindow", "Add", nullptr));
     } // retranslateUi
 
 };

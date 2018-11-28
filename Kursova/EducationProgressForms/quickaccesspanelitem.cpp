@@ -13,6 +13,8 @@ QuickAccessPanelItem::QuickAccessPanelItem(QString name,  Status _status, int th
     ui->SubItemsWidget->setAutoFillBackground(true);
 
     connect(ui->ButtonBack, SIGNAL(pressed()), this,SLOT(Back()) );
+       connect(ui->ButtonRemove, SIGNAL(pressed()), this,SLOT(Remove()) );
+
     Init(name, _status, thisID);
 
     
@@ -37,10 +39,10 @@ void QuickAccessPanelItem::Init(QString name, Status _status, int _thisID){
         break;
 
     case spesiality:
-        query =  dbHelper.getGrup(" spesiality = " + QString().number(_thisID));
+        query =  dbHelper.getGroup(" spesiality = " + QString().number(_thisID));
 
         break;
-    case grup:
+    case group:
         return;
     }
 
@@ -89,9 +91,9 @@ void QuickAccessPanelItem::Init(QString name, Status _status, int _thisID){
             break;
 
         case spesiality:
-            query = dbHelper.getGrup("ID = "+QString().number(ID));
+            query = dbHelper.getGroup("ID = "+QString().number(ID));
             query->first();
-            text =  query->value((int)DatabaseHelper::ColumnsOfGrup::number).toString();
+            text =  query->value((int)DatabaseHelper::ColumnsOfGroup::number).toString();
 
 
         }
@@ -163,7 +165,7 @@ void QuickAccessPanelItem::changeChild(){
                 return;
 
             case spesiality:
-                Init(p.first->text(),  QuickAccessPanelItem::Status::grup, p.second);
+                Init(p.first->text(),  QuickAccessPanelItem::Status::group, p.second);
                 return;
             }
 
@@ -176,6 +178,11 @@ void QuickAccessPanelItem::changeChild(){
     
 
     
+}
+
+void QuickAccessPanelItem::Remove(){
+    this->hide();
+    delete this;
 }
 
 QuickAccessPanelItem::~QuickAccessPanelItem()

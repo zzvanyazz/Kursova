@@ -18,5 +18,5 @@ void GroupInputForm::completed(){
 
 }
 void GroupInputForm::cancel(){
-    ((QMainWindow*) parent())->close();
+     ((QMainWindow*)((QWidget*)parent())->parent())->hide();
 }

@@ -14,6 +14,7 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QScrollArea>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QVBoxLayout>
@@ -29,6 +30,7 @@ public:
     QHBoxLayout *horizontalLayout_3;
     QLabel *label;
     QSpinBox *department;
+    QScrollArea *scrollArea;
     QWidget *conteiner;
     QVBoxLayout *verticalLayout_2;
     QHBoxLayout *horizontalLayout;
@@ -59,23 +61,24 @@ public:
 
         department = new QSpinBox(horizontalWidget_3);
         department->setObjectName(QStringLiteral("department"));
+        department->setMinimum(1);
 
         horizontalLayout_3->addWidget(department);
 
 
         verticalLayout->addWidget(horizontalWidget_3);
 
-        conteiner = new QWidget(DepartmentsInputForm);
+        scrollArea = new QScrollArea(DepartmentsInputForm);
+        scrollArea->setObjectName(QStringLiteral("scrollArea"));
+        scrollArea->setWidgetResizable(true);
+        conteiner = new QWidget();
         conteiner->setObjectName(QStringLiteral("conteiner"));
-        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Expanding);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(conteiner->sizePolicy().hasHeightForWidth());
-        conteiner->setSizePolicy(sizePolicy1);
+        conteiner->setGeometry(QRect(0, 0, 376, 188));
         verticalLayout_2 = new QVBoxLayout(conteiner);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        scrollArea->setWidget(conteiner);
 
-        verticalLayout->addWidget(conteiner);
+        verticalLayout->addWidget(scrollArea);
 
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));

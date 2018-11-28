@@ -17,6 +17,7 @@
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QSpinBox>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -26,12 +27,17 @@ class Ui_SpecialiyInputForm
 {
 public:
     QVBoxLayout *verticalLayout;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout_4;
+    QLabel *label_3;
+    QSpinBox *spinBox;
     QHBoxLayout *horizontalLayout_2;
     QLabel *label;
     QComboBox *boxDepartment;
     QHBoxLayout *horizontalLayout_3;
     QLabel *label_2;
     QLineEdit *lineEdit;
+    QWidget *control;
     QHBoxLayout *horizontalLayout;
     QSpacerItem *horizontalSpacer;
     QPushButton *btn_ok;
@@ -44,6 +50,29 @@ public:
         SpecialiyInputForm->resize(400, 300);
         verticalLayout = new QVBoxLayout(SpecialiyInputForm);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        widget = new QWidget(SpecialiyInputForm);
+        widget->setObjectName(QStringLiteral("widget"));
+        QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Maximum);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(widget->sizePolicy().hasHeightForWidth());
+        widget->setSizePolicy(sizePolicy);
+        horizontalLayout_4 = new QHBoxLayout(widget);
+        horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
+        label_3 = new QLabel(widget);
+        label_3->setObjectName(QStringLiteral("label_3"));
+
+        horizontalLayout_4->addWidget(label_3);
+
+        spinBox = new QSpinBox(widget);
+        spinBox->setObjectName(QStringLiteral("spinBox"));
+        spinBox->setMinimum(1);
+
+        horizontalLayout_4->addWidget(spinBox);
+
+
+        verticalLayout->addWidget(widget);
+
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
         label = new QLabel(SpecialiyInputForm);
@@ -74,24 +103,28 @@ public:
 
         verticalLayout->addLayout(horizontalLayout_3);
 
-        horizontalLayout = new QHBoxLayout();
+        control = new QWidget(SpecialiyInputForm);
+        control->setObjectName(QStringLiteral("control"));
+        sizePolicy.setHeightForWidth(control->sizePolicy().hasHeightForWidth());
+        control->setSizePolicy(sizePolicy);
+        horizontalLayout = new QHBoxLayout(control);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout->addItem(horizontalSpacer);
 
-        btn_ok = new QPushButton(SpecialiyInputForm);
+        btn_ok = new QPushButton(control);
         btn_ok->setObjectName(QStringLiteral("btn_ok"));
 
         horizontalLayout->addWidget(btn_ok);
 
-        btn_cancel = new QPushButton(SpecialiyInputForm);
+        btn_cancel = new QPushButton(control);
         btn_cancel->setObjectName(QStringLiteral("btn_cancel"));
 
         horizontalLayout->addWidget(btn_cancel);
 
 
-        verticalLayout->addLayout(horizontalLayout);
+        verticalLayout->addWidget(control);
 
 
         retranslateUi(SpecialiyInputForm);
@@ -102,6 +135,7 @@ public:
     void retranslateUi(QWidget *SpecialiyInputForm)
     {
         SpecialiyInputForm->setWindowTitle(QApplication::translate("SpecialiyInputForm", "Form", nullptr));
+        label_3->setText(QApplication::translate("SpecialiyInputForm", "\320\232\321\226\320\273\321\214\320\272\321\226\321\201\321\202\321\214 \321\201\320\277\320\265\321\206\321\226\320\260\320\273\321\214\320\275\320\276\321\201\321\202\320\265\320\271 \320\264\320\273\321\217 \320\262\320\262\320\265\320\264\320\265\320\275\320\275\321\217", nullptr));
         label->setText(QApplication::translate("SpecialiyInputForm", "\320\222\321\226\320\264\320\264\321\226\320\273\320\265\320\275\320\275\321\217", nullptr));
         label_2->setText(QApplication::translate("SpecialiyInputForm", "\320\235\320\260\320\267\320\262\320\260 \321\201\320\277\320\265\321\206\321\226\320\260\320\273\321\214\320\275\320\276\321\201\321\202\321\226", nullptr));
         btn_ok->setText(QApplication::translate("SpecialiyInputForm", "\320\236\320\232", nullptr));

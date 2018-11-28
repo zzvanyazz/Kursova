@@ -2,7 +2,7 @@
 #define EDUCATIONPROGRESSMAINWINDOW_H
 #include <databasehelper.h>
 #include <QMainWindow>
-
+#include <EducationProgressForms/adddatawindow.h>
 namespace Ui {
 class EducationProgressMainWindow;
 }
@@ -17,9 +17,11 @@ public:
 private slots:
 
     void addItemQuickAccessPanel();
+    void showAddDataWindow();
 
 
 private:
+     addDataWindow *w;
     DatabaseHelper dbHelper;
     Ui::EducationProgressMainWindow *ui;
 };

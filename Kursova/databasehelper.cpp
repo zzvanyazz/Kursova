@@ -77,9 +77,9 @@ void DatabaseHelper::addSpesialty(int department, QString name){
     chek(&query);
 }
 
-void DatabaseHelper::addGrup(int number, QString name, int spesiality, int curator){
+void DatabaseHelper::addGroup(int number, QString name, int spesiality, int curator){
     QSqlQuery query(db);
-    query.prepare("INSERT INTO grups (number, name, spesiality, curator) "
+    query.prepare("INSERT INTO groups (number, name, spesiality, curator) "
                   "VALUES (:number, :name, :spesiality, :curator)");
     query.bindValue(":number", number);
     query.bindValue(":name", name);
@@ -164,10 +164,10 @@ QSqlQuery* DatabaseHelper::getSpesialty(QString where ){
 
     return query;
 }
-QSqlQuery* DatabaseHelper::getGrup(QString where ){
+QSqlQuery* DatabaseHelper::getGroup(QString where ){
     QSqlQuery*  query = new QSqlQuery(db);
 
-    query->exec("SELECT * FROM grups WHERE " + where);
+    query->exec("SELECT * FROM groups WHERE " + where);
 
     return query;
 }
@@ -232,9 +232,9 @@ void DatabaseHelper::setSpesialty(int ID, int department, QString name){
 
     chek(&query);
 }
-void DatabaseHelper::setGrup(int ID, int number, QString name, int spesiality, int curator){
+void DatabaseHelper::setGroup(int ID, int number, QString name, int spesiality, int curator){
     QSqlQuery query(db);
-    query.prepare("UPDATE grups number = :number, name = :name, spesiality = :spesiality, curator = :curator WHERE ID = "+ QString().number(ID));
+    query.prepare("UPDATE groups number = :number, name = :name, spesiality = :spesiality, curator = :curator WHERE ID = "+ QString().number(ID));
     query.bindValue(":number", number);
     query.bindValue(":name", name);
     query.bindValue(":spesiality", spesiality);

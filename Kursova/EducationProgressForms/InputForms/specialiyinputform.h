@@ -2,7 +2,7 @@
 #define SPECIALIYINPUTFORM_H
 
 #include <QWidget>
-
+#include <databasehelper.h>
 namespace Ui {
 class SpecialiyInputForm;
 }
@@ -19,6 +19,8 @@ private slots:
     void cancel();
 
 private:
+    DatabaseHelper dbHelper;
+    QList<QPair<int, int>> departments;
     Ui::SpecialiyInputForm *ui;
 };
 

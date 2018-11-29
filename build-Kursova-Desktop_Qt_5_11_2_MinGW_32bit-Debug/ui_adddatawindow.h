@@ -46,7 +46,7 @@ public:
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         Menu = new QWidget(centralwidget);
         Menu->setObjectName(QStringLiteral("Menu"));
-        Menu->setStyleSheet(QStringLiteral(""));
+        Menu->setStyleSheet(QStringLiteral("background-color: rgb(150, 150, 150);"));
         verticalLayout_2 = new QVBoxLayout(Menu);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
         ButtonAddSpeciality = new QPushButton(Menu);

@@ -33,7 +33,7 @@
     <item>
      <widget class="QWidget" name="Menu" native="true">
       <property name="styleSheet">
-       <string notr="true"/>
+       <string notr="true">background-color: rgb(150, 150, 150);</string>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
        <item>

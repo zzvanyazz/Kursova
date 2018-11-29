@@ -3,7 +3,7 @@
 
 #include <QWidget>
 #include<QtWidgets>
-
+#include <databasehelper.h>
 namespace Ui {
 class DepartmentsInputForm;
 }
@@ -21,6 +21,7 @@ private slots:
     void departmentValueChanged(int);
 
 private:
+    DatabaseHelper dbHelper;
     QList<QLineEdit*> lines;
     Ui::DepartmentsInputForm *ui;
 };

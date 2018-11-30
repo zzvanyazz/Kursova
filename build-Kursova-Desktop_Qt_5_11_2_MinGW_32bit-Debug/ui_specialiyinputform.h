@@ -47,9 +47,12 @@ public:
     {
         if (SpecialiyInputForm->objectName().isEmpty())
             SpecialiyInputForm->setObjectName(QStringLiteral("SpecialiyInputForm"));
-        SpecialiyInputForm->resize(400, 300);
+        SpecialiyInputForm->resize(400, 283);
+        SpecialiyInputForm->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);\n"
+"background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0.034, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(10, 7, 77, 255));"));
         verticalLayout = new QVBoxLayout(SpecialiyInputForm);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setContentsMargins(2, 2, 2, 2);
         widget = new QWidget(SpecialiyInputForm);
         widget->setObjectName(QStringLiteral("widget"));
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Maximum);
@@ -109,6 +112,7 @@ public:
         control->setSizePolicy(sizePolicy);
         horizontalLayout = new QHBoxLayout(control);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
         horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout->addItem(horizontalSpacer);

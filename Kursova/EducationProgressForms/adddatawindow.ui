@@ -25,38 +25,33 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(255, 255, 255);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <property name="styleSheet">
     <string notr="true">background-color: rgb(51, 51, 51);</string>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="leftMargin">
+     <number>2</number>
+    </property>
+    <property name="topMargin">
+     <number>2</number>
+    </property>
+    <property name="rightMargin">
+     <number>2</number>
+    </property>
+    <property name="bottomMargin">
+     <number>2</number>
+    </property>
     <item>
      <widget class="QWidget" name="Menu" native="true">
       <property name="styleSheet">
-       <string notr="true">background-color: rgb(150, 150, 150);</string>
+       <string notr="true">background-color: rgb(150, 150, 150);
+background-color: rgb(51, 51, 51);</string>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2">
-       <item>
-        <widget class="QPushButton" name="ButtonAddSpeciality">
-         <property name="enabled">
-          <bool>true</bool>
-         </property>
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-           <horstretch>5</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0.372, stop:0.17017 rgba(0, 27, 72, 255), stop:0.371371 rgba(0, 0, 0, 255), stop:0.668669 rgba(4, 0, 5, 255), stop:1 rgba(105, 12, 137, 255));
-font: 10pt &quot;Rockwell&quot;;</string>
-         </property>
-         <property name="text">
-          <string>Додати спеціальність</string>
-         </property>
-        </widget>
-       </item>
        <item>
         <widget class="QPushButton" name="ButtonAddDepartment">
          <property name="enabled">
@@ -79,9 +74,8 @@ font: 10pt &quot;Rockwell&quot;;</string>
          </property>
          <property name="styleSheet">
           <string notr="true">color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0.372, stop:0.171853 rgba(8, 72, 0, 255), stop:0.371371 rgba(0, 0, 0, 255), stop:0.668669 rgba(4, 0, 5, 255), stop:1 rgba(0, 27, 72, 255));
-font: 10pt &quot;Rockwell&quot;;
-</string>
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0.372, stop:0.17017 rgba(0, 27, 72, 255), stop:0.371371 rgba(0, 0, 0, 255), stop:0.668669 rgba(4, 0, 5, 255), stop:1 rgba(105, 12, 137, 255));
+font: 10pt &quot;Rockwell&quot;;</string>
          </property>
          <property name="text">
           <string>Додати відділення</string>
@@ -94,6 +88,29 @@ font: 10pt &quot;Rockwell&quot;;
          </property>
          <property name="flat">
           <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="ButtonAddSpeciality">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+           <horstretch>5</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">
+color: rgb(255, 255, 255);
+background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0.372, stop:0.171853 rgba(8, 72, 0, 255), stop:0.371371 rgba(0, 0, 0, 255), stop:0.668669 rgba(4, 0, 5, 255), stop:1 rgba(0, 27, 72, 255));
+font: 10pt &quot;Rockwell&quot;;
+</string>
+         </property>
+         <property name="text">
+          <string>Додати спеціальність</string>
          </property>
         </widget>
        </item>

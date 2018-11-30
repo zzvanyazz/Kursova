@@ -1,7 +1,7 @@
 #include "subjectinputform.h"
 #include "ui_subjectinputform.h"
 #include<QtWidgets>
-
+#include <EducationProgressForms/adddatawindow.h>
 SubjectInputForm::SubjectInputForm(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::SubjectInputForm)
@@ -17,6 +17,12 @@ SubjectInputForm::~SubjectInputForm()
     delete ui;
 }
 void SubjectInputForm::completed(){
+    for(QLineEdit *l :lines){
+        if(!l->text().isEmpty())
+            dbHelper.addSubject(l->text());
+    }
+    if(ui->subjectCount->value() == 1) cancel();
+    ui->subjectCount->setValue(ui->subjectCount->value()-1);
 
 }
 void SubjectInputForm::cancel(){
@@ -24,13 +30,24 @@ void SubjectInputForm::cancel(){
 }
 
 void SubjectInputForm::subjectValueChanged(int value){
+    for(int i = 0; i < lines.length(); i++){
+        ui->conteiner->layout()->removeWidget(lines[i]->parentWidget());
+        lines[i]->parentWidget()->hide();
+
+    }
+    lines.clear();
     for(int i = 0;i<value;i++){
-        QHBoxLayout *p=new QHBoxLayout(ui->scrollAreaWidgetContents);
-        QLabel *text=new QLabel(ui->scrollAreaWidgetContents);
-        QLineEdit *line=new QLineEdit(ui->scrollAreaWidgetContents);
+        QWidget *w = new QWidget();
+        QHBoxLayout *p=new QHBoxLayout(ui->conteiner);
+        QLabel *text=new QLabel(ui->conteiner);
+        QLineEdit *line=new QLineEdit(ui->conteiner);
         lines.push_back(line);
+        text->setText(QString().number(i+1));
+        text->setStyleSheet("color: rgb(255, 255, 255);");
         p->addWidget(text);
         p->addWidget(line);
+        w->setLayout(p);
+        ui->conteiner->layout()->addWidget(w);
 
     }
 

@@ -2,7 +2,7 @@
 #define GROUPINPUTFORM_H
 
 #include <QWidget>
-
+#include <databasehelper.h>
 namespace Ui {
 class GroupInputForm;
 }
@@ -19,6 +19,7 @@ private slots:
     void cancel();
 
 private:
+    DatabaseHelper dbHelper;
     Ui::GroupInputForm *ui;
 };
 

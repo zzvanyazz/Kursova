@@ -58,9 +58,11 @@ public:
     {
         if (StudenrInputForm->objectName().isEmpty())
             StudenrInputForm->setObjectName(QStringLiteral("StudenrInputForm"));
-        StudenrInputForm->resize(440, 292);
+        StudenrInputForm->resize(440, 383);
+        StudenrInputForm->setStyleSheet(QStringLiteral("background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0.034, stop:0.365385 rgba(0, 0, 0, 255), stop:1 rgba(53, 35, 5, 255));"));
         verticalLayout = new QVBoxLayout(StudenrInputForm);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setContentsMargins(2, 2, 2, 2);
         widget = new QWidget(StudenrInputForm);
         widget->setObjectName(QStringLiteral("widget"));
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Maximum);
@@ -111,6 +113,9 @@ public:
 
         horizontalLayout_5->addWidget(studentName);
 
+
+        horizontalLayout_6->addLayout(horizontalLayout_5);
+
         horizontalLayout_3 = new QHBoxLayout();
         horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
         label = new QLabel(StudenrInputForm);
@@ -124,10 +129,7 @@ public:
         horizontalLayout_3->addWidget(studentLastName);
 
 
-        horizontalLayout_5->addLayout(horizontalLayout_3);
-
-
-        horizontalLayout_6->addLayout(horizontalLayout_5);
+        horizontalLayout_6->addLayout(horizontalLayout_3);
 
 
         horizontalLayout_7->addLayout(horizontalLayout_6);
@@ -167,8 +169,11 @@ public:
 
         widget1 = new QWidget(StudenrInputForm);
         widget1->setObjectName(QStringLiteral("widget1"));
-        sizePolicy.setHeightForWidth(widget1->sizePolicy().hasHeightForWidth());
-        widget1->setSizePolicy(sizePolicy);
+        QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Maximum);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(widget1->sizePolicy().hasHeightForWidth());
+        widget1->setSizePolicy(sizePolicy1);
         horizontalLayout_4 = new QHBoxLayout(widget1);
         horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
         horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);

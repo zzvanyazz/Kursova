@@ -13,7 +13,22 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0.034, stop:0.475962 rgba(0, 0, 0, 255), stop:1 rgba(0, 72, 65, 255));</string>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>2</number>
+   </property>
+   <property name="topMargin">
+    <number>2</number>
+   </property>
+   <property name="rightMargin">
+    <number>2</number>
+   </property>
+   <property name="bottomMargin">
+    <number>2</number>
+   </property>
    <item>
     <widget class="QWidget" name="horizontalWidget_3" native="true">
      <property name="sizePolicy">
@@ -45,13 +60,13 @@
      <property name="widgetResizable">
       <bool>true</bool>
      </property>
-     <widget class="QWidget" name="scrollAreaWidgetContents">
+     <widget class="QWidget" name="conteiner">
       <property name="geometry">
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>376</width>
-        <height>188</height>
+        <width>394</width>
+        <height>204</height>
        </rect>
       </property>
       <layout class="QVBoxLayout" name="verticalLayout_2"/>

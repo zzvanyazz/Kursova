@@ -2,7 +2,7 @@
 #define LECTURERINPUTFORM_H
 
 #include <QWidget>
-
+#include <databasehelper.h>
 namespace Ui {
 class LecturerInputForm;
 }
@@ -19,6 +19,7 @@ private slots:
     void cancel();
 
 private:
+    DatabaseHelper dbHelper;
     Ui::LecturerInputForm *ui;
 };
 

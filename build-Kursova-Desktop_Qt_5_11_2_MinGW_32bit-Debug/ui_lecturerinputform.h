@@ -49,12 +49,20 @@ public:
         if (LecturerInputForm->objectName().isEmpty())
             LecturerInputForm->setObjectName(QStringLiteral("LecturerInputForm"));
         LecturerInputForm->resize(400, 300);
+        LecturerInputForm->setStyleSheet(QStringLiteral("background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0.034, stop:0.475962 rgba(0, 0, 0, 255), stop:1 rgba(0, 72, 65, 255));"));
         verticalLayout = new QVBoxLayout(LecturerInputForm);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setContentsMargins(2, 2, 2, 2);
         widget = new QWidget(LecturerInputForm);
         widget->setObjectName(QStringLiteral("widget"));
+        QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(widget->sizePolicy().hasHeightForWidth());
+        widget->setSizePolicy(sizePolicy);
         horizontalLayout_5 = new QHBoxLayout(widget);
         horizontalLayout_5->setObjectName(QStringLiteral("horizontalLayout_5"));
+        horizontalLayout_5->setContentsMargins(0, 0, 0, 0);
         label_4 = new QLabel(widget);
         label_4->setObjectName(QStringLiteral("label_4"));
 

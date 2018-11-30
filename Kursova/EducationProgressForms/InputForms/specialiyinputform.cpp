@@ -2,7 +2,7 @@
 #include "ui_specialiyinputform.h"
 #include<QtWidgets>
 #include <QSqlQuery>
-
+#include <EducationProgressForms/adddatawindow.h>
 SpecialiyInputForm::SpecialiyInputForm(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::SpecialiyInputForm)
@@ -19,6 +19,7 @@ SpecialiyInputForm::SpecialiyInputForm(QWidget *parent) :
            i++;
         }while(q->next());
     }
+
 
 
 }
@@ -40,6 +41,7 @@ void SpecialiyInputForm::completed(){
     dbHelper.addSpesialty(ID, ui->lineEdit->text());
     if(ui->spinBox->value() == 1) cancel();
     ui->spinBox->setValue(ui->spinBox->value()-1);
+    ui->lineEdit->clear();
 
 }
 void SpecialiyInputForm::cancel(){

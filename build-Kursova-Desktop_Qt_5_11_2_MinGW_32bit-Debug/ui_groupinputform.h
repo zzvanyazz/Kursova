@@ -43,7 +43,7 @@ public:
     QComboBox *boxCurator;
     QHBoxLayout *horizontalLayout_5;
     QLabel *label_3;
-    QLineEdit *hroupName;
+    QLineEdit *groupName;
     QWidget *widget;
     QHBoxLayout *horizontalLayout;
     QSpacerItem *horizontalSpacer;
@@ -55,8 +55,10 @@ public:
         if (GroupInputForm->objectName().isEmpty())
             GroupInputForm->setObjectName(QStringLiteral("GroupInputForm"));
         GroupInputForm->resize(400, 300);
+        GroupInputForm->setStyleSheet(QStringLiteral("background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0.034, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(5, 61, 8, 255));"));
         verticalLayout = new QVBoxLayout(GroupInputForm);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setContentsMargins(2, 2, 2, 2);
         horizontalWidget = new QWidget(GroupInputForm);
         horizontalWidget->setObjectName(QStringLiteral("horizontalWidget"));
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Maximum);
@@ -139,10 +141,10 @@ public:
 
         horizontalLayout_5->addWidget(label_3);
 
-        hroupName = new QLineEdit(GroupInputForm);
-        hroupName->setObjectName(QStringLiteral("hroupName"));
+        groupName = new QLineEdit(GroupInputForm);
+        groupName->setObjectName(QStringLiteral("groupName"));
 
-        horizontalLayout_5->addWidget(hroupName);
+        horizontalLayout_5->addWidget(groupName);
 
 
         verticalLayout->addLayout(horizontalLayout_5);
@@ -156,6 +158,7 @@ public:
         widget->setSizePolicy(sizePolicy1);
         horizontalLayout = new QHBoxLayout(widget);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
         horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout->addItem(horizontalSpacer);

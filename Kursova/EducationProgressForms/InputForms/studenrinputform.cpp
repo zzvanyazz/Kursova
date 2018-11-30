@@ -1,7 +1,7 @@
 #include "studenrinputform.h"
 #include "ui_studenrinputform.h"
 #include<QtWidgets>
-
+#include <EducationProgressForms/adddatawindow.h>
 StudenrInputForm::StudenrInputForm(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::StudenrInputForm)

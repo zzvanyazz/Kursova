@@ -29,7 +29,7 @@ public:
     QWidget *horizontalWidget_3;
     QHBoxLayout *horizontalLayout_3;
     QLabel *label;
-    QSpinBox *department;
+    QSpinBox *departmentCounter;
     QScrollArea *scrollArea;
     QWidget *conteiner;
     QVBoxLayout *verticalLayout_2;
@@ -43,8 +43,10 @@ public:
         if (DepartmentsInputForm->objectName().isEmpty())
             DepartmentsInputForm->setObjectName(QStringLiteral("DepartmentsInputForm"));
         DepartmentsInputForm->resize(400, 300);
+        DepartmentsInputForm->setStyleSheet(QStringLiteral("background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0.034, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(53, 8, 89, 255));"));
         verticalLayout = new QVBoxLayout(DepartmentsInputForm);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setContentsMargins(2, 2, 2, 2);
         horizontalWidget_3 = new QWidget(DepartmentsInputForm);
         horizontalWidget_3->setObjectName(QStringLiteral("horizontalWidget_3"));
         QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum);
@@ -56,24 +58,27 @@ public:
         horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
         label = new QLabel(horizontalWidget_3);
         label->setObjectName(QStringLiteral("label"));
+        label->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
 
         horizontalLayout_3->addWidget(label);
 
-        department = new QSpinBox(horizontalWidget_3);
-        department->setObjectName(QStringLiteral("department"));
-        department->setMinimum(1);
+        departmentCounter = new QSpinBox(horizontalWidget_3);
+        departmentCounter->setObjectName(QStringLiteral("departmentCounter"));
+        departmentCounter->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
+        departmentCounter->setMinimum(1);
 
-        horizontalLayout_3->addWidget(department);
+        horizontalLayout_3->addWidget(departmentCounter);
 
 
         verticalLayout->addWidget(horizontalWidget_3);
 
         scrollArea = new QScrollArea(DepartmentsInputForm);
         scrollArea->setObjectName(QStringLiteral("scrollArea"));
+        scrollArea->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
         scrollArea->setWidgetResizable(true);
         conteiner = new QWidget();
         conteiner->setObjectName(QStringLiteral("conteiner"));
-        conteiner->setGeometry(QRect(0, 0, 376, 188));
+        conteiner->setGeometry(QRect(0, 0, 394, 204));
         verticalLayout_2 = new QVBoxLayout(conteiner);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
         scrollArea->setWidget(conteiner);
@@ -88,11 +93,13 @@ public:
 
         btn_ok = new QPushButton(DepartmentsInputForm);
         btn_ok->setObjectName(QStringLiteral("btn_ok"));
+        btn_ok->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
 
         horizontalLayout->addWidget(btn_ok);
 
         btn_cancel = new QPushButton(DepartmentsInputForm);
         btn_cancel->setObjectName(QStringLiteral("btn_cancel"));
+        btn_cancel->setStyleSheet(QStringLiteral("color: rgb(255, 255, 255);"));
 
         horizontalLayout->addWidget(btn_cancel);
 

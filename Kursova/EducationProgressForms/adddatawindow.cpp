@@ -26,19 +26,33 @@ void addDataWindow::setInputForm(){
 qDebug() << "!!!!" <<  endl;
     QWidget *w;
 
-    if(QObject::sender() == ui->ButtonAddDepartment)
+    if(QObject::sender() == ui->ButtonAddDepartment){
          w= new DepartmentsInputForm( ui->centralwidget);
-    else if(QObject::sender() == ui->ButtonAddSpeciality)
+         ui->centralwidget->setStyleSheet("background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0.034, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(53, 8, 89, 255));");
+    }
+    else if(QObject::sender() == ui->ButtonAddSpeciality){
         w = new SpecialiyInputForm(  ui->centralwidget);
-    else if(QObject::sender() == ui->ButtonAddGroup)
+         ui->centralwidget->setStyleSheet("background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0.034, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(10, 7, 77, 255));");
+    }
+    else if(QObject::sender() == ui->ButtonAddGroup){
         w = new GroupInputForm( this);
-    else if(QObject::sender() == ui->ButtonAddLecturer)
+        ui->centralwidget->setStyleSheet("background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0.034, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(5, 61, 8, 255));");
+    }
+    else if(QObject::sender() == ui->ButtonAddLecturer){
         w = new LecturerInputForm(  ui->centralwidget);
-    else if(QObject::sender() == ui->ButtonAddStudent)
+        ui->centralwidget->setStyleSheet("background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0.034, stop:0.475962 rgba(0, 0, 0, 255), stop:1 rgba(0, 72, 65, 255));");
+
+    }
+    else if(QObject::sender() == ui->ButtonAddStudent){
         w = new StudenrInputForm( ui->centralwidget);
-    else if(QObject::sender() == ui->ButtonAddSubject)
+         ui->centralwidget->setStyleSheet("background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0.034, stop:0.365385 rgba(0, 0, 0, 255), stop:1 rgba(53, 35, 5, 255));");
+    }
+    else if(QObject::sender() == ui->ButtonAddSubject){
         w = new SubjectInputForm( ui->centralwidget);
+          ui->centralwidget->setStyleSheet("background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0.034, stop:0.475962 rgba(0, 0, 0, 255), stop:1 rgba(0, 72, 65, 255));");
+    }
     qDebug() << "!!!! 2" <<  endl;
+
     ui->centralwidget->layout()->addWidget(w);
     qDebug() << "!!!! 3" <<  endl;
 

@@ -31,7 +31,7 @@ public:
     QLabel *label;
     QSpinBox *subjectCount;
     QScrollArea *scrollArea;
-    QWidget *scrollAreaWidgetContents;
+    QWidget *conteiner;
     QVBoxLayout *verticalLayout_2;
     QHBoxLayout *horizontalLayout;
     QSpacerItem *horizontalSpacer;
@@ -43,8 +43,10 @@ public:
         if (SubjectInputForm->objectName().isEmpty())
             SubjectInputForm->setObjectName(QStringLiteral("SubjectInputForm"));
         SubjectInputForm->resize(400, 300);
+        SubjectInputForm->setStyleSheet(QStringLiteral("background-color: qlineargradient(spread:pad, x1:1, y1:1, x2:1, y2:0.034, stop:0.475962 rgba(0, 0, 0, 255), stop:1 rgba(0, 72, 65, 255));"));
         verticalLayout = new QVBoxLayout(SubjectInputForm);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setContentsMargins(2, 2, 2, 2);
         horizontalWidget_3 = new QWidget(SubjectInputForm);
         horizontalWidget_3->setObjectName(QStringLiteral("horizontalWidget_3"));
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Maximum);
@@ -71,12 +73,12 @@ public:
         scrollArea = new QScrollArea(SubjectInputForm);
         scrollArea->setObjectName(QStringLiteral("scrollArea"));
         scrollArea->setWidgetResizable(true);
-        scrollAreaWidgetContents = new QWidget();
-        scrollAreaWidgetContents->setObjectName(QStringLiteral("scrollAreaWidgetContents"));
-        scrollAreaWidgetContents->setGeometry(QRect(0, 0, 376, 188));
-        verticalLayout_2 = new QVBoxLayout(scrollAreaWidgetContents);
+        conteiner = new QWidget();
+        conteiner->setObjectName(QStringLiteral("conteiner"));
+        conteiner->setGeometry(QRect(0, 0, 394, 204));
+        verticalLayout_2 = new QVBoxLayout(conteiner);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
-        scrollArea->setWidget(scrollAreaWidgetContents);
+        scrollArea->setWidget(conteiner);
 
         verticalLayout->addWidget(scrollArea);
 

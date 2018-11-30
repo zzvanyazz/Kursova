@@ -105,7 +105,7 @@ void DatabaseHelper::addLecturer(QString name, QString surname, QString lastname
 
 void DatabaseHelper::addSubject(QString name){
     QSqlQuery query(db);
-    query.prepare("INSERT INTO subject (name) VALUES (:name)");
+    query.prepare("INSERT INTO subjects (name) VALUES (:name)");
     query.bindValue(":name", name);
     chek(&query);
 }
@@ -254,7 +254,7 @@ void DatabaseHelper::setLecturer(int ID, QString name, QString surname, QString 
 }
 void DatabaseHelper::setSubject(int ID, QString name){
     QSqlQuery query(db);
-    query.prepare("UPDATE subject name = :name VALUES ID = "+QString().number(ID));
+    query.prepare("UPDATE subjects name = :name VALUES ID = "+QString().number(ID));
     query.bindValue(":name", name);
     chek(&query);
 }

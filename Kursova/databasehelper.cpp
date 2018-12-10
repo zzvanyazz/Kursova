@@ -5,6 +5,7 @@
 
 
 
+
 DatabaseHelper::DatabaseHelper(){
     db =  QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("college.db");

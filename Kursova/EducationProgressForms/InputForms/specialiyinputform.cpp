@@ -18,6 +18,16 @@ SpecialiyInputForm::SpecialiyInputForm(QWidget *parent) :
            ui->boxDepartment->addItem(q->value((int)DatabaseHelper::ColumnsOfDepartment::name).toString());
            i++;
         }while(q->next());
+
+    }
+    else {
+
+        QMessageBox::warning(this, "Помилка" , "Ви не ввели жодного відділення");
+        ((QMainWindow*)parent)->hide();
+        addDataWindow *w = new addDataWindow();
+        w->show();
+        return;
+
     }
 
 
@@ -31,6 +41,10 @@ SpecialiyInputForm::~SpecialiyInputForm()
     delete ui;
 }
 void SpecialiyInputForm::completed(){
+    if(ui->lineEdit->text().isEmpty() ){
+        QMessageBox::warning(this, "Помилка", "Введіть назву спеціальності");
+        return;
+    }
     int ID;
     for(QPair<int, int> p : departments){
         if(p.second == ui->boxDepartment->currentIndex()){

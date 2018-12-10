@@ -18,8 +18,7 @@ int main(int argc, char *argv[])
     qDebug() << stack.pop() << endl;
 
 
-        EducationProgressMainWindow
-                w;
+    EducationProgressMainWindow w;
 
     w.show();
 

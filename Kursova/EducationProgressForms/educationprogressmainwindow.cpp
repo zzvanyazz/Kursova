@@ -38,8 +38,11 @@ void EducationProgressMainWindow::showAddDataWindow(){
 
 }
 void EducationProgressMainWindow::showMarkInputForm(){
+    QMainWindow  *w = new QMainWindow(this);
+
     MarkInputForm *m = new MarkInputForm();
-    m->show();
+        w->setCentralWidget(m);
+    w->show();
 
 }
 

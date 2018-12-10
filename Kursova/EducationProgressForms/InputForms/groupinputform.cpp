@@ -33,7 +33,7 @@ GroupInputForm::GroupInputForm(QWidget *parent) :
         do{
 
             //ui->boxDepartment->addItem(q->value((int)DatabaseHelper::ColumnsOfDepartment::name).toString());
-            ui->boxCurator->addItem(lecturerQuery->value((int)DatabaseHelper::ColumnsOfSpesiality::name).toString(), lecturerQuery->value((int)DatabaseHelper::ColumnsOfDepartment::ID ));
+            ui->boxCurator->addItem(lecturerQuery->value((int)DatabaseHelper::ColumsOfLecturers::name).toString()+" "+lecturerQuery->value((int)DatabaseHelper::ColumsOfLecturers::surname).toString(), lecturerQuery->value((int)DatabaseHelper::ColumnsOfDepartment::ID ));
 
         }while(lecturerQuery->next());
     }else{

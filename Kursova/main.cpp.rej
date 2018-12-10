@@ -1,9 +1,0 @@
-diff a/Kursova/main.cpp b/Kursova/main.cpp	(rejected hunks)
-@@ -19,6 +19,7 @@
-     qDebug() << stack.pop() << endl;
-     qDebug() <<  "test 1 " << endl;
-     qDebug() <<  "test 2 " << endl;
-+    qDebug() <<  "test 4 " << endl;
- 
-         EducationProgressMainWindow
-                 w;

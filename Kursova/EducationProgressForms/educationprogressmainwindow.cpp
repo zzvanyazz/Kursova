@@ -4,13 +4,15 @@
 #include <databasehelper.h>
 #include <EducationProgressForms/quickaccesspanelitem.h>
 #include <EducationProgressForms/adddatawindow.h>
+#include <EducationProgressForms/InputForms/markinputform.h>
 EducationProgressMainWindow::EducationProgressMainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::EducationProgressMainWindow)
 {
     ui->setupUi(this);
    connect(ui->ButtonAddPanelItem, SIGNAL (pressed()),this, SLOT (addItemQuickAccessPanel()));
-   connect(ui->ButtonShowAddWindow, SIGNAL (pressed()),this, SLOT (showAddDataWindow()));
+   connect(ui->ButtonShowAddWindow2, SIGNAL (pressed()),this, SLOT (showAddDataWindow()));
+     connect(ui->ButtonShowInpuMarksForm, SIGNAL (pressed()),this, SLOT (showMarkInputForm()));
 
 }
 
@@ -26,7 +28,6 @@ void EducationProgressMainWindow::addItemQuickAccessPanel(){
 
 }
 void EducationProgressMainWindow::showAddDataWindow(){
-    if(w->isVisible()) return;
     addDataWindow *w = new addDataWindow(this);
     w->show();
     for(QuickAccessPanelItem *Item: QuickAccessItems){
@@ -34,6 +35,11 @@ void EducationProgressMainWindow::showAddDataWindow(){
     }
 
 
+
+}
+void EducationProgressMainWindow::showMarkInputForm(){
+    MarkInputForm *m = new MarkInputForm();
+    m->show();
 
 }
 

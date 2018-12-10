@@ -11,6 +11,7 @@ INPUT(
 ./release\departmentsinputform.o
 ./release\groupinputform.o
 ./release\specialiyinputform.o
+./release\markinputform.o
 ./release\moc_mainwindow.o
 ./release\moc_educationprogressmainwindow.o
 ./release\moc_quickaccesspanelitem.o
@@ -21,4 +22,5 @@ INPUT(
 ./release\moc_departmentsinputform.o
 ./release\moc_groupinputform.o
 ./release\moc_specialiyinputform.o
+./release\moc_markinputform.o
 );

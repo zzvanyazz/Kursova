@@ -56,7 +56,8 @@ public:
     QWidget *FunctionalPanel;
     QVBoxLayout *verticalLayout_4;
     QCheckBox *CheckFormOfEducation;
-    QPushButton *ButtonShowAddWindow;
+    QPushButton *ButtonShowAddWindow2;
+    QPushButton *ButtonShowInpuMarksForm;
     QSpacerItem *verticalSpacer_2;
     QMenuBar *menubar;
     QStatusBar *statusbar;
@@ -228,10 +229,15 @@ public:
 
         verticalLayout_4->addWidget(CheckFormOfEducation);
 
-        ButtonShowAddWindow = new QPushButton(FunctionalPanel);
-        ButtonShowAddWindow->setObjectName(QStringLiteral("ButtonShowAddWindow"));
+        ButtonShowAddWindow2 = new QPushButton(FunctionalPanel);
+        ButtonShowAddWindow2->setObjectName(QStringLiteral("ButtonShowAddWindow2"));
 
-        verticalLayout_4->addWidget(ButtonShowAddWindow);
+        verticalLayout_4->addWidget(ButtonShowAddWindow2);
+
+        ButtonShowInpuMarksForm = new QPushButton(FunctionalPanel);
+        ButtonShowInpuMarksForm->setObjectName(QStringLiteral("ButtonShowInpuMarksForm"));
+
+        verticalLayout_4->addWidget(ButtonShowInpuMarksForm);
 
 
         verticalLayout_2->addWidget(FunctionalPanel);
@@ -266,7 +272,8 @@ public:
         labelCurator->setText(QApplication::translate("EducationProgressMainWindow", "\320\232\321\203\321\200\320\260\321\202\320\276\321\200:", nullptr));
         name_curator->setText(QString());
         CheckFormOfEducation->setText(QApplication::translate("EducationProgressMainWindow", "\320\233\320\270\321\210\320\265 \320\264\320\265\321\200\320\266\320\260\320\262\320\275\320\270\320\272\320\270", nullptr));
-        ButtonShowAddWindow->setText(QApplication::translate("EducationProgressMainWindow", "Add", nullptr));
+        ButtonShowAddWindow2->setText(QApplication::translate("EducationProgressMainWindow", "+", nullptr));
+        ButtonShowInpuMarksForm->setText(QApplication::translate("EducationProgressMainWindow", "\320\224\320\276\320\264\320\260\321\202\320\270 \320\276\321\206\321\226\320\275\320\272\320\270", nullptr));
     } // retranslateUi
 
 };

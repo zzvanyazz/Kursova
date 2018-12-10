@@ -2,6 +2,8 @@
 #define STUDENRINPUTFORM_H
 
 #include <QWidget>
+#include<QSqlQuery>
+#include<databasehelper.h>
 
 namespace Ui {
 class StudenrInputForm;
@@ -20,6 +22,7 @@ private slots:
 
 private:
     Ui::StudenrInputForm *ui;
+    DatabaseHelper dbHelper;
 };
 
 #endif // STUDENRINPUTFORM_H

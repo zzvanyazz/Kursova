@@ -10,6 +10,7 @@ StudenrInputForm::StudenrInputForm(QWidget *parent) :
     connect(ui->btn_ok,SIGNAL(pressed()),this,SLOT(completed()));
     connect(ui->btn_cancel,SIGNAL(pressed()),this,SLOT(cancel()));
 
+
 }
 
 StudenrInputForm::~StudenrInputForm()
@@ -17,6 +18,17 @@ StudenrInputForm::~StudenrInputForm()
     delete ui;
 }
 void StudenrInputForm::completed(){
+    if(ui->studentSurname->text().isEmpty() ){
+        QMessageBox::warning(this, "Помилка", "Введіть прізвище студента ");
+        return;
+    }else if(ui->studentName->text().isEmpty()){
+        QMessageBox::warning(this, "Помилка", "Введіть ім'я студента");
+        return;
+    }
+    else if(ui->studentLastName->text().isEmpty()){
+            QMessageBox::warning(this, "Помилка", "Введіть по батькові студента");
+            return;
+        }
 
 }
 void StudenrInputForm::cancel(){

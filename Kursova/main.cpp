@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
         while (!stack.isEmpty())
 
     qDebug() << stack.pop() << endl;
-
+    qDebug() <<  "test 3 " << endl;
 
         EducationProgressMainWindow
                 w;

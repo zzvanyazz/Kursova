@@ -17,8 +17,6 @@ addDataWindow::addDataWindow(QWidget *parent) :
     connect(ui->ButtonAddStudent,    SIGNAL(pressed()), this, SLOT(setInputForm()));
     connect(ui->ButtonAddSubject,    SIGNAL(pressed()), this, SLOT(setInputForm()));
     connect(ui->ButtonAddLecturer,   SIGNAL(pressed()), this, SLOT(setInputForm()));
-
-
 }
 
 void addDataWindow::setInputForm(){

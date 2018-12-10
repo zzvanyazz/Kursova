@@ -23,12 +23,14 @@ private slots:
     void changeChild();
     void Back();
     void Remove();
+    void Reload();
+
 
 
 
 private:
     int thisID;
-    QStack<QPair<Status, int>> parent;
+    QStack<QPair<Status, int>> parentList;
     QList<QPair<QPushButton*, int>> childs;
     QList<int> itemsID;
     DatabaseHelper dbHelper;

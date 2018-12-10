@@ -1,4 +1,4 @@
-#include "educationprogressmainwindow.h"
+  #include "educationprogressmainwindow.h"
 #include "ui_educationprogressmainwindow.h"
 #include <QtWidgets>
 #include <databasehelper.h>
@@ -22,12 +22,34 @@ void EducationProgressMainWindow::addItemQuickAccessPanel(){
     QString name = "College";
     d = new QuickAccessPanelItem(name,  QuickAccessPanelItem::Status::college,0, this );
     ui->QuickAccessPanel->layout()->addWidget(d);
+    QuickAccessItems.append(d);
 
 }
 void EducationProgressMainWindow::showAddDataWindow(){
     if(w->isVisible()) return;
     addDataWindow *w = new addDataWindow(this);
     w->show();
+    for(QuickAccessPanelItem *Item: QuickAccessItems){
+    connect(w, SIGNAL( closeEvent(QCloseEvent*)), Item, SLOT(Reload()));
+    }
+
+
+
+}
+
+void EducationProgressMainWindow::showTable(){
+    QSqlQuery *q1 = dbHelper.getGroup("number = "+((QPushButton*)QObject::sender())->text());
+    q1->first();
+    QString ID = q1->value((int)DatabaseHelper::ColumnsOfGroup::ID).toString();
+    QSqlQuery *students = dbHelper.getStudent("gurp = "+ID);
+    if(students->first()){
+        do{
+
+        }while (students->next());
+    }
+
+
+
 
 }
 

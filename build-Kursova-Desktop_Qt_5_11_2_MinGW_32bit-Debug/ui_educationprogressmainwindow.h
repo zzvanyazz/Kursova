@@ -13,6 +13,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCheckBox>
 #include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
@@ -40,7 +41,16 @@ public:
     QWidget *QuickAccessPanel;
     QVBoxLayout *verticalLayout;
     QSpacerItem *verticalSpacer;
-    QWidget *widget_2;
+    QWidget *EducationPregressWidget;
+    QVBoxLayout *verticalLayout_6;
+    QWidget *InfoWidget;
+    QHBoxLayout *horizontalLayout_3;
+    QLabel *labelGrup;
+    QLabel *name_grup;
+    QLabel *labelCurator;
+    QLabel *name_curator;
+    QWidget *TableConteiner;
+    QHBoxLayout *horizontalLayout_4;
     QWidget *FunctionalPanelConteiner;
     QVBoxLayout *verticalLayout_2;
     QWidget *FunctionalPanel;
@@ -55,7 +65,7 @@ public:
     {
         if (EducationProgressMainWindow->objectName().isEmpty())
             EducationProgressMainWindow->setObjectName(QStringLiteral("EducationProgressMainWindow"));
-        EducationProgressMainWindow->resize(1074, 600);
+        EducationProgressMainWindow->resize(975, 518);
         QSizePolicy sizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -68,14 +78,14 @@ public:
         scrollArea = new QScrollArea(centralwidget);
         scrollArea->setObjectName(QStringLiteral("scrollArea"));
         QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Minimum);
-        sizePolicy1.setHorizontalStretch(1);
+        sizePolicy1.setHorizontalStretch(2);
         sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(scrollArea->sizePolicy().hasHeightForWidth());
         scrollArea->setSizePolicy(sizePolicy1);
         scrollArea->setWidgetResizable(true);
         QuickAccessContainer = new QWidget();
         QuickAccessContainer->setObjectName(QStringLiteral("QuickAccessContainer"));
-        QuickAccessContainer->setGeometry(QRect(0, 0, 221, 526));
+        QuickAccessContainer->setGeometry(QRect(0, 0, 221, 444));
         QSizePolicy sizePolicy2(QSizePolicy::Minimum, QSizePolicy::Minimum);
         sizePolicy2.setHorizontalStretch(0);
         sizePolicy2.setVerticalStretch(0);
@@ -118,8 +128,11 @@ public:
 
         QuickAccessPanel = new QWidget(QuickAccessContainer);
         QuickAccessPanel->setObjectName(QStringLiteral("QuickAccessPanel"));
-        sizePolicy1.setHeightForWidth(QuickAccessPanel->sizePolicy().hasHeightForWidth());
-        QuickAccessPanel->setSizePolicy(sizePolicy1);
+        QSizePolicy sizePolicy5(QSizePolicy::Minimum, QSizePolicy::Minimum);
+        sizePolicy5.setHorizontalStretch(1);
+        sizePolicy5.setVerticalStretch(0);
+        sizePolicy5.setHeightForWidth(QuickAccessPanel->sizePolicy().hasHeightForWidth());
+        QuickAccessPanel->setSizePolicy(sizePolicy5);
         verticalLayout = new QVBoxLayout(QuickAccessPanel);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         verticalLayout->setContentsMargins(1, 1, -1, -1);
@@ -134,15 +147,66 @@ public:
 
         horizontalLayout->addWidget(scrollArea);
 
-        widget_2 = new QWidget(centralwidget);
-        widget_2->setObjectName(QStringLiteral("widget_2"));
-        QSizePolicy sizePolicy5(QSizePolicy::Minimum, QSizePolicy::Minimum);
-        sizePolicy5.setHorizontalStretch(4);
-        sizePolicy5.setVerticalStretch(0);
-        sizePolicy5.setHeightForWidth(widget_2->sizePolicy().hasHeightForWidth());
-        widget_2->setSizePolicy(sizePolicy5);
+        EducationPregressWidget = new QWidget(centralwidget);
+        EducationPregressWidget->setObjectName(QStringLiteral("EducationPregressWidget"));
+        QSizePolicy sizePolicy6(QSizePolicy::Minimum, QSizePolicy::Minimum);
+        sizePolicy6.setHorizontalStretch(10);
+        sizePolicy6.setVerticalStretch(0);
+        sizePolicy6.setHeightForWidth(EducationPregressWidget->sizePolicy().hasHeightForWidth());
+        EducationPregressWidget->setSizePolicy(sizePolicy6);
+        verticalLayout_6 = new QVBoxLayout(EducationPregressWidget);
+        verticalLayout_6->setObjectName(QStringLiteral("verticalLayout_6"));
+        InfoWidget = new QWidget(EducationPregressWidget);
+        InfoWidget->setObjectName(QStringLiteral("InfoWidget"));
+        sizePolicy.setHeightForWidth(InfoWidget->sizePolicy().hasHeightForWidth());
+        InfoWidget->setSizePolicy(sizePolicy);
+        horizontalLayout_3 = new QHBoxLayout(InfoWidget);
+        horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
+        horizontalLayout_3->setContentsMargins(1, 1, 1, 1);
+        labelGrup = new QLabel(InfoWidget);
+        labelGrup->setObjectName(QStringLiteral("labelGrup"));
+        QSizePolicy sizePolicy7(QSizePolicy::Maximum, QSizePolicy::Preferred);
+        sizePolicy7.setHorizontalStretch(0);
+        sizePolicy7.setVerticalStretch(0);
+        sizePolicy7.setHeightForWidth(labelGrup->sizePolicy().hasHeightForWidth());
+        labelGrup->setSizePolicy(sizePolicy7);
 
-        horizontalLayout->addWidget(widget_2);
+        horizontalLayout_3->addWidget(labelGrup);
+
+        name_grup = new QLabel(InfoWidget);
+        name_grup->setObjectName(QStringLiteral("name_grup"));
+
+        horizontalLayout_3->addWidget(name_grup);
+
+        labelCurator = new QLabel(InfoWidget);
+        labelCurator->setObjectName(QStringLiteral("labelCurator"));
+        sizePolicy7.setHeightForWidth(labelCurator->sizePolicy().hasHeightForWidth());
+        labelCurator->setSizePolicy(sizePolicy7);
+
+        horizontalLayout_3->addWidget(labelCurator);
+
+        name_curator = new QLabel(InfoWidget);
+        name_curator->setObjectName(QStringLiteral("name_curator"));
+
+        horizontalLayout_3->addWidget(name_curator);
+
+
+        verticalLayout_6->addWidget(InfoWidget);
+
+        TableConteiner = new QWidget(EducationPregressWidget);
+        TableConteiner->setObjectName(QStringLiteral("TableConteiner"));
+        QSizePolicy sizePolicy8(QSizePolicy::Expanding, QSizePolicy::Preferred);
+        sizePolicy8.setHorizontalStretch(0);
+        sizePolicy8.setVerticalStretch(0);
+        sizePolicy8.setHeightForWidth(TableConteiner->sizePolicy().hasHeightForWidth());
+        TableConteiner->setSizePolicy(sizePolicy8);
+        horizontalLayout_4 = new QHBoxLayout(TableConteiner);
+        horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
+
+        verticalLayout_6->addWidget(TableConteiner);
+
+
+        horizontalLayout->addWidget(EducationPregressWidget);
 
         FunctionalPanelConteiner = new QWidget(centralwidget);
         FunctionalPanelConteiner->setObjectName(QStringLiteral("FunctionalPanelConteiner"));
@@ -156,6 +220,11 @@ public:
         verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
         CheckFormOfEducation = new QCheckBox(FunctionalPanel);
         CheckFormOfEducation->setObjectName(QStringLiteral("CheckFormOfEducation"));
+        QSizePolicy sizePolicy9(QSizePolicy::Minimum, QSizePolicy::Fixed);
+        sizePolicy9.setHorizontalStretch(0);
+        sizePolicy9.setVerticalStretch(0);
+        sizePolicy9.setHeightForWidth(CheckFormOfEducation->sizePolicy().hasHeightForWidth());
+        CheckFormOfEducation->setSizePolicy(sizePolicy9);
 
         verticalLayout_4->addWidget(CheckFormOfEducation);
 
@@ -177,7 +246,7 @@ public:
         EducationProgressMainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(EducationProgressMainWindow);
         menubar->setObjectName(QStringLiteral("menubar"));
-        menubar->setGeometry(QRect(0, 0, 1074, 25));
+        menubar->setGeometry(QRect(0, 0, 975, 25));
         EducationProgressMainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(EducationProgressMainWindow);
         statusbar->setObjectName(QStringLiteral("statusbar"));
@@ -192,6 +261,10 @@ public:
     {
         EducationProgressMainWindow->setWindowTitle(QApplication::translate("EducationProgressMainWindow", "MainWindow", nullptr));
         ButtonAddPanelItem->setText(QApplication::translate("EducationProgressMainWindow", "+", nullptr));
+        labelGrup->setText(QApplication::translate("EducationProgressMainWindow", "\320\263\321\200\321\203\320\277\320\260:", nullptr));
+        name_grup->setText(QString());
+        labelCurator->setText(QApplication::translate("EducationProgressMainWindow", "\320\232\321\203\321\200\320\260\321\202\320\276\321\200:", nullptr));
+        name_curator->setText(QString());
         CheckFormOfEducation->setText(QApplication::translate("EducationProgressMainWindow", "\320\233\320\270\321\210\320\265 \320\264\320\265\321\200\320\266\320\260\320\262\320\275\320\270\320\272\320\270", nullptr));
         ButtonShowAddWindow->setText(QApplication::translate("EducationProgressMainWindow", "Add", nullptr));
     } // retranslateUi

@@ -258,9 +258,16 @@
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="ButtonShowAddWindow">
+           <widget class="QPushButton" name="ButtonShowAddWindow2">
             <property name="text">
-             <string>Add</string>
+             <string>+</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="ButtonShowInpuMarksForm">
+            <property name="text">
+             <string>Додати оцінки</string>
             </property>
            </widget>
           </item>

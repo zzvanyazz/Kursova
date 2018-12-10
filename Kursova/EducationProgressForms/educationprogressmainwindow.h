@@ -20,6 +20,7 @@ private slots:
     void addItemQuickAccessPanel();
     void showAddDataWindow();
     void showTable();
+    void showMarkInputForm();
 
 private:
     QList<QuickAccessPanelItem*> QuickAccessItems;

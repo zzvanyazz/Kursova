@@ -11,6 +11,7 @@ INPUT(
 ./debug\departmentsinputform.o
 ./debug\groupinputform.o
 ./debug\specialiyinputform.o
+./debug\markinputform.o
 ./debug\moc_mainwindow.o
 ./debug\moc_educationprogressmainwindow.o
 ./debug\moc_quickaccesspanelitem.o
@@ -21,4 +22,5 @@ INPUT(
 ./debug\moc_departmentsinputform.o
 ./debug\moc_groupinputform.o
 ./debug\moc_specialiyinputform.o
+./debug\moc_markinputform.o
 );

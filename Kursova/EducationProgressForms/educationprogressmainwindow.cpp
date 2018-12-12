@@ -10,19 +10,12 @@ EducationProgressMainWindow::EducationProgressMainWindow(QWidget *parent) :
     ui(new Ui::EducationProgressMainWindow)
 {
     ui->setupUi(this);
-<<<<<<< HEAD
+
     connect(ui->ButtonAddPanelItem, SIGNAL (pressed()),this, SLOT (addItemQuickAccessPanel()));
     connect(ui->ButtonShowAddWindow2, SIGNAL (pressed()),this, SLOT (showAddDataWindow()));
     connect(ui->ButtonShowInpuMarksForm, SIGNAL (pressed()),this, SLOT (showMarkInputForm()));
 
-=======
-   connect(ui->ButtonAddPanelItem, SIGNAL (pressed()),this, SLOT (addItemQuickAccessPanel()));
-   connect(ui->ButtonShowAddWindow2, SIGNAL (pressed()),this, SLOT (showAddDataWindow()));
-     connect(ui->ButtonShowInpuMarksForm, SIGNAL (pressed()),this, SLOT (showMarkInputForm()));
-    model = new QSqlQueryModel;
-    model->setQuery(*dbHelper.getSubject());
-    ui->tableView->setModel(model);
->>>>>>> 3a5b2f97cd55e5cea14dff70c9078495976eee9a
+
 
 }
 

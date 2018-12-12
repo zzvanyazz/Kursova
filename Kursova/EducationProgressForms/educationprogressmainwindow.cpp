@@ -1,4 +1,4 @@
-  #include "educationprogressmainwindow.h"
+#include "educationprogressmainwindow.h"
 #include "ui_educationprogressmainwindow.h"
 #include <QtWidgets>
 #include <databasehelper.h>
@@ -13,6 +13,9 @@ EducationProgressMainWindow::EducationProgressMainWindow(QWidget *parent) :
    connect(ui->ButtonAddPanelItem, SIGNAL (pressed()),this, SLOT (addItemQuickAccessPanel()));
    connect(ui->ButtonShowAddWindow2, SIGNAL (pressed()),this, SLOT (showAddDataWindow()));
      connect(ui->ButtonShowInpuMarksForm, SIGNAL (pressed()),this, SLOT (showMarkInputForm()));
+    model = new QSqlQueryModel;
+    model->setQuery(*dbHelper.getDepartment());
+    ui->tableView->setModel(model);
 
 }
 

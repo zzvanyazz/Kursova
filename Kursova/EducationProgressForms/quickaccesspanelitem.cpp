@@ -46,7 +46,7 @@ void QuickAccessPanelItem::Init(QString name, Status _status, int _thisID){
         query =  dbHelper.getGroup(" spesiality = " + QString().number(_thisID));
         break;
     case group:
-        emit selected(thisID);
+        emit selected(_thisID);
         //((EducationProgressMainWindow*)parent())->showTable();
         return;
     }

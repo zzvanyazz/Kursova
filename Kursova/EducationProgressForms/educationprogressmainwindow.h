@@ -27,6 +27,7 @@ private slots:
     void showMarkInputForm();
 
 private:
+     QWidget *w2;
     QList<QuickAccessPanelItem*> QuickAccessItems;
      addDataWindow *w;
     DatabaseHelper dbHelper;

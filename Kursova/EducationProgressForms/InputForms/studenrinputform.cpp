@@ -9,6 +9,23 @@ StudenrInputForm::StudenrInputForm(QWidget *parent) :
     ui->setupUi(this);
     connect(ui->btn_ok,SIGNAL(pressed()),this,SLOT(completed()));
     connect(ui->btn_cancel,SIGNAL(pressed()),this,SLOT(cancel()));
+    QSqlQuery *groupQuery = dbHelper.getGroup();
+    int i = 0;
+    if(groupQuery->first()){
+        do{
+
+            //ui->boxDepartment->addItem(q->value((int)DatabaseHelper::ColumnsOfDepartment::name).toString());
+            ui->comboBox->addItem(groupQuery->value((int)DatabaseHelper::ColumnsOfGroup::number).toString(),groupQuery->value((int)DatabaseHelper::ColumnsOfGroup::ID));
+
+        }while(groupQuery->next());
+    }else {
+        QMessageBox::warning(this, "Помилка" , "Ви не ввели жодної спеціальності");
+        ((QMainWindow*)parent)->hide();
+        addDataWindow *w = new addDataWindow();
+        w->show();
+        return;
+
+    }
 
 
 }

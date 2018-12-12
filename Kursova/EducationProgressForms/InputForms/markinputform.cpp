@@ -16,14 +16,14 @@ MarkInputForm::MarkInputForm(QWidget *parent) :
         do{
 
             //ui->boxDepartment->addItem(q->value((int)DatabaseHelper::ColumnsOfDepartment::name).toString());
-            ui->GroupConboBox->addItem(groupQuery->value((int)DatabaseHelper::ColumnsOfGroup::number).toString(), groupQuery->value((int)DatabaseHelper::ColumnsOfGroup::ID ));
+            //ui->GroupConboBox->addItem(groupQuery->value((int)DatabaseHelper::ColumnsOfGroup::number).toString(), groupQuery->value((int)DatabaseHelper::ColumnsOfGroup::ID ));
         }while(groupQuery->next());
     }
         if(studentQuery->first()){
             do{
 
                 //ui->boxDepartment->addItem(q->value((int)DatabaseHelper::ColumnsOfDepartment::name).toString());
-                ui->SudentConboBox->addItem(studentQuery->value((int)DatabaseHelper::ColumnsOfStudent::surname).toString(),studentQuery->value((int)DatabaseHelper::ColumnsOfStudent::ID));
+               // ui->SudentConboBox->addItem(studentQuery->value((int)DatabaseHelper::ColumnsOfStudent::surname).toString(),studentQuery->value((int)DatabaseHelper::ColumnsOfStudent::ID));
             }while(studentQuery->next());
     }else {
         QMessageBox::warning(this, "Помилка" , "Ви не ввели жодної групи");

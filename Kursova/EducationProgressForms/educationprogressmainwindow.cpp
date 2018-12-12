@@ -58,10 +58,10 @@ void EducationProgressMainWindow::showTable(int GroupID){
     if(students->first()&&subjects->first()){
         do{
             QLabel *name = new QLabel;
-            name->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum );
-
+            name->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum );
+            name->setStyleSheet("background-color: rgb(100, 85, 138);");
             name->setText(students->value((int)DatabaseHelper::ColumnsOfStudent::surname).toString()+" "+students->value((int)DatabaseHelper::ColumnsOfStudent::name).toString());
-            ui->Table->addWidget(name, i, j);
+            ui->Table->addWidget(name, i, j,Qt::AlignmentFlag::AlignLeft);
 
             do{
                  j++;
@@ -69,21 +69,22 @@ void EducationProgressMainWindow::showTable(int GroupID){
                 data->exec("SELECT mark from education_progress WHERE student = "+students->value((int)DatabaseHelper::ColumnsOfStudent::ID).toString()
                            +" AND subject = "+subjects->value(0).toString()+" AND semester = 0");
                 QLabel *mark = new QLabel;
-                mark->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum );
+
+                mark->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum );
 
                 if (data->first()){
                 mark->setText(data->value(0).toString());
-                ui->Table->addWidget(mark, i , j);
+                ui->Table->addWidget(mark, i , j,Qt::AlignmentFlag::AlignLeft);
                 }else {
                     mark->setText("/");
-                    ui->Table->addWidget(mark, i , j);
+                    ui->Table->addWidget(mark, i , j, Qt::AlignmentFlag::AlignLeft);
                 }
 
 
 
 
-
             }while(subjects->next());
+            subjects->first();
             i++;
             j = 0;
         }while(students->next());

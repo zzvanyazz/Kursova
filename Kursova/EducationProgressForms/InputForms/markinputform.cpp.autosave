@@ -45,8 +45,11 @@ MarkInputForm::~MarkInputForm()
 {
     delete ui;
 }
-void MarkInputForm::studentSelected(int id){
+void MarkInputForm::groupsSelected(int id){
     QSqlQuery*  subjects = new QSqlQuery(dbHelper.db);
     subjects->exec("SELECT DISTINCT subject FROM education_progress WHERE \"group\"="+QString().number(id)+";");
-
+    if(subjects->first()){
+        
+        
+    }
 }

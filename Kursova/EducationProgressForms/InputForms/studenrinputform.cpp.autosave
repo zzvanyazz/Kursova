@@ -56,7 +56,6 @@ void StudenrInputForm::completed(){
     if(ui->spinBox->value() == 1) cancel();
     ui->spinBox->setValue(ui->spinBox->value()-1);
 
-
 }
 void StudenrInputForm::cancel(){
      ((QMainWindow*)((QWidget*)parent())->parent())->hide();

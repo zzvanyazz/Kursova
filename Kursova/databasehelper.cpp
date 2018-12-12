@@ -57,7 +57,7 @@ void DatabaseHelper::addDepartment(QString name){
 
 void DatabaseHelper::addStudent(int grup, QString name, QString surname, QString lastname,  bool form_of_education){
     QSqlQuery query(db);
-    query.prepare("INSERT INTO students (grup, name, surname, lastname, form_of_education) "
+    query.prepare("INSERT INTO student (grup, name, surname, lastname, form_of_education) "
                   "VALUES (:grup, :name, :surname, :lastname, :form_of_education)");
     query.bindValue(":grup", grup);
     query.bindValue(":name", name);

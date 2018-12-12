@@ -4,6 +4,9 @@
 #include <QMainWindow>
 #include <EducationProgressForms/quickaccesspanelitem.h>
 #include <EducationProgressForms/adddatawindow.h>
+#include<QDialog>
+#include<QStandardItemModel>
+#include<QSqlQueryModel>
 namespace Ui {
 class EducationProgressMainWindow;
 }
@@ -27,6 +30,7 @@ private:
      addDataWindow *w;
     DatabaseHelper dbHelper;
     Ui::EducationProgressMainWindow *ui;
+    QSqlQueryModel *model;
 };
 
 #endif // EDUCATIONPROGRESSMAINWINDOW_H

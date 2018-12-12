@@ -49,7 +49,16 @@
        </widget>
       </item>
       <item>
-       <widget class="QFontComboBox" name="fontComboBox"/>
+       <widget class="QFontComboBox" name="SpecialiyConboBox">
+        <property name="sizeAdjustPolicy">
+         <enum>QComboBox::AdjustToContents</enum>
+        </property>
+        <property name="currentFont">
+         <font>
+          <family>Microsoft JhengHei UI</family>
+         </font>
+        </property>
+       </widget>
       </item>
       <item>
        <widget class="QLabel" name="label">

@@ -54,14 +54,31 @@ void EducationProgressMainWindow::showTable(int GroupID){
     int i = 0, j = 0;
     QSqlQuery *students = dbHelper.getStudent("Grup = "+QString().number(GroupID)+" group by surname");
     QSqlQuery*  subjects = new QSqlQuery(dbHelper.db);
-    subjects->exec("SELECT DISTINCT subject FROM education_progress WHERE \"group\"=1;");
+    subjects->exec("SELECT DISTINCT subject FROM education_progress WHERE \"group\"="+QString().number(GroupID)+";");
+    QLabel *empty = new QLabel();
+    ui->Table->addWidget(empty, i, j);
+    if(subjects->first()){
+        do{
+            j++;
+            QLabel *n = new QLabel;
+            QSqlQuery *Sub = dbHelper.getSubject("ID = "+QString().number(subjects->value(0).toInt()));
+
+             Sub->first();
+            n->setText(Sub->value((int)DatabaseHelper::ColumnsOfSubject::name).toString());
+            ui->Table->addWidget(n, i, j);
+
+
+        }while(subjects->next());
+    }
+    i++;
+    j = 0;
     if(students->first()&&subjects->first()){
         do{
             QLabel *name = new QLabel;
             name->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum );
-            name->setStyleSheet("background-color: rgb(100, 85, 138);");
+            name->setStyleSheet("background-color: rgb(200, 185, 255);");
             name->setText(students->value((int)DatabaseHelper::ColumnsOfStudent::surname).toString()+" "+students->value((int)DatabaseHelper::ColumnsOfStudent::name).toString());
-            ui->Table->addWidget(name, i, j,Qt::AlignmentFlag::AlignLeft);
+            ui->Table->addWidget(name, i, j);
 
             do{
                  j++;
@@ -71,13 +88,13 @@ void EducationProgressMainWindow::showTable(int GroupID){
                 QLabel *mark = new QLabel;
 
                 mark->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum );
-
+                mark->setStyleSheet("background-color: rgb(203, 250, 255)");
                 if (data->first()){
                 mark->setText(data->value(0).toString());
-                ui->Table->addWidget(mark, i , j,Qt::AlignmentFlag::AlignLeft);
+                ui->Table->addWidget(mark, i , j);
                 }else {
                     mark->setText("/");
-                    ui->Table->addWidget(mark, i , j, Qt::AlignmentFlag::AlignLeft);
+                    ui->Table->addWidget(mark, i , j);
                 }
 
 

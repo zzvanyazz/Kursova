@@ -41,7 +41,7 @@ public:
     void addSubject(QString name);
     void addLesson(int grup, int day_of_week, int number_of_week, int number_of_lesson,
                    int subject, int lecturer,  QString classroom);
-    void addMark(int student, int grup, bool semester, int subject, int form_of_control, int lecturer, int mark);
+    void addMark(int student, int grup, bool semester, int subject, int lecturer, int mark);
 
 
     //get------------------------------------------

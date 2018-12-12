@@ -125,15 +125,15 @@ void DatabaseHelper::addLesson(int grup, int day_of_week, int number_of_week, in
     query.bindValue(":classroom", classroom);
     chek(&query);
 }
-void DatabaseHelper::addMark(int student, int grup, bool semester, int subject, int form_of_control, int lecturer, int mark){
+void DatabaseHelper::addMark(int student, int grup, bool semester, int subject, int lecturer, int mark){
     QSqlQuery query(db);
-    query.prepare("INSERT INTO education_progress (student, grup, semester, subject, form_of_control, lecturer, mark) "
-                  "VALUES (:student, :grup, :semester, :subject, :form_of_control, :lecturer, :mark)");
+    query.prepare("INSERT INTO education_progress (student, grup, semester, subject, lecturer, mark) "
+                  "VALUES (:student, :grup, :semester, :subject, :lecturer, :mark)");
     query.bindValue(":student", student);
     query.bindValue(":grup", grup);
     query.bindValue(":semester", semester);
     query.bindValue(":subject", subject);
-    query.bindValue(":form_of_control", form_of_control);
+
     query.bindValue(":lecturer", lecturer);
     query.bindValue(":mark", mark);
 

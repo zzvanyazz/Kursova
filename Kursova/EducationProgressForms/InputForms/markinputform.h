@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <databasehelper.h>
+
 namespace Ui {
 class MarkInputForm;
 }
@@ -14,6 +15,8 @@ class MarkInputForm : public QWidget
 public:
     explicit MarkInputForm(QWidget *parent = nullptr);
     ~MarkInputForm();
+public slots:
+
 
 private:
     DatabaseHelper dbHelper;

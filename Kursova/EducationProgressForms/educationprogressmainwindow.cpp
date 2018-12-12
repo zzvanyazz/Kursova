@@ -14,7 +14,7 @@ EducationProgressMainWindow::EducationProgressMainWindow(QWidget *parent) :
    connect(ui->ButtonShowAddWindow2, SIGNAL (pressed()),this, SLOT (showAddDataWindow()));
      connect(ui->ButtonShowInpuMarksForm, SIGNAL (pressed()),this, SLOT (showMarkInputForm()));
     model = new QSqlQueryModel;
-    model->setQuery(*dbHelper.getDepartment());
+    model->setQuery(*dbHelper.getSubject());
     ui->tableView->setModel(model);
 
 }
@@ -59,9 +59,6 @@ void EducationProgressMainWindow::showTable(){
 
         }while (students->next());
     }
-
-
-
 
 }
 

@@ -69,7 +69,7 @@ void EducationProgressMainWindow::showTable(int GroupID){
                 data->exec("SELECT mark from education_progress WHERE student = "+students->value((int)DatabaseHelper::ColumnsOfStudent::ID).toString()
                            +" AND subject = "+subjects->value(0).toString()+" AND semester = 0");
                 QLabel *mark = new QLabel;
-              //  name->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum );
+                mark->setSizePolicy(QSizePolicy::Maximum, QSizePolicy::Maximum );
 
                 if (data->first()){
                 mark->setText(data->value(0).toString());

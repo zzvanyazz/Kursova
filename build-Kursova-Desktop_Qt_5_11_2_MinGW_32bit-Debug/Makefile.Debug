@@ -3161,6 +3161,11 @@ debug/moc_markinputform.cpp: E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqltablemodel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlresult.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qtsqlversion.h \
+		../Kursova/EducationProgressForms/quickaccesspanelitem.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/QPair \
 		../Kursova/EducationProgressForms/InputForms/markinputform.h \
 		debug/moc_predefs.h \
 		E:/Qt/5.11.2/mingw53_32/bin/moc.exe
@@ -4172,11 +4177,12 @@ debug/educationprogressmainwindow.o: ../Kursova/EducationProgressForms/education
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QCheckBox \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QGridLayout \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLineEdit \
@@ -8365,6 +8371,11 @@ debug/markinputform.o: ../Kursova/EducationProgressForms/InputForms/markinputfor
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqltablemodel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlresult.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qtsqlversion.h \
+		../Kursova/EducationProgressForms/quickaccesspanelitem.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/QPair \
 		ui_markinputform.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
@@ -8373,9 +8384,6 @@ debug/markinputform.o: ../Kursova/EducationProgressForms/InputForms/markinputfor
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QComboBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QFontComboBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qfontcombobox.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qfontdatabase.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
@@ -8386,7 +8394,13 @@ debug/markinputform.o: ../Kursova/EducationProgressForms/InputForms/markinputfor
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QScrollArea \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qscrollarea.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
-		E:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlQuery
+		E:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlQuery \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdialog.h \
+		../Kursova/EducationProgressForms/adddatawindow.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMainWindow \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmainwindow.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\markinputform.o ..\Kursova\EducationProgressForms\InputForms\markinputform.cpp
 
 debug/moc_mainwindow.o: debug/moc_mainwindow.cpp 

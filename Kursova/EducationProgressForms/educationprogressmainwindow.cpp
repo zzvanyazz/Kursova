@@ -97,9 +97,6 @@ void EducationProgressMainWindow::showTable(int GroupID){
                     ui->Table->addWidget(mark, i , j);
                 }
 
-
-
-
             }while(subjects->next());
             subjects->first();
             i++;

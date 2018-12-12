@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <databasehelper.h>
+#include<EducationProgressForms/quickaccesspanelitem.h>
 
 namespace Ui {
 class MarkInputForm;
@@ -16,11 +17,13 @@ public:
     explicit MarkInputForm(QWidget *parent = nullptr);
     ~MarkInputForm();
 public slots:
+    void studentSelected(int);
 
 
 private:
     DatabaseHelper dbHelper;
     Ui::MarkInputForm *ui;
+    QuickAccessPanelItem *panel;
 };
 
 #endif // MARKINPUTFORM_H

@@ -29,6 +29,9 @@ void LecturerInputForm::completed(){
     dbHelper.addLecturer(ui->lectureName->text(), ui->lectureSurname->text(), ui->lectureLastName->text());
     if(ui->Counter->value() == 1) cancel();
     ui->Counter->setValue(ui->Counter->value()-1);
+    ui->lectureName->clear();
+    ui->lectureLastName->clear();
+    ui->lectureSurname->clear();
 
 }
 void LecturerInputForm::cancel(){

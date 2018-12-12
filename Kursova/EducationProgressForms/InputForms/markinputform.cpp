@@ -9,7 +9,7 @@ MarkInputForm::MarkInputForm(QWidget *parent) :
 {
     ui->setupUi(this);
     panel = new QuickAccessPanelItem("College",  QuickAccessPanelItem::Status::college,0, ui->QuicAccessPanelItem );
-    connect(panel,&QuickAccessPanelItem::selected,this,&MarkInputForm::studentSelected);
+    connect(panel,&QuickAccessPanelItem::selected,this,&MarkInputForm::groupSelected);
     ui->QuicAccessPanelItem->layout()->addWidget(panel);
     //connect(ui->GroupConboBox,&QComboBox::changeEvent,this,&MarkInputForm::)
     QSqlQuery *groupQuery = dbHelper.getGroup();
@@ -45,8 +45,11 @@ MarkInputForm::~MarkInputForm()
 {
     delete ui;
 }
-void MarkInputForm::studentSelected(int id){
+void MarkInputForm::groupSelected(int id){
     QSqlQuery*  subjects = new QSqlQuery(dbHelper.db);
     subjects->exec("SELECT DISTINCT subject FROM education_progress WHERE \"group\"="+QString().number(id)+";");
+    if(subjects->first()){
 
+
+    }
 }

@@ -80,6 +80,7 @@ void EducationProgressMainWindow::showTable(int GroupID){
                     ui->Table->addWidget(mark, i , j, Qt::AlignmentFlag::AlignLeft);
                 }
 
+
             }while(subjects->next());
             subjects->first();
             i++;

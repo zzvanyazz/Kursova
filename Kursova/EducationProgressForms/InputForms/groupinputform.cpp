@@ -66,6 +66,8 @@ void GroupInputForm::completed(){
                 ui->boxCurator->itemData(ui->boxCurator->currentIndex()).toInt());
     if(ui->spinBoxCounter->value() == 1) cancel();
     ui->spinBoxCounter->setValue(ui->spinBoxCounter->value()-1);
+    ui->groupName->clear();
+    ui->groupNumber->clear();
 }
 void GroupInputForm::cancel(){
     ((QMainWindow*)((QWidget*)parent())->parent())->hide();

@@ -17,7 +17,7 @@ public:
     explicit MarkInputForm(QWidget *parent = nullptr);
     ~MarkInputForm();
 public slots:
-    void studentSelected(int);
+    void groupSelected(int);
 
 
 private:

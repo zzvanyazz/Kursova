@@ -55,6 +55,9 @@ void StudenrInputForm::completed(){
                 );
     if(ui->spinBox->value() == 1) cancel();
     ui->spinBox->setValue(ui->spinBox->value()-1);
+    ui->studentName->clear();
+    ui->studentLastName->clear();
+    ui->studentSurname->clear();
 
 
 }

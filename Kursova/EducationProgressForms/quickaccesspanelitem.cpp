@@ -34,6 +34,7 @@ void QuickAccessPanelItem::Init(QString name, Status _status, int _thisID){
 
         query =  dbHelper.getDepartment();
 
+
         break;
 
     case department:
@@ -45,7 +46,12 @@ void QuickAccessPanelItem::Init(QString name, Status _status, int _thisID){
         query =  dbHelper.getGroup(" spesiality = " + QString().number(_thisID));
         break;
     case group:
+        emit selected(thisID);
         //((EducationProgressMainWindow*)parent())->showTable();
+        return;
+    }
+    if(!query->first()){
+        QMessageBox::warning(this, "Помилка", "Пусто");
         return;
     }
 
@@ -89,8 +95,7 @@ void QuickAccessPanelItem::Init(QString name, Status _status, int _thisID){
             query = dbHelper.getGroup("ID = "+QString().number(ID));
             query->first();
             text =  query->value((int)DatabaseHelper::ColumnsOfGroup::number).toString();
-            connect(pushButton, SIGNAL(pressed()), ((EducationProgressMainWindow*)(parent()->parent()->parent()->parent()->parent()->parent())),
-                    SLOT(showTable()));
+
         }
         pushButton->setText(text);
         qDebug() << 1 <<'\n';

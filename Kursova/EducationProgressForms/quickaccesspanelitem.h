@@ -24,6 +24,8 @@ private slots:
     void Back();
     void Remove();
     void Reload();
+signals:
+void selected(int);
 
 
 

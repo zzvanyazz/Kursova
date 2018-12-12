@@ -6,10 +6,11 @@
 class DatabaseHelper
 {
 
-    QSqlDatabase db ;
+
     void chek(QSqlQuery*);
 
 public:
+     QSqlDatabase db ;
 
 
 

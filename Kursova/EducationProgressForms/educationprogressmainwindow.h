@@ -22,7 +22,8 @@ private slots:
 
     void addItemQuickAccessPanel();
     void showAddDataWindow();
-    void showTable();
+    void showTable(int);
+
     void showMarkInputForm();
 
 private:

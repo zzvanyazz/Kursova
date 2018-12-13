@@ -18,6 +18,7 @@ public:
     ~MarkInputForm();
 public slots:
     void groupSelected(int);
+    void completed();
 
 
 private:

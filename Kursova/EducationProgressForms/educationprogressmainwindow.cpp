@@ -61,17 +61,20 @@ delete w2;
  ui->TableConteiner->layout()->addWidget(w2);
 
 
+
+
     QSqlQuery *students = dbHelper.getStudent("Grup = "+QString().number(GroupID)+" group by surname");
     QSqlQuery*  subjects = new QSqlQuery(dbHelper.db);
     subjects->exec("SELECT DISTINCT subject FROM education_progress WHERE \"group\"="+QString().number(GroupID)+";");
     QLabel *empty = new QLabel();
+    empty->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum );
     Table->addWidget(empty, i, j);
     if(subjects->first()){
         do{
             j++;
             QLabel *n = new QLabel;
             QSqlQuery *Sub = dbHelper.getSubject("ID = "+QString().number(subjects->value(0).toInt()));
-
+            n->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
              Sub->first();
             n->setText(Sub->value((int)DatabaseHelper::ColumnsOfSubject::name).toString());
             Table->addWidget(n, i, j);
@@ -84,7 +87,7 @@ delete w2;
     if(students->first()&&subjects->first()){
         do{
             QLabel *name = new QLabel;
-            name->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum );
+            name->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum );
             name->setStyleSheet("background-color: rgb(200, 185, 255);");
             name->setText(students->value((int)DatabaseHelper::ColumnsOfStudent::surname).toString()+" "+students->value((int)DatabaseHelper::ColumnsOfStudent::name).toString());
             Table->addWidget(name, i, j);
@@ -96,7 +99,7 @@ delete w2;
                            +" AND subject = "+subjects->value(0).toString()+" AND semester = 0");
                 QLabel *mark = new QLabel;
 
-                mark->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum );
+                mark->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum );
                 mark->setStyleSheet("background-color: rgb(203, 250, 255)");
                 if (data->first()){
                 mark->setText(data->value(0).toString());

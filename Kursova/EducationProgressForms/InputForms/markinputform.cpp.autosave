@@ -96,6 +96,8 @@ void MarkInputForm::groupSelected(int id){
 
 void MarkInputForm::completed(){
     for(QLineEdit *l : lines){
-
+        if(!l->text().isEmpty()){
+            
+        }
     }
 }

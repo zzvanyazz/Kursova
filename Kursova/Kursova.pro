@@ -26,7 +26,6 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp \
     databasehelper.cpp \
     EducationProgressForms/educationprogressmainwindow.cpp \
     EducationProgressForms/quickaccesspanelitem.cpp \
@@ -40,7 +39,6 @@ SOURCES += \
     EducationProgressForms/InputForms/markinputform.cpp
 
 HEADERS += \
-        mainwindow.h \
     databasehelper.h \
     EducationProgressForms/educationprogressmainwindow.h \
     EducationProgressForms/quickaccesspanelitem.h \
@@ -54,7 +52,6 @@ HEADERS += \
     EducationProgressForms/InputForms/markinputform.h
 
 FORMS += \
-        mainwindow.ui \
     EducationProgressForms/educationprogressmainwindow.ui \
     EducationProgressForms/quickaccesspanelitem.ui \
     EducationProgressForms/adddatawindow.ui \

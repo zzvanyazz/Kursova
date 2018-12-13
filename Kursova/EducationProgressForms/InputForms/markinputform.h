@@ -12,16 +12,18 @@ class MarkInputForm;
 class MarkInputForm : public QWidget
 {
     Q_OBJECT
+    int currentGroup;
 
 public:
     explicit MarkInputForm(QWidget *parent = nullptr);
     ~MarkInputForm();
 public slots:
     void groupSelected(int);
+    void completed();
 
 
 private:
-    QList<QLineEdit*> lines;
+    QList<QPair<QLineEdit*, int>> lines;
     DatabaseHelper dbHelper;
     Ui::MarkInputForm *ui;
     QuickAccessPanelItem *panel;

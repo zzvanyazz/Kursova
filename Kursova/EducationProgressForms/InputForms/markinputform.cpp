@@ -10,6 +10,8 @@ MarkInputForm::MarkInputForm(QWidget *parent) :
 {
     ui->setupUi(this);
     panel = new QuickAccessPanelItem("College",  QuickAccessPanelItem::Status::college,0, ui->QuicAccessPanelItem );
+    connect(ui->buttonOk, &QPushButton::pressed, this, &MarkInputForm::completed);
+    connect(ui->ButtonCancel, &QPushButton::pressed, this, &MarkInputForm::completed);
     connect(panel,&QuickAccessPanelItem::selected,this,&MarkInputForm::groupSelected);
     ui->QuicAccessPanelItem->layout()->addWidget(panel);
     //connect(ui->GroupConboBox,&QComboBox::changeEvent,this,&MarkInputForm::)
@@ -39,6 +41,7 @@ MarkInputForm::MarkInputForm(QWidget *parent) :
     }
 
 
+
     //QSqlQuery departments = dbHelper.get
 }
 
@@ -47,6 +50,7 @@ MarkInputForm::~MarkInputForm()
     delete ui;
 }
 void MarkInputForm::groupSelected(int id){
+    currentGroup = id;
     QSqlQuery*  subjects = new QSqlQuery(dbHelper.db);
     subjects->exec("SELECT DISTINCT subject FROM education_progress WHERE \"group\"="+QString().number(id)+";");
     QSqlQuery *student = dbHelper.getStudent("grup = "+QString().number(id));
@@ -62,10 +66,10 @@ void MarkInputForm::groupSelected(int id){
         }while(student->next());
 
     }
-    for(QLineEdit *e:lines){
-        e->parentWidget()->hide();
+    for(QPair<QLineEdit*, int> e:lines){
+        e.first->parentWidget()->hide();
 
-        delete e->parentWidget();
+        delete e.first->parentWidget();
 
     }
     lines.clear();
@@ -76,7 +80,8 @@ void MarkInputForm::groupSelected(int id){
             QHBoxLayout *p=new QHBoxLayout();
             QLabel *text=new QLabel();
             QLineEdit *line = new QLineEdit(w);
-            lines.push_back(line);
+            line->setValidator( new QIntValidator);
+            lines.push_back(QPair<QLineEdit*, int>(line, subjects->value(0).toInt()));
             QSqlQuery *sub = dbHelper.getSubject("ID = " + subjects->value(0).toString());
             sub->first();
 
@@ -88,4 +93,12 @@ void MarkInputForm::groupSelected(int id){
             ui->scrollAreaWidgetContents->layout()->addWidget(w);
         }while(subjects->next());
     }else{}
+}
+
+void MarkInputForm::completed(){
+    for(QPair<QLineEdit*, int> l : lines){
+        if(!l.first->text().isEmpty()){
+            dbHelper.addMark(ui->studentscomboBox->currentData().toInt(), currentGroup, ui->comboBoxSemester->currentIndex(), l.second, l.first->text().toInt());
+        }
+    }
 }

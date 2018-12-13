@@ -9,13 +9,16 @@ EducationProgressMainWindow::EducationProgressMainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::EducationProgressMainWindow)
 {
+
     ui->setupUi(this);
+
     connect(ui->ButtonAddPanelItem, SIGNAL (pressed()),this, SLOT (addItemQuickAccessPanel()));
     connect(ui->ButtonShowAddWindow2, SIGNAL (pressed()),this, SLOT (showAddDataWindow()));
     connect(ui->ButtonShowInpuMarksForm, SIGNAL (pressed()),this, SLOT (showMarkInputForm()));
-    connect(ui->CheckFormOfEducation, &QCheckBox::stateChanged, this, &EducationProgressMainWindow::FormEducationChanget);
+    connect(ui->CheckFormOfEducation, &QCheckBox::stateChanged, this, &EducationProgressMainWindow::FormEducationChanged);
 
     w2 = new QWidget(this);
+
 
 }
 
@@ -51,6 +54,18 @@ void EducationProgressMainWindow::showMarkInputForm(){
 }
 
 void EducationProgressMainWindow::showTable(int GroupID){
+
+
+
+    QSqlQuery *group = dbHelper.getGroup("ID = "+ QString().number(GroupID));
+    group->first();
+
+    ui->name_grup->setText(group->value((int)DatabaseHelper::ColumnsOfGroup::name).toString());
+    QSqlQuery *lecturer = dbHelper.getLecturer("ID = "+ QString().number(group->value((int)DatabaseHelper::ColumnsOfGroup::curator).toInt()));
+    lecturer->first();
+    ui->name_curator->setText(lecturer->value((int)DatabaseHelper::ColumsOfLecturers::name).toString());
+
+
     currentGroup = GroupID;
     w2->hide();
     delete w2;
@@ -97,7 +112,7 @@ void EducationProgressMainWindow::showTable(int GroupID){
                 j++;
                 QSqlQuery *data = new QSqlQuery(dbHelper.db);
                 data->exec("SELECT mark from education_progress WHERE student = "+students->value((int)DatabaseHelper::ColumnsOfStudent::ID).toString()
-                           +" AND subject = "+subjects->value(0).toString()+" AND semester = 0");
+                           +" AND subject = "+subjects->value(0).toString()+" AND semester = "+QString().number(ui->comboBoxSemester->currentIndex()));
                 QLabel *mark = new QLabel;
 
                 mark->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum );
@@ -131,9 +146,10 @@ void EducationProgressMainWindow::showTable(int GroupID){
 }
 
 
-void EducationProgressMainWindow::FormEducationChanget(){
+void EducationProgressMainWindow::FormEducationChanged(){
     showTable(currentGroup);
 }
+
 
 
 

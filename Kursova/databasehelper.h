@@ -33,6 +33,9 @@ public:
 
 
 
+
+
+
     // add------------------------------------------
     void addDepartment(QString name);
     void addStudent(int grup, QString name, QString surname, QString lastname,  bool form_of_education);

@@ -3,14 +3,11 @@
 #include <QDir>
 #include <QDebug>
 
-
-
-
 DatabaseHelper::DatabaseHelper(){
     db =  QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("college.db");
 
-    //db.setDatabaseName( "college.db");
+
     if(!db.open()) {
         QMessageBox::warning(nullptr, "Error open", db.lastError().text());
         return;

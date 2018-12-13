@@ -89,7 +89,7 @@ OBJECTS       = release/main.o \
 		release/moc_specialiyinputform.o \
 		release/moc_markinputform.o
 
-DIST          =  ..\Kursova\databasehelper.h \
+DIST          = diagram.qmodel ..\Kursova\databasehelper.h \
 		..\Kursova\EducationProgressForms\educationprogressmainwindow.h \
 		..\Kursova\EducationProgressForms\quickaccesspanelitem.h \
 		..\Kursova\EducationProgressForms\adddatawindow.h \

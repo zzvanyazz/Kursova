@@ -17,6 +17,7 @@ class EducationProgressMainWindow : public QMainWindow
     int currentGroup  = 0;
 
 
+
 public:
     explicit EducationProgressMainWindow(QWidget *parent = nullptr);
     ~EducationProgressMainWindow();
@@ -25,8 +26,9 @@ private slots:
     void addItemQuickAccessPanel();
     void showAddDataWindow();
     void showTable(int);
-void FormEducationChanget();
+void FormEducationChanged();
     void showMarkInputForm();
+
 
 private:
      QWidget *w2;

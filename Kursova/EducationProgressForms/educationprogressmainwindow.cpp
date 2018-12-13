@@ -10,12 +10,12 @@ EducationProgressMainWindow::EducationProgressMainWindow(QWidget *parent) :
     ui(new Ui::EducationProgressMainWindow)
 {
     ui->setupUi(this);
-
     connect(ui->ButtonAddPanelItem, SIGNAL (pressed()),this, SLOT (addItemQuickAccessPanel()));
     connect(ui->ButtonShowAddWindow2, SIGNAL (pressed()),this, SLOT (showAddDataWindow()));
     connect(ui->ButtonShowInpuMarksForm, SIGNAL (pressed()),this, SLOT (showMarkInputForm()));
+    connect(ui->CheckFormOfEducation, &QCheckBox::stateChanged, this, &EducationProgressMainWindow::FormEducationChanget);
 
- w2 = new QWidget(this);
+    w2 = new QWidget(this);
 
 }
 
@@ -51,14 +51,14 @@ void EducationProgressMainWindow::showMarkInputForm(){
 }
 
 void EducationProgressMainWindow::showTable(int GroupID){
-
-w2->hide();
-delete w2;
+    currentGroup = GroupID;
+    w2->hide();
+    delete w2;
     int i = 0, j = 0;
     QGridLayout *Table = new QGridLayout();
     w2 = new QWidget(this);
     w2->setLayout(Table);
- ui->TableConteiner->layout()->addWidget(w2);
+    ui->TableConteiner->layout()->addWidget(w2);
 
 
 
@@ -75,7 +75,7 @@ delete w2;
             QLabel *n = new QLabel;
             QSqlQuery *Sub = dbHelper.getSubject("ID = "+QString().number(subjects->value(0).toInt()));
             n->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
-             Sub->first();
+            Sub->first();
             n->setText(Sub->value((int)DatabaseHelper::ColumnsOfSubject::name).toString());
             Table->addWidget(n, i, j);
 
@@ -89,11 +89,12 @@ delete w2;
             QLabel *name = new QLabel;
             name->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum );
             name->setStyleSheet("background-color: rgb(200, 185, 255);");
+            if(!students->value((int)DatabaseHelper::ColumnsOfStudent::form_of_education).toBool()&&ui->CheckFormOfEducation->isChecked())continue;
             name->setText(students->value((int)DatabaseHelper::ColumnsOfStudent::surname).toString()+" "+students->value((int)DatabaseHelper::ColumnsOfStudent::name).toString());
             Table->addWidget(name, i, j);
 
             do{
-                 j++;
+                j++;
                 QSqlQuery *data = new QSqlQuery(dbHelper.db);
                 data->exec("SELECT mark from education_progress WHERE student = "+students->value((int)DatabaseHelper::ColumnsOfStudent::ID).toString()
                            +" AND subject = "+subjects->value(0).toString()+" AND semester = 0");
@@ -102,8 +103,8 @@ delete w2;
                 mark->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum );
                 mark->setStyleSheet("background-color: rgb(203, 250, 255)");
                 if (data->first()){
-                mark->setText(data->value(0).toString());
-                Table->addWidget(mark, i , j);
+                    mark->setText(data->value(0).toString());
+                    Table->addWidget(mark, i , j);
                 }else {
                     mark->setText("/");
                     Table->addWidget(mark, i , j);
@@ -128,6 +129,13 @@ delete w2;
 
 
 }
+
+
+void EducationProgressMainWindow::FormEducationChanget(){
+    showTable(currentGroup);
+}
+
+
 
 EducationProgressMainWindow::~EducationProgressMainWindow()
 {

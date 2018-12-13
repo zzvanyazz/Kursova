@@ -125,16 +125,15 @@ void DatabaseHelper::addLesson(int grup, int day_of_week, int number_of_week, in
     query.bindValue(":classroom", classroom);
     chek(&query);
 }
-void DatabaseHelper::addMark(int student, int grup, bool semester, int subject, int lecturer, int mark){
+void DatabaseHelper::addMark(int student, int grup, bool semester, int subject, int mark){
     QSqlQuery query(db);
-    query.prepare("INSERT INTO education_progress (student, grup, semester, subject, lecturer, mark) "
-                  "VALUES (:student, :grup, :semester, :subject, :lecturer, :mark)");
+    query.prepare("INSERT INTO education_progress (student, \"group\", semester, subject, mark) "
+                  "VALUES (:student, :grup, :semester, :subject, :mark)");
     query.bindValue(":student", student);
     query.bindValue(":grup", grup);
     query.bindValue(":semester", semester);
     query.bindValue(":subject", subject);
 
-    query.bindValue(":lecturer", lecturer);
     query.bindValue(":mark", mark);
 
     chek(&query);
@@ -276,17 +275,15 @@ void DatabaseHelper::setLesson(int ID , int grup, int day_of_week, int number_of
     chek(&query);
 
 }
-void DatabaseHelper::setMark(int ID, int student, int grup, bool semester, int subject, int form_of_control, int lecturer, int mark){
+void DatabaseHelper::setMark(int ID, int student, int grup, bool semester, int subject, int mark){
     QSqlQuery query(db);
-    query.prepare("UPDATE education_progress SET student = :student, grup= :grup, semester = :semester,"
-                  " subject = :subject, form_of_control = :form_of_control, lecturer = :lecturer, mark = :mark WHERE ID = " + QString().number(ID));
+    query.prepare("UPDATE education_progress SET student = :student, \"group\"= :grup, semester = :semester,"
+                  " subject = :subject, mark = :mark WHERE ID = " + QString().number(ID));
 
     query.bindValue(":student", student);
     query.bindValue(":grup", grup);
     query.bindValue(":semester", semester);
     query.bindValue(":subject", subject);
-    query.bindValue(":form_of_control", form_of_control);
-    query.bindValue(":lecturer", lecturer);
     query.bindValue(":mark", mark);
 
     chek(&query);

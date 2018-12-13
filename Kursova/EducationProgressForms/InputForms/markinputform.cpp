@@ -50,6 +50,7 @@ MarkInputForm::~MarkInputForm()
     delete ui;
 }
 void MarkInputForm::groupSelected(int id){
+    currentGroup = id;
     QSqlQuery*  subjects = new QSqlQuery(dbHelper.db);
     subjects->exec("SELECT DISTINCT subject FROM education_progress WHERE \"group\"="+QString().number(id)+";");
     QSqlQuery *student = dbHelper.getStudent("grup = "+QString().number(id));
@@ -65,10 +66,10 @@ void MarkInputForm::groupSelected(int id){
         }while(student->next());
 
     }
-    for(QLineEdit *e:lines){
-        e->parentWidget()->hide();
+    for(QPair<QLineEdit*, int> e:lines){
+        e.first->parentWidget()->hide();
 
-        delete e->parentWidget();
+        delete e.first->parentWidget();
 
     }
     lines.clear();
@@ -80,7 +81,7 @@ void MarkInputForm::groupSelected(int id){
             QLabel *text=new QLabel();
             QLineEdit *line = new QLineEdit(w);
             line->setValidator( new QIntValidator);
-            lines.push_back(line);
+            lines.push_back(QPair<QLineEdit*, int>(line, subjects->value(0).toInt()));
             QSqlQuery *sub = dbHelper.getSubject("ID = " + subjects->value(0).toString());
             sub->first();
 
@@ -95,7 +96,9 @@ void MarkInputForm::groupSelected(int id){
 }
 
 void MarkInputForm::completed(){
-    for(QLineEdit *l : lines){
-
+    for(QPair<QLineEdit*, int> l : lines){
+        if(!l.first->text().isEmpty()){
+            dbHelper.addMark(ui->studentscomboBox->currentData().toInt(), currentGroup, ui->comboBoxSemester->currentIndex(), l.second, l.first->text().toInt());
+        }
     }
 }

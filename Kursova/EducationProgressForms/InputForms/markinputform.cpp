@@ -98,7 +98,7 @@ void MarkInputForm::groupSelected(int id){
 void MarkInputForm::completed(){
     for(QPair<QLineEdit*, int> l : lines){
         if(!l.first->text().isEmpty()){
-            dbHelper.addMark(ui->studentscomboBox->currentData().toInt(), currentGroup, ui->comboBoxSemester->currentIndex(), l.second, l.first->text().toInt());
+            dbHelper.addMark(ui->studentscomboBox->currentData().toInt(), currentGroup, (bool)ui->comboBoxSemester->currentIndex(), l.second, l.first->text().toInt());
         }
     }
 }

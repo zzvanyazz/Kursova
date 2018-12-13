@@ -34,7 +34,7 @@ private:
      addDataWindow *w;
     DatabaseHelper dbHelper;
     Ui::EducationProgressMainWindow *ui;
-    QSqlQueryModel *model;
+
 };
 
 #endif // EDUCATIONPROGRESSMAINWINDOW_H

@@ -204,6 +204,7 @@ void QuickAccessPanelItem::Reload(){
     }
 }
 void QuickAccessPanelItem::Remove(){
+    if(block)return;
     this->hide();
     delete this;
 }

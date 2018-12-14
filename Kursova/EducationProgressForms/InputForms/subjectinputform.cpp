@@ -21,8 +21,8 @@ void SubjectInputForm::completed(){
         if(!l->text().isEmpty())
             dbHelper.addSubject(l->text());
     }
-    if(ui->subjectCount->value() == 1) cancel();
-    ui->subjectCount->setValue(ui->subjectCount->value()-1);
+cancel();
+
 
 }
 void SubjectInputForm::cancel(){

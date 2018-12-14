@@ -15,6 +15,7 @@ class QuickAccessPanelItem : public QWidget
 
 
 public:
+    bool block = false;
     enum Status{college, department, spesiality, group};
     explicit QuickAccessPanelItem(QString name, Status status, int thisID, QWidget *parent = nullptr);
     ~QuickAccessPanelItem();

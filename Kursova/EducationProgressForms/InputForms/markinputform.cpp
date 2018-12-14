@@ -10,6 +10,7 @@ MarkInputForm::MarkInputForm(QWidget *parent) :
 {
     ui->setupUi(this);
     panel = new QuickAccessPanelItem("College",  QuickAccessPanelItem::Status::college,0, ui->QuicAccessPanelItem );
+    panel->block =true;
     connect(ui->buttonOk, &QPushButton::pressed, this, &MarkInputForm::completed);
     connect(ui->ButtonCancel, &QPushButton::pressed, this, &MarkInputForm::completed);
     connect(panel,&QuickAccessPanelItem::selected,this,&MarkInputForm::groupSelected);
@@ -51,8 +52,8 @@ MarkInputForm::~MarkInputForm()
 }
 void MarkInputForm::groupSelected(int id){
     currentGroup = id;
-    QSqlQuery*  subjects = new QSqlQuery(dbHelper.db);
-    subjects->exec("SELECT DISTINCT subject FROM education_progress WHERE \"group\"="+QString().number(id)+";");
+    QSqlQuery*  subjects = dbHelper.getSubject();
+
     QSqlQuery *student = dbHelper.getStudent("grup = "+QString().number(id));
     ui->studentscomboBox->clear();
     if(student->first()){
@@ -65,7 +66,8 @@ void MarkInputForm::groupSelected(int id){
 
         }while(student->next());
 
-    }
+    }else return;
+
     for(QPair<QLineEdit*, int> e:lines){
         e.first->parentWidget()->hide();
 
@@ -84,9 +86,7 @@ void MarkInputForm::groupSelected(int id){
             lines.push_back(QPair<QLineEdit*, int>(line, subjects->value(0).toInt()));
             QSqlQuery *sub = dbHelper.getSubject("ID = " + subjects->value(0).toString());
             sub->first();
-
             text->setText(sub->value((int)DatabaseHelper::ColumnsOfSubject::name).toString());
-
             p->addWidget(text);
             p->addWidget(line);
             w->setLayout(p);
@@ -96,9 +96,11 @@ void MarkInputForm::groupSelected(int id){
 }
 
 void MarkInputForm::completed(){
+
     for(QPair<QLineEdit*, int> l : lines){
         if(!l.first->text().isEmpty()){
             dbHelper.addMark(ui->studentscomboBox->currentData().toInt(), currentGroup, ui->comboBoxSemester->currentIndex(), l.second, l.first->text().toInt());
+            l.first->clear();
         }
     }
 }

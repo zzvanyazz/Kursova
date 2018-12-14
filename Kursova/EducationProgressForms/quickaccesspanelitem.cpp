@@ -34,7 +34,7 @@ void QuickAccessPanelItem::Init(QString name, Status _status, int _thisID){
 
         query =  dbHelper.getDepartment();
 
-
+        if(!query->first())hide();
         break;
 
     case department:
@@ -105,7 +105,7 @@ void QuickAccessPanelItem::Back(){
     if(parentList.length() == 1) return;
     QSqlQuery *q;
     QString name;
-parentList.pop();
+    parentList.pop();
 
     QPair<Status, int>p = parentList.pop();
     switch(p.first) {

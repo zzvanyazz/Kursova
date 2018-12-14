@@ -134,15 +134,6 @@ void EducationProgressMainWindow::showTable(int GroupID){
     }
     else;
 
-
-
-
-
-
-
-
-
-
 }
 
 

@@ -50,7 +50,7 @@
                          <object>{8a21f6bc-bec9-4ef8-99ae-2c2f9b9a98b9}</object>
                          <context>Kursova</context>
                          <name>DatabaseHelper</name>
-                         <pos>x:440;y:2370</pos>
+                         <pos>x:495;y:960</pos>
                          <rect>x:-345;y:-280;w:690;h:560</rect>
                          <visual-role>0</visual-role>
                          <visual-emphasized>true</visual-emphasized>
@@ -73,8 +73,8 @@
                          <object>{30112dfd-795b-4443-984f-e494e45cce0f}</object>
                          <context>EducationProgressForms</context>
                          <name>EducationProgressMainWindow</name>
-                         <pos>x:1745;y:2330</pos>
-                         <rect>x:-175;y:-130;w:350;h:260</rect>
+                         <pos>x:1070;y:1035</pos>
+                         <rect>x:-185;y:-130;w:370;h:260</rect>
                          <auto-sized>false</auto-sized>
                          <visual-role>0</visual-role>
                          <visual-emphasized>true</visual-emphasized>
@@ -97,7 +97,7 @@
                          <object>{8f338dcb-c356-4e17-919c-4bd4757a658c}</object>
                          <context>InputForms</context>
                          <name>DepartmentsInputForm</name>
-                         <pos>x:1670;y:735</pos>
+                         <pos>x:1500;y:560</pos>
                          <rect>x:-155;y:-90;w:310;h:180</rect>
                          <visual-role>0</visual-role>
                          <visual-emphasized>true</visual-emphasized>
@@ -120,7 +120,7 @@
                          <object>{2f3f1b12-1137-4626-81ca-ceefc91de7ca}</object>
                          <context>InputForms</context>
                          <name>GroupInputForm</name>
-                         <pos>x:485;y:565</pos>
+                         <pos>x:675;y:360</pos>
                          <rect>x:-140;y:-90;w:280;h:180</rect>
                          <auto-sized>false</auto-sized>
                          <visual-role>0</visual-role>
@@ -144,8 +144,9 @@
                          <object>{9cbd11a2-abdb-4ef1-ba62-a73f6a34b35b}</object>
                          <context>InputForms</context>
                          <name>LecturerInputForm</name>
-                         <pos>x:1000;y:265</pos>
-                         <rect>x:-145;y:-75;w:290;h:150</rect>
+                         <pos>x:870;y:140</pos>
+                         <rect>x:-145;y:-90;w:290;h:180</rect>
+                         <auto-sized>false</auto-sized>
                          <visual-role>0</visual-role>
                          <visual-emphasized>true</visual-emphasized>
                         </DObject>
@@ -167,8 +168,8 @@
                          <object>{f2af67c1-fe53-47d8-a190-4237a503e63b}</object>
                          <context>InputForms</context>
                          <name>MarkInputForm</name>
-                         <pos>x:670;y:345</pos>
-                         <rect>x:-145;y:-95;w:290;h:190</rect>
+                         <pos>x:1585;y:1145</pos>
+                         <rect>x:-250;y:-95;w:500;h:190</rect>
                          <auto-sized>false</auto-sized>
                          <visual-role>0</visual-role>
                          <visual-emphasized>true</visual-emphasized>
@@ -191,7 +192,7 @@
                          <object>{44b3d5f0-5389-42d5-ba0c-bf41265e4673}</object>
                          <context>InputForms</context>
                          <name>SpecialiyInputForm</name>
-                         <pos>x:1540;y:530</pos>
+                         <pos>x:1400;y:360</pos>
                          <rect>x:-145;y:-90;w:290;h:180</rect>
                          <auto-sized>false</auto-sized>
                          <visual-role>0</visual-role>
@@ -215,8 +216,9 @@
                          <object>{e8645451-68b6-43b0-b07c-eeef05f4cf80}</object>
                          <context>InputForms</context>
                          <name>StudenrInputForm</name>
-                         <pos>x:345;y:770</pos>
-                         <rect>x:-145;y:-75;w:290;h:150</rect>
+                         <pos>x:575;y:560</pos>
+                         <rect>x:-145;y:-90;w:290;h:180</rect>
+                         <auto-sized>false</auto-sized>
                          <visual-role>0</visual-role>
                          <visual-emphasized>true</visual-emphasized>
                         </DObject>
@@ -238,7 +240,7 @@
                          <object>{28afed55-aa20-41dd-b39f-f9f15a0ef893}</object>
                          <context>InputForms</context>
                          <name>SubjectInputForm</name>
-                         <pos>x:1330;y:325</pos>
+                         <pos>x:1215;y:140</pos>
                          <rect>x:-145;y:-90;w:290;h:180</rect>
                          <visual-role>0</visual-role>
                          <visual-emphasized>true</visual-emphasized>
@@ -261,8 +263,9 @@
                          <object>{8e2bfd57-7ba8-440c-b6dd-e91860bc1e4b}</object>
                          <context>EducationProgressForms</context>
                          <name>addDataWindow</name>
-                         <pos>x:1035;y:1000</pos>
-                         <rect>x:-140;y:-65;w:280;h:130</rect>
+                         <pos>x:1070;y:745</pos>
+                         <rect>x:-185;y:-65;w:370;h:130</rect>
+                         <auto-sized>false</auto-sized>
                          <visual-role>0</visual-role>
                          <visual-emphasized>true</visual-emphasized>
                         </DObject>
@@ -284,7 +287,7 @@
                          <object>{43de2b08-4050-4b98-b212-c738f78e11ce}</object>
                          <context>EducationProgressForms</context>
                          <name>QuickAccessPanelItem</name>
-                         <pos>x:905;y:1830</pos>
+                         <pos>x:1585;y:815</pos>
                          <rect>x:-250;y:-140;w:500;h:280</rect>
                          <visual-role>0</visual-role>
                          <visual-emphasized>true</visual-emphasized>
@@ -307,17 +310,578 @@
                          <object>{bb4138ab-56d4-4727-b823-6cb29531c146}</object>
                          <context>EducationProgressForms</context>
                          <name>RepairDataMainWindow</name>
-                         <pos>x:865;y:1330</pos>
-                         <rect>x:-65;y:-30;w:130;h:60</rect>
+                         <pos>x:1070;y:1290</pos>
+                         <rect>x:-185;y:-70;w:370;h:140</rect>
+                         <auto-sized>false</auto-sized>
                          <visual-role>0</visual-role>
                         </DObject>
                        </base-DObject>
+                       <show-all-members>true</show-all-members>
                       </DClass>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DClass">
+                      <DClass>
+                       <base-DObject>
+                        <DObject>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{b6b7cfad-edd8-4423-aacf-a15a8fe9ec25}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{84bf9125-ff47-49d2-a98a-0b4eceaf42db}</object>
+                         <context>RepairForms</context>
+                         <name>DepartmentRepairForm</name>
+                         <pos>x:885;y:1730</pos>
+                         <rect>x:-155;y:-90;w:310;h:180</rect>
+                         <visual-role>0</visual-role>
+                        </DObject>
+                       </base-DObject>
+                       <show-all-members>true</show-all-members>
+                      </DClass>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DClass">
+                      <DClass>
+                       <base-DObject>
+                        <DObject>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{f8726fd3-84ce-4ca2-a125-27b356a8a795}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{120f2245-4d67-4a5c-ad6c-e09d3563e38e}</object>
+                         <context>RepairForms</context>
+                         <name>GroupRepairForm</name>
+                         <pos>x:1255;y:1735</pos>
+                         <rect>x:-145;y:-95;w:290;h:190</rect>
+                         <visual-role>0</visual-role>
+                        </DObject>
+                       </base-DObject>
+                       <show-all-members>true</show-all-members>
+                      </DClass>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DClass">
+                      <DClass>
+                       <base-DObject>
+                        <DObject>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{c7675cd8-f67a-4d5f-aebe-7778a6053894}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{cbf8e657-475e-437d-868e-841d00ceee18}</object>
+                         <context>RepairForms</context>
+                         <name>LecturerRepairForm</name>
+                         <pos>x:1590;y:1360</pos>
+                         <rect>x:-150;y:-90;w:300;h:180</rect>
+                         <visual-role>0</visual-role>
+                        </DObject>
+                       </base-DObject>
+                       <show-all-members>true</show-all-members>
+                      </DClass>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DClass">
+                      <DClass>
+                       <base-DObject>
+                        <DObject>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{309dd03b-07c7-416a-bdea-c4d49974cf79}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{47e3d923-04bd-4c97-bf27-9e984ba3a505}</object>
+                         <context>RepairForms</context>
+                         <name>SpecialityRepairForm</name>
+                         <pos>x:740;y:1545</pos>
+                         <rect>x:-145;y:-85;w:290;h:170</rect>
+                         <auto-sized>false</auto-sized>
+                         <visual-role>0</visual-role>
+                        </DObject>
+                       </base-DObject>
+                       <show-all-members>true</show-all-members>
+                      </DClass>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DClass">
+                      <DClass>
+                       <base-DObject>
+                        <DObject>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{4445d7fb-c494-46fe-a22e-9b19049318b2}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{7e6e4f34-2038-46d0-9d15-35e6f6aa8504}</object>
+                         <context>InputForms</context>
+                         <name>StudenrInputForm</name>
+                         <pos>x:595;y:1360</pos>
+                         <rect>x:-145;y:-90;w:290;h:180</rect>
+                         <auto-sized>false</auto-sized>
+                         <visual-role>0</visual-role>
+                        </DObject>
+                       </base-DObject>
+                       <show-all-members>true</show-all-members>
+                      </DClass>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DClass">
+                      <DClass>
+                       <base-DObject>
+                        <DObject>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{f8a35987-af0f-47eb-91f3-09978958a6ba}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{5c243610-40b0-4d5c-b699-aef1e0d1ec3c}</object>
+                         <context>InputForms</context>
+                         <name>SubjectInputForm</name>
+                         <pos>x:1360;y:1545</pos>
+                         <rect>x:-145;y:-85;w:290;h:170</rect>
+                         <visual-role>0</visual-role>
+                        </DObject>
+                       </base-DObject>
+                       <show-all-members>true</show-all-members>
+                      </DClass>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{a0f75b1b-a08d-4b68-ac0d-56e5f7c9251f}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{ea7be071-b295-4ded-a3d8-f431e1b92312}</object>
+                         <a>{a71923c7-8a27-41d9-92b5-38b96e3381d6}</a>
+                         <b>{4936b944-c8ae-43c8-a511-fbf6bb4d4a34}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>*</cradinality>
+                         <navigable>true</navigable>
+                         <kind>2</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{26eec278-1ed9-4ff3-828a-7142b77cb23d}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{a7c42e83-0d23-4c8f-8050-f3f6350a2bec}</object>
+                         <a>{a71923c7-8a27-41d9-92b5-38b96e3381d6}</a>
+                         <b>{3b3c1bc9-0671-4657-b742-ee713a5c57fe}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>1</cradinality>
+                         <navigable>true</navigable>
+                         <kind>2</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{5b0600a2-2df4-487a-83c8-8b2e487a3c4c}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{afbfb30b-720d-4188-9a8f-cfcf1a2735f6}</object>
+                         <a>{a71923c7-8a27-41d9-92b5-38b96e3381d6}</a>
+                         <b>{9df8c229-c749-481b-917a-1e5f6c4b6d0a}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>1</cradinality>
+                         <navigable>true</navigable>
+                         <kind>2</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{ce7a8471-0115-4af4-a1e6-b432c70aafa6}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{c77eceef-ef1f-4c8a-96ff-fa710d3e9fc9}</object>
+                         <a>{a71923c7-8a27-41d9-92b5-38b96e3381d6}</a>
+                         <b>{07ba51a2-7939-420b-bc3a-1c13019da1c1}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>1</cradinality>
+                         <navigable>true</navigable>
+                         <kind>2</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{2572058c-6c6d-44c4-877e-bd0c9e24adee}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{4aa46d73-6b64-43c4-ac84-ee5a7970bf7f}</object>
+                         <a>{a71923c7-8a27-41d9-92b5-38b96e3381d6}</a>
+                         <b>{bdf928a2-6eab-4822-98f8-848306d4eb51}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>1</cradinality>
+                         <navigable>true</navigable>
+                         <kind>2</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{93a080c1-d686-4276-81d1-73c1f9e35536}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{53de32ee-f56f-450d-bd70-1e945ef99522}</object>
+                         <a>{a71923c7-8a27-41d9-92b5-38b96e3381d6}</a>
+                         <b>{ab14ea3c-3024-49de-8ec3-f9e55db34979}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>1</cradinality>
+                         <navigable>true</navigable>
+                         <kind>2</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{116eb207-244d-4eb1-b95d-43c804d51633}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{7c7403c7-305e-48db-ab59-ee81c89a4ee6}</object>
+                         <a>{7b3ff489-ec1b-41af-9bfd-e602a094f440}</a>
+                         <b>{a71923c7-8a27-41d9-92b5-38b96e3381d6}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>1</cradinality>
+                         <navigable>true</navigable>
+                         <kind>2</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{884dcdfd-66f5-40f5-92d5-e0710d8f89fe}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{64274731-584e-4558-898f-a691df4367c7}</object>
+                         <a>{7b3ff489-ec1b-41af-9bfd-e602a094f440}</a>
+                         <b>{c1580f1b-59b5-417a-90b5-b507c0eb4e9a}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>1</cradinality>
+                         <navigable>true</navigable>
+                         <kind>2</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{3cb9dd28-3513-4b29-8b98-4107fffa35f1}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{c45be319-5267-4723-a292-a2e9b0e4dfb3}</object>
+                         <a>{7b3ff489-ec1b-41af-9bfd-e602a094f440}</a>
+                         <b>{bfef2b95-56dd-4313-be3c-e6bf45d4771c}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>1</cradinality>
+                         <navigable>true</navigable>
+                         <kind>2</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{85da089e-5797-4497-a104-6c945a730f99}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{496f790b-48d0-4f7f-84da-f46b360dd365}</object>
+                         <a>{7b3ff489-ec1b-41af-9bfd-e602a094f440}</a>
+                         <b>{2586d4bf-a883-4665-bd64-65f4fa12321b}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>1</cradinality>
+                         <navigable>true</navigable>
+                         <kind>2</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{95f48275-9f33-4f0c-954d-4e10307ae578}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{1c9d1897-38eb-4c6d-804a-e7882d81af51}</object>
+                         <a>{bfef2b95-56dd-4313-be3c-e6bf45d4771c}</a>
+                         <b>{c1580f1b-59b5-417a-90b5-b507c0eb4e9a}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>1</cradinality>
+                         <navigable>true</navigable>
+                         <kind>2</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{b6133a88-2d04-4d9a-9ec0-8fc7a851b49a}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{08847438-cc9c-42f2-a5e9-20f1eacb2fc4}</object>
+                         <a>{2586d4bf-a883-4665-bd64-65f4fa12321b}</a>
+                         <b>{c7675cd8-f67a-4d5f-aebe-7778a6053894}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>1</cradinality>
+                         <navigable>true</navigable>
+                         <kind>2</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{86361018-263f-441c-9f78-b56e69936b5d}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{bf0c949c-8ed9-40bb-906a-d6b8c3e710f7}</object>
+                         <a>{2586d4bf-a883-4665-bd64-65f4fa12321b}</a>
+                         <b>{f8a35987-af0f-47eb-91f3-09978958a6ba}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>1</cradinality>
+                         <navigable>true</navigable>
+                         <kind>2</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{e4665f48-8c90-48cc-8acf-d3854d9ea4e3}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{6df5db6f-a290-47c9-9ca5-50519497977d}</object>
+                         <a>{2586d4bf-a883-4665-bd64-65f4fa12321b}</a>
+                         <b>{309dd03b-07c7-416a-bdea-c4d49974cf79}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>1</cradinality>
+                         <navigable>true</navigable>
+                         <kind>2</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{e7487267-4638-444d-ab51-e438e6f99353}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{a42a85ab-eab8-4047-97da-5d7c9c6ff8f9}</object>
+                         <a>{2586d4bf-a883-4665-bd64-65f4fa12321b}</a>
+                         <b>{4445d7fb-c494-46fe-a22e-9b19049318b2}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>1</cradinality>
+                         <navigable>true</navigable>
+                         <kind>2</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{206c1950-56aa-41c9-8ffd-e7a7ad31dde5}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{2d072c36-406c-468e-a3b9-3373248bcfbd}</object>
+                         <a>{2586d4bf-a883-4665-bd64-65f4fa12321b}</a>
+                         <b>{f8726fd3-84ce-4ca2-a125-27b356a8a795}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>1</cradinality>
+                         <navigable>true</navigable>
+                         <kind>2</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
+                     </instance>
+                    </item>
+                    <item>
+                     <instance type="DAssociation">
+                      <DAssociation>
+                       <base-DRelation>
+                        <DRelation>
+                         <base-DElement>
+                          <DElement>
+                           <uid>{d8619be4-1924-482b-a9b8-af27b358daa3}</uid>
+                          </DElement>
+                         </base-DElement>
+                         <object>{9a077c85-9e6a-46b1-8b51-dfe320968601}</object>
+                         <a>{2586d4bf-a883-4665-bd64-65f4fa12321b}</a>
+                         <b>{b6b7cfad-edd8-4423-aacf-a15a8fe9ec25}</b>
+                        </DRelation>
+                       </base-DRelation>
+                       <a>
+                        <DAssociationEnd>
+                         <cradinality>1</cradinality>
+                         <navigable>true</navigable>
+                         <kind>2</kind>
+                        </DAssociationEnd>
+                       </a>
+                      </DAssociation>
                      </instance>
                     </item>
                    </qlist>
                   </elements>
-                  <last-modified>1544907096521</last-modified>
+                  <last-modified>1544909317764</last-modified>
                   <toolbarid>General</toolbarid>
                  </MDiagram>
                 </base-MDiagram>
@@ -1011,14 +1575,14 @@
                             <qlist>
                              <item>
                               <MClassMember>
-                               <uid>{b991b925-df04-4736-aee1-1ae57984e2e4}</uid>
+                               <uid>{8f9694c7-ba20-4a64-bd3d-486ce3414137}</uid>
                                <type>2</type>
                                <declaration>void chek(QSqlQuery*)</declaration>
                               </MClassMember>
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{c238121b-5ed4-4c47-9280-406c2ec8e127}</uid>
+                               <uid>{053f834f-9f6e-4fd3-8f52-205b05f4a92b}</uid>
                                <visibility>1</visibility>
                                <type>1</type>
                                <declaration>QSqlDatabase db</declaration>
@@ -1026,7 +1590,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{1989643d-f7c3-41a2-9cc0-d98e396d6a0f}</uid>
+                               <uid>{990dae36-8412-4b44-92b5-c5414b9f087e}</uid>
                                <visibility>1</visibility>
                                <type>1</type>
                                <declaration>enum class ColumnsOfDepartment        {ID, name}</declaration>
@@ -1034,7 +1598,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{a3b33bad-dc73-4efe-b362-65dd679fa9fe}</uid>
+                               <uid>{24f4e473-b5b7-4c53-b1df-7ff377f012b0}</uid>
                                <visibility>1</visibility>
                                <type>1</type>
                                <declaration>enum class ColumnsOfSpesiality        {ID, department, name}</declaration>
@@ -1042,7 +1606,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{97d6c193-8af4-4b12-93c9-9699c7d83c50}</uid>
+                               <uid>{2572ae32-63bb-4929-822b-b38474d7920c}</uid>
                                <visibility>1</visibility>
                                <type>1</type>
                                <declaration>enum class ColumnsOfSubject           {ID, name}</declaration>
@@ -1050,7 +1614,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{1d801e08-61ab-4cd0-bc63-fcd58e740597}</uid>
+                               <uid>{188af710-4178-46bc-8325-3f6f06486925}</uid>
                                <visibility>1</visibility>
                                <type>1</type>
                                <declaration>enum class ColumnsOfGroup             {ID, number, name, spesiality, curator}</declaration>
@@ -1058,7 +1622,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{a060eb8b-0211-4d42-83dc-f9116b8e2f1b}</uid>
+                               <uid>{a4d6b8d1-78ec-4a47-9b58-8c0d6e8174fc}</uid>
                                <visibility>1</visibility>
                                <type>1</type>
                                <declaration>enum class ColumnsOfStudent           {ID, group, name, surname ,lastname , form_of_education}</declaration>
@@ -1066,7 +1630,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{cfdde6ae-88e6-443d-8935-6b2942ff8d14}</uid>
+                               <uid>{a8341488-7716-4bb1-b43e-fe7801567a9c}</uid>
                                <visibility>1</visibility>
                                <type>1</type>
                                <declaration>enum class ColumsOfLecturers          {ID, name, surname, lastname}</declaration>
@@ -1074,7 +1638,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{0c92b85b-6ad4-4ce3-809c-edac1debc29f}</uid>
+                               <uid>{efcc7587-33c6-4fea-96fd-853bafecad8c}</uid>
                                <visibility>1</visibility>
                                <type>1</type>
                                <declaration>enum class ColumnsOfSchedule          {ID, group, day_of_week, number_of_week, number_of_lesson, subject, lecturer, classroom}</declaration>
@@ -1082,7 +1646,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{5385f4ac-b282-42e4-bb6b-dd994a501667}</uid>
+                               <uid>{4b0b817c-1d8f-489b-aec6-4db6d38666e4}</uid>
                                <visibility>1</visibility>
                                <type>1</type>
                                <declaration>enum class ColumnsOfEducationProgress {ID, student, group, semester, subject, form_of_control, lecturer, mark}</declaration>
@@ -1090,7 +1654,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{cf881c4c-f02d-4434-8837-6536a80d757a}</uid>
+                               <uid>{41816258-bf15-40b2-9e84-190e31895e35}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>DatabaseHelper()</declaration>
@@ -1098,7 +1662,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{b69740b1-4ad9-4e4c-8bd0-efe627c4a7f8}</uid>
+                               <uid>{347b04d0-7232-4eb9-9feb-86f16659f19e}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>~DatabaseHelper()</declaration>
@@ -1106,7 +1670,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{dfeaf4b4-fb84-48c5-a21f-1e7e0dae2eb1}</uid>
+                               <uid>{3660d562-ef48-48a5-8265-ad939e0b02c4}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>bool exec(QString)</declaration>
@@ -1114,7 +1678,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{a38be0bf-3d7b-4d5f-acae-bd01e3a907e9}</uid>
+                               <uid>{2a264333-b4f0-4444-b154-4aa3e0d5174c}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void addDepartment(QString name)</declaration>
@@ -1122,7 +1686,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{34f5920e-4431-494d-95c4-3e1a6b525cce}</uid>
+                               <uid>{1d733220-4ec0-4642-9eed-f58d39fbf5a5}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void addStudent(int grup, QString name, QString surname, QString lastname,  bool form_of_education)</declaration>
@@ -1130,7 +1694,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{e76674f5-a103-4c0e-9416-f06369491367}</uid>
+                               <uid>{7fc941b9-3e8f-439a-8d5e-6c1bd3b68a8f}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void addSpesialty(int department, QString name)</declaration>
@@ -1138,7 +1702,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{7a049a11-2689-47f5-925a-c6d7c4f48a42}</uid>
+                               <uid>{1ab64ac7-563e-44ad-886a-83235e6ebace}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void addGroup(int number, QString name, int spesiality, int curator)</declaration>
@@ -1146,7 +1710,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{ecafa4e6-4bc2-424a-ae62-ddc1e3b8e636}</uid>
+                               <uid>{2167fd9e-be1e-40fc-9182-65ead86da14d}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void addLecturer(QString name, QString surname, QString lastname)</declaration>
@@ -1154,7 +1718,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{fe37d509-a0e0-45c1-8996-1b06ee98b4eb}</uid>
+                               <uid>{92fe3bdf-4d86-475f-ab2f-9c4fb5090953}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void addSubject(QString name)</declaration>
@@ -1162,7 +1726,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{937cdc22-e695-4798-8e8f-b80e011b1c32}</uid>
+                               <uid>{f6792092-822b-4421-b30f-60b306ac8e89}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void addLesson(int grup, int day_of_week, int number_of_week, int number_of_lesson,                    int subject, int lecturer,  QString classroom)</declaration>
@@ -1170,7 +1734,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{09148282-9cf4-4c02-9b61-e52768128f0a}</uid>
+                               <uid>{17d24c8e-534e-42d4-b00b-c6eb3c1618f7}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void addMark(int student, int grup, bool semester, int subject, int mark)</declaration>
@@ -1178,7 +1742,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{f6a46998-6670-44b7-9f8c-8d4735f43ab2}</uid>
+                               <uid>{f55d4a71-7cb4-4afb-9219-98ede7a854f5}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>QSqlQuery* getDepartment(QString WHERE = &quot;1&quot;)</declaration>
@@ -1186,7 +1750,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{6dd3f62b-7e1e-416d-9860-4011b867e33d}</uid>
+                               <uid>{78857158-2a2e-47e6-91d0-6628b97d2f0b}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>QSqlQuery* getStudent(QString WHERE = &quot;1&quot;)</declaration>
@@ -1194,7 +1758,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{4392fb15-229a-4905-b742-281956719f01}</uid>
+                               <uid>{e91d6076-27f5-41d1-8623-38146053c27b}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>QSqlQuery* getSpesialty(QString WHERE= &quot;1&quot;)</declaration>
@@ -1202,7 +1766,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{ad20e5d7-2680-4d6e-8a37-ac01833642f4}</uid>
+                               <uid>{405a80bf-462d-4754-b36b-2131d565a8fc}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>QSqlQuery* getGroup(QString WHERE= &quot;1&quot;)</declaration>
@@ -1210,7 +1774,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{dc8a0050-46fc-4345-9d8b-d1214bac1048}</uid>
+                               <uid>{272d0d24-0f90-48a8-9ecf-fb053696817a}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>QSqlQuery* getLecturer(QString WHERE= &quot;1&quot;)</declaration>
@@ -1218,7 +1782,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{e777ce57-b736-4b76-8d26-2d0dbb7456ee}</uid>
+                               <uid>{d64989e9-46b1-4757-bbf9-311bb5ef3ef7}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>QSqlQuery* getSubject(QString WHERE= &quot;1&quot;)</declaration>
@@ -1226,7 +1790,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{bbebeb88-bb77-4775-a84d-9cff6177300d}</uid>
+                               <uid>{916875cd-3b71-4224-94ad-4d1559ca2d21}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>QSqlQuery* getLesson(QString WHERE= &quot;1&quot;)</declaration>
@@ -1234,7 +1798,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{8111b024-6672-4279-93da-8a751f76fe47}</uid>
+                               <uid>{cf8e5ebe-0e5a-4372-ae34-2116c23e2a29}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>QSqlQuery* getMark(QString WHERE= &quot;1&quot;)</declaration>
@@ -1242,7 +1806,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{d94b1487-76c6-4e57-b9d5-b2f535564925}</uid>
+                               <uid>{8586d760-0362-4a1d-ab68-9b9faf35fa4b}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setDepartment(int  ID, QString name)</declaration>
@@ -1250,7 +1814,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{9742c2bf-28d8-4dd5-89e8-59b12df1061a}</uid>
+                               <uid>{36e4d35c-7e1f-4530-942d-b7b192a46c6c}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setStudent(int ID, int grup, QString name, QString surname, QString lastname,  bool form_of_education)</declaration>
@@ -1258,7 +1822,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{bc2a4585-a9f5-4cc5-abbe-db23e97157a8}</uid>
+                               <uid>{4ecef011-a441-4ddc-af49-b57051f037e0}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setSpesialty(int ID, int department, QString name)</declaration>
@@ -1266,7 +1830,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{7c13f311-c331-43df-a77a-3965689d63ea}</uid>
+                               <uid>{0802758d-b2f5-4f90-a5a6-26064ad83933}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setGroup(int ID, int number, QString name, int spesiality, int curator)</declaration>
@@ -1274,7 +1838,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{d0f2aacb-188b-411d-9669-05e5cdf18008}</uid>
+                               <uid>{2ea23681-7f25-4d65-b7bb-cf125e9fc10c}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setLecturer(int ID, QString name, QString surname, QString lastname)</declaration>
@@ -1282,7 +1846,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{8b192f01-0ba6-402d-8007-4e12f9b001a1}</uid>
+                               <uid>{2d1c6f89-2b7b-4bba-b3a5-b33933ac6b37}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setSubject(int ID, QString name)</declaration>
@@ -1290,7 +1854,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{4c65c476-73f4-4dd2-877f-54cd1f4e1eb2}</uid>
+                               <uid>{8d12e9cc-90cc-4147-941e-8f7044e222a1}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setLesson(int ID , int grup, int day_of_week, int number_of_week, int number_of_lesson,                    int subject, int lecturer,  QString classroom)</declaration>
@@ -1298,7 +1862,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{06a173e2-98d4-4cb6-a0f2-f089a401f0cc}</uid>
+                               <uid>{454607fa-384b-4f6e-9cfc-2d6d49f04995}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>void setMark(int ID, int student, int grup, bool semester, int subject, int mark)</declaration>
@@ -1345,9 +1909,822 @@
                                          </MElement>
                                         </base-MElement>
                                         <name>RepairDataMainWindow</name>
+                                        <relations>
+                                         <handles>
+                                          <handles>
+                                           <qlist>
+                                            <item>
+                                             <handle>
+                                              <uid>{8911064b-1d42-45f7-b3b8-1047739a0772}</uid>
+                                              <target>
+                                               <instance type="MAssociation">
+                                                <MAssociation>
+                                                 <base-MRelation>
+                                                  <MRelation>
+                                                   <base-MElement>
+                                                    <MElement>
+                                                     <uid>{8911064b-1d42-45f7-b3b8-1047739a0772}</uid>
+                                                    </MElement>
+                                                   </base-MElement>
+                                                   <a>{bb4138ab-56d4-4727-b823-6cb29531c146}</a>
+                                                   <b>{5c243610-40b0-4d5c-b699-aef1e0d1ec3c}</b>
+                                                  </MRelation>
+                                                 </base-MRelation>
+                                                 <a>
+                                                  <MAssociationEnd>
+                                                   <cardinality>1</cardinality>
+                                                   <navigable>true</navigable>
+                                                   <kind>2</kind>
+                                                  </MAssociationEnd>
+                                                 </a>
+                                                </MAssociation>
+                                               </instance>
+                                              </target>
+                                             </handle>
+                                            </item>
+                                            <item>
+                                             <handle>
+                                              <uid>{08847438-cc9c-42f2-a5e9-20f1eacb2fc4}</uid>
+                                              <target>
+                                               <instance type="MAssociation">
+                                                <MAssociation>
+                                                 <base-MRelation>
+                                                  <MRelation>
+                                                   <base-MElement>
+                                                    <MElement>
+                                                     <uid>{08847438-cc9c-42f2-a5e9-20f1eacb2fc4}</uid>
+                                                    </MElement>
+                                                   </base-MElement>
+                                                   <a>{bb4138ab-56d4-4727-b823-6cb29531c146}</a>
+                                                   <b>{cbf8e657-475e-437d-868e-841d00ceee18}</b>
+                                                  </MRelation>
+                                                 </base-MRelation>
+                                                 <a>
+                                                  <MAssociationEnd>
+                                                   <cardinality>1</cardinality>
+                                                   <navigable>true</navigable>
+                                                   <kind>2</kind>
+                                                  </MAssociationEnd>
+                                                 </a>
+                                                </MAssociation>
+                                               </instance>
+                                              </target>
+                                             </handle>
+                                            </item>
+                                            <item>
+                                             <handle>
+                                              <uid>{bf0c949c-8ed9-40bb-906a-d6b8c3e710f7}</uid>
+                                              <target>
+                                               <instance type="MAssociation">
+                                                <MAssociation>
+                                                 <base-MRelation>
+                                                  <MRelation>
+                                                   <base-MElement>
+                                                    <MElement>
+                                                     <uid>{bf0c949c-8ed9-40bb-906a-d6b8c3e710f7}</uid>
+                                                    </MElement>
+                                                   </base-MElement>
+                                                   <a>{bb4138ab-56d4-4727-b823-6cb29531c146}</a>
+                                                   <b>{5c243610-40b0-4d5c-b699-aef1e0d1ec3c}</b>
+                                                  </MRelation>
+                                                 </base-MRelation>
+                                                 <a>
+                                                  <MAssociationEnd>
+                                                   <cardinality>1</cardinality>
+                                                   <navigable>true</navigable>
+                                                   <kind>2</kind>
+                                                  </MAssociationEnd>
+                                                 </a>
+                                                </MAssociation>
+                                               </instance>
+                                              </target>
+                                             </handle>
+                                            </item>
+                                            <item>
+                                             <handle>
+                                              <uid>{6df5db6f-a290-47c9-9ca5-50519497977d}</uid>
+                                              <target>
+                                               <instance type="MAssociation">
+                                                <MAssociation>
+                                                 <base-MRelation>
+                                                  <MRelation>
+                                                   <base-MElement>
+                                                    <MElement>
+                                                     <uid>{6df5db6f-a290-47c9-9ca5-50519497977d}</uid>
+                                                    </MElement>
+                                                   </base-MElement>
+                                                   <a>{bb4138ab-56d4-4727-b823-6cb29531c146}</a>
+                                                   <b>{47e3d923-04bd-4c97-bf27-9e984ba3a505}</b>
+                                                  </MRelation>
+                                                 </base-MRelation>
+                                                 <a>
+                                                  <MAssociationEnd>
+                                                   <cardinality>1</cardinality>
+                                                   <navigable>true</navigable>
+                                                   <kind>2</kind>
+                                                  </MAssociationEnd>
+                                                 </a>
+                                                </MAssociation>
+                                               </instance>
+                                              </target>
+                                             </handle>
+                                            </item>
+                                            <item>
+                                             <handle>
+                                              <uid>{a42a85ab-eab8-4047-97da-5d7c9c6ff8f9}</uid>
+                                              <target>
+                                               <instance type="MAssociation">
+                                                <MAssociation>
+                                                 <base-MRelation>
+                                                  <MRelation>
+                                                   <base-MElement>
+                                                    <MElement>
+                                                     <uid>{a42a85ab-eab8-4047-97da-5d7c9c6ff8f9}</uid>
+                                                    </MElement>
+                                                   </base-MElement>
+                                                   <a>{bb4138ab-56d4-4727-b823-6cb29531c146}</a>
+                                                   <b>{7e6e4f34-2038-46d0-9d15-35e6f6aa8504}</b>
+                                                  </MRelation>
+                                                 </base-MRelation>
+                                                 <a>
+                                                  <MAssociationEnd>
+                                                   <cardinality>1</cardinality>
+                                                   <navigable>true</navigable>
+                                                   <kind>2</kind>
+                                                  </MAssociationEnd>
+                                                 </a>
+                                                </MAssociation>
+                                               </instance>
+                                              </target>
+                                             </handle>
+                                            </item>
+                                            <item>
+                                             <handle>
+                                              <uid>{2d072c36-406c-468e-a3b9-3373248bcfbd}</uid>
+                                              <target>
+                                               <instance type="MAssociation">
+                                                <MAssociation>
+                                                 <base-MRelation>
+                                                  <MRelation>
+                                                   <base-MElement>
+                                                    <MElement>
+                                                     <uid>{2d072c36-406c-468e-a3b9-3373248bcfbd}</uid>
+                                                    </MElement>
+                                                   </base-MElement>
+                                                   <a>{bb4138ab-56d4-4727-b823-6cb29531c146}</a>
+                                                   <b>{120f2245-4d67-4a5c-ad6c-e09d3563e38e}</b>
+                                                  </MRelation>
+                                                 </base-MRelation>
+                                                 <a>
+                                                  <MAssociationEnd>
+                                                   <cardinality>1</cardinality>
+                                                   <navigable>true</navigable>
+                                                   <kind>2</kind>
+                                                  </MAssociationEnd>
+                                                 </a>
+                                                </MAssociation>
+                                               </instance>
+                                              </target>
+                                             </handle>
+                                            </item>
+                                            <item>
+                                             <handle>
+                                              <uid>{9a077c85-9e6a-46b1-8b51-dfe320968601}</uid>
+                                              <target>
+                                               <instance type="MAssociation">
+                                                <MAssociation>
+                                                 <base-MRelation>
+                                                  <MRelation>
+                                                   <base-MElement>
+                                                    <MElement>
+                                                     <uid>{9a077c85-9e6a-46b1-8b51-dfe320968601}</uid>
+                                                    </MElement>
+                                                   </base-MElement>
+                                                   <a>{bb4138ab-56d4-4727-b823-6cb29531c146}</a>
+                                                   <b>{84bf9125-ff47-49d2-a98a-0b4eceaf42db}</b>
+                                                  </MRelation>
+                                                 </base-MRelation>
+                                                 <a>
+                                                  <MAssociationEnd>
+                                                   <cardinality>1</cardinality>
+                                                   <navigable>true</navigable>
+                                                   <kind>2</kind>
+                                                  </MAssociationEnd>
+                                                 </a>
+                                                </MAssociation>
+                                               </instance>
+                                              </target>
+                                             </handle>
+                                            </item>
+                                           </qlist>
+                                          </handles>
+                                         </handles>
+                                        </relations>
                                        </MObject>
                                       </base-MObject>
+                                      <members>
+                                       <qlist>
+                                        <item>
+                                         <MClassMember>
+                                          <uid>{b57a1676-c87a-4c30-982a-b99469594158}</uid>
+                                          <type>1</type>
+                                          <declaration>Q_OBJECT</declaration>
+                                         </MClassMember>
+                                        </item>
+                                        <item>
+                                         <MClassMember>
+                                          <uid>{e77dbfee-86ff-4bfc-870d-e1dd8a734c64}</uid>
+                                          <visibility>1</visibility>
+                                          <type>2</type>
+                                          <declaration>explicit RepairDataMainWindow(QWidget *parent = nullptr)</declaration>
+                                         </MClassMember>
+                                        </item>
+                                        <item>
+                                         <MClassMember>
+                                          <uid>{92f289e8-3a7f-47fe-802e-26cdb96c6e54}</uid>
+                                          <visibility>1</visibility>
+                                          <type>2</type>
+                                          <declaration>~RepairDataMainWindow()</declaration>
+                                         </MClassMember>
+                                        </item>
+                                        <item>
+                                         <MClassMember>
+                                          <uid>{02f4786e-8af5-46de-8f8d-ad2f12274230}</uid>
+                                          <visibility>5</visibility>
+                                          <type>2</type>
+                                          <declaration>void setRepairForms()</declaration>
+                                         </MClassMember>
+                                        </item>
+                                        <item>
+                                         <MClassMember>
+                                          <uid>{c53bd6a7-db3c-4831-bccf-1f53a4c87bcd}</uid>
+                                          <visibility>3</visibility>
+                                          <type>1</type>
+                                          <declaration>Ui::RepairDataMainWindow *ui</declaration>
+                                         </MClassMember>
+                                        </item>
+                                       </qlist>
+                                      </members>
                                      </MClass>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
+                                 <item>
+                                  <handle>
+                                   <uid>{82951172-95be-4875-9fea-625cf0e4ec87}</uid>
+                                   <target>
+                                    <instance type="MPackage">
+                                     <MPackage>
+                                      <base-MObject>
+                                       <MObject>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{82951172-95be-4875-9fea-625cf0e4ec87}</uid>
+                                          <flags>1</flags>
+                                         </MElement>
+                                        </base-MElement>
+                                        <name>RepairForms</name>
+                                        <children>
+                                         <handles>
+                                          <handles>
+                                           <qlist>
+                                            <item>
+                                             <handle>
+                                              <uid>{84bf9125-ff47-49d2-a98a-0b4eceaf42db}</uid>
+                                              <target>
+                                               <instance type="MClass">
+                                                <MClass>
+                                                 <base-MObject>
+                                                  <MObject>
+                                                   <base-MElement>
+                                                    <MElement>
+                                                     <uid>{84bf9125-ff47-49d2-a98a-0b4eceaf42db}</uid>
+                                                     <flags>1</flags>
+                                                    </MElement>
+                                                   </base-MElement>
+                                                   <name>DepartmentRepairForm</name>
+                                                  </MObject>
+                                                 </base-MObject>
+                                                 <members>
+                                                  <qlist>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{97be09b5-c921-4af5-8a36-f0b36903d6b2}</uid>
+                                                     <visibility>1</visibility>
+                                                     <type>2</type>
+                                                     <declaration>explicit DepartmentRepairForm(QWidget *parent = nullptr)</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{a809f5b2-de9c-4594-9b38-56986a8da4ac}</uid>
+                                                     <visibility>1</visibility>
+                                                     <type>2</type>
+                                                     <declaration>~DepartmentRepairForm()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{b07b6f3e-a91b-4e16-9946-24618cae732d}</uid>
+                                                     <visibility>5</visibility>
+                                                     <type>2</type>
+                                                     <declaration>void deleteDepartment()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{4aed0f0e-45cc-40f5-a35f-f5837df67d42}</uid>
+                                                     <visibility>5</visibility>
+                                                     <type>2</type>
+                                                     <declaration>void completed()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{b06d9071-d744-4394-bd9d-783682334966}</uid>
+                                                     <visibility>5</visibility>
+                                                     <type>2</type>
+                                                     <declaration>void cancel()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{d50e413e-3bda-4190-9708-26698bf3b32c}</uid>
+                                                     <visibility>3</visibility>
+                                                     <type>1</type>
+                                                     <declaration>QList&lt;QPair&lt;int, int&gt;&gt; dep</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{c9c3c4ed-4bb3-4b47-ab82-065bf4f7f951}</uid>
+                                                     <visibility>3</visibility>
+                                                     <type>2</type>
+                                                     <declaration>void setDepartments()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{da8f41ac-52a7-462e-92d0-bbcded6bf4fe}</uid>
+                                                     <visibility>3</visibility>
+                                                     <type>1</type>
+                                                     <declaration>Ui::DepartmentRepairForm *ui</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                  </qlist>
+                                                 </members>
+                                                </MClass>
+                                               </instance>
+                                              </target>
+                                             </handle>
+                                            </item>
+                                            <item>
+                                             <handle>
+                                              <uid>{120f2245-4d67-4a5c-ad6c-e09d3563e38e}</uid>
+                                              <target>
+                                               <instance type="MClass">
+                                                <MClass>
+                                                 <base-MObject>
+                                                  <MObject>
+                                                   <base-MElement>
+                                                    <MElement>
+                                                     <uid>{120f2245-4d67-4a5c-ad6c-e09d3563e38e}</uid>
+                                                     <flags>1</flags>
+                                                    </MElement>
+                                                   </base-MElement>
+                                                   <name>GroupRepairForm</name>
+                                                  </MObject>
+                                                 </base-MObject>
+                                                 <members>
+                                                  <qlist>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{29a3f63c-a03d-41cd-8e6c-3ba3ac68bf80}</uid>
+                                                     <type>1</type>
+                                                     <declaration>Q_OBJECT</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{807ab17c-4e5c-4731-96d0-4da0b66b0873}</uid>
+                                                     <visibility>1</visibility>
+                                                     <type>2</type>
+                                                     <declaration>explicit GroupRepairForm(QWidget *parent = nullptr)</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{7a94e398-89bb-40ad-8af1-bbb7f6b2c700}</uid>
+                                                     <visibility>1</visibility>
+                                                     <type>2</type>
+                                                     <declaration>~GroupRepairForm()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{0a8edf06-f995-441d-99f4-6246e00673c9}</uid>
+                                                     <visibility>5</visibility>
+                                                     <type>2</type>
+                                                     <declaration>void deleteDepartment()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{e545b887-79cc-4436-bca8-4fbe9bb67d56}</uid>
+                                                     <visibility>5</visibility>
+                                                     <type>2</type>
+                                                     <declaration>void completed()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{76def875-7fb0-4c73-83ed-018f26dcb1c8}</uid>
+                                                     <visibility>5</visibility>
+                                                     <type>2</type>
+                                                     <declaration>void cancel()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{6cc6c830-cd74-4bc0-9bea-3936bf1181e6}</uid>
+                                                     <visibility>3</visibility>
+                                                     <type>1</type>
+                                                     <declaration>QList&lt;QPair&lt;int, int&gt;&gt; gru</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{b1c931ce-99d6-4dc8-8273-5288c239985a}</uid>
+                                                     <visibility>3</visibility>
+                                                     <type>2</type>
+                                                     <declaration>void setGroup()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{44f8887c-375a-4ffb-85ac-488b7e63c777}</uid>
+                                                     <visibility>3</visibility>
+                                                     <type>1</type>
+                                                     <declaration>Ui::GroupRepairForm *ui</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                  </qlist>
+                                                 </members>
+                                                </MClass>
+                                               </instance>
+                                              </target>
+                                             </handle>
+                                            </item>
+                                            <item>
+                                             <handle>
+                                              <uid>{cbf8e657-475e-437d-868e-841d00ceee18}</uid>
+                                              <target>
+                                               <instance type="MClass">
+                                                <MClass>
+                                                 <base-MObject>
+                                                  <MObject>
+                                                   <base-MElement>
+                                                    <MElement>
+                                                     <uid>{cbf8e657-475e-437d-868e-841d00ceee18}</uid>
+                                                     <flags>1</flags>
+                                                    </MElement>
+                                                   </base-MElement>
+                                                   <name>LecturerRepairForm</name>
+                                                  </MObject>
+                                                 </base-MObject>
+                                                 <members>
+                                                  <qlist>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{95a31bef-f84c-4a80-8bc3-63b3d8924a79}</uid>
+                                                     <visibility>1</visibility>
+                                                     <type>2</type>
+                                                     <declaration>explicit LecturerRepairForm(QWidget *parent = nullptr)</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{c3b39d1f-54a9-4ff7-9581-9bdebec7b52b}</uid>
+                                                     <visibility>1</visibility>
+                                                     <type>2</type>
+                                                     <declaration>~LecturerRepairForm()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{8aa4d257-7ba7-4c26-8e78-6ecd117e8d3a}</uid>
+                                                     <visibility>5</visibility>
+                                                     <type>2</type>
+                                                     <declaration>void deleteDepartment()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{c5ca1fa0-e7af-4e1b-8ace-2b0f696c7fb5}</uid>
+                                                     <visibility>5</visibility>
+                                                     <type>2</type>
+                                                     <declaration>void completed()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{7a325d2a-35a6-4d80-9dae-268833c4ea22}</uid>
+                                                     <visibility>5</visibility>
+                                                     <type>2</type>
+                                                     <declaration>void cancel()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{db14c828-9c9e-4c0b-96d5-c658acdf5149}</uid>
+                                                     <visibility>3</visibility>
+                                                     <type>1</type>
+                                                     <declaration>QList&lt;QPair&lt;int, int&gt;&gt; lec</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{ca8ff823-e0be-49d9-a68e-03ed538df8c9}</uid>
+                                                     <visibility>3</visibility>
+                                                     <type>2</type>
+                                                     <declaration>void setLecturer()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{77114cf0-b581-42f6-a938-e169bd312680}</uid>
+                                                     <visibility>3</visibility>
+                                                     <type>1</type>
+                                                     <declaration>Ui::LecturerRepairForm *ui</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                  </qlist>
+                                                 </members>
+                                                </MClass>
+                                               </instance>
+                                              </target>
+                                             </handle>
+                                            </item>
+                                            <item>
+                                             <handle>
+                                              <uid>{47e3d923-04bd-4c97-bf27-9e984ba3a505}</uid>
+                                              <target>
+                                               <instance type="MClass">
+                                                <MClass>
+                                                 <base-MObject>
+                                                  <MObject>
+                                                   <base-MElement>
+                                                    <MElement>
+                                                     <uid>{47e3d923-04bd-4c97-bf27-9e984ba3a505}</uid>
+                                                     <flags>1</flags>
+                                                    </MElement>
+                                                   </base-MElement>
+                                                   <name>SpecialityRepairForm</name>
+                                                  </MObject>
+                                                 </base-MObject>
+                                                 <members>
+                                                  <qlist>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{397819d7-09e1-4578-b3da-70de25b738d6}</uid>
+                                                     <visibility>1</visibility>
+                                                     <type>2</type>
+                                                     <declaration>explicit SpecialiyInputForm(QWidget *parent = nullptr)</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{e93ff7aa-0e8d-4df4-873c-a8c17bf611d0}</uid>
+                                                     <visibility>1</visibility>
+                                                     <type>2</type>
+                                                     <declaration>~SpecialiyInputForm()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{7a9a6f97-e1f5-4096-a7f2-c9fbcbaf878d}</uid>
+                                                     <visibility>5</visibility>
+                                                     <type>2</type>
+                                                     <declaration>void completed()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{95443f70-6140-4f46-ba6c-ab227216e434}</uid>
+                                                     <visibility>5</visibility>
+                                                     <type>2</type>
+                                                     <declaration>void cancel()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{a223fffc-85a8-4d70-b388-62868850c5d0}</uid>
+                                                     <visibility>3</visibility>
+                                                     <type>1</type>
+                                                     <declaration>QList&lt;QPair&lt;int, int&gt;&gt; departments</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{90b59ca8-6337-468b-af6f-a6dd5373ef92}</uid>
+                                                     <visibility>3</visibility>
+                                                     <type>1</type>
+                                                     <declaration>Ui::SpecialiyInputForm *ui</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                  </qlist>
+                                                 </members>
+                                                </MClass>
+                                               </instance>
+                                              </target>
+                                             </handle>
+                                            </item>
+                                           </qlist>
+                                          </handles>
+                                         </handles>
+                                        </children>
+                                       </MObject>
+                                      </base-MObject>
+                                     </MPackage>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
+                                 <item>
+                                  <handle>
+                                   <uid>{e8bf70a5-f1fd-4daf-9301-3aecce365bb1}</uid>
+                                   <target>
+                                    <instance type="MPackage">
+                                     <MPackage>
+                                      <base-MObject>
+                                       <MObject>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{e8bf70a5-f1fd-4daf-9301-3aecce365bb1}</uid>
+                                          <flags>1</flags>
+                                         </MElement>
+                                        </base-MElement>
+                                        <name>InputForms</name>
+                                        <children>
+                                         <handles>
+                                          <handles>
+                                           <qlist>
+                                            <item>
+                                             <handle>
+                                              <uid>{7e6e4f34-2038-46d0-9d15-35e6f6aa8504}</uid>
+                                              <target>
+                                               <instance type="MClass">
+                                                <MClass>
+                                                 <base-MObject>
+                                                  <MObject>
+                                                   <base-MElement>
+                                                    <MElement>
+                                                     <uid>{7e6e4f34-2038-46d0-9d15-35e6f6aa8504}</uid>
+                                                     <flags>1</flags>
+                                                    </MElement>
+                                                   </base-MElement>
+                                                   <name>StudenrInputForm</name>
+                                                  </MObject>
+                                                 </base-MObject>
+                                                 <members>
+                                                  <qlist>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{6a0902bd-dee4-48a7-951d-4387ebbf3a91}</uid>
+                                                     <visibility>1</visibility>
+                                                     <type>2</type>
+                                                     <declaration>explicit StudenrInputForm(QWidget *parent = nullptr)</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{4be2aa0a-df09-48ec-85e0-f7f35068ce28}</uid>
+                                                     <visibility>1</visibility>
+                                                     <type>2</type>
+                                                     <declaration>~StudenrInputForm()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{1a8172ee-9c4e-4f14-bc4a-8f2e9e631a0a}</uid>
+                                                     <visibility>5</visibility>
+                                                     <type>2</type>
+                                                     <declaration>void completed()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{efca69a3-db56-4ef4-b41c-8ed4f10f36ea}</uid>
+                                                     <visibility>5</visibility>
+                                                     <type>2</type>
+                                                     <declaration>void cancel()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{74d17cbb-b64b-4cfb-ade5-ac73c0770859}</uid>
+                                                     <visibility>3</visibility>
+                                                     <type>1</type>
+                                                     <declaration>Ui::StudenrInputForm *ui</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                  </qlist>
+                                                 </members>
+                                                </MClass>
+                                               </instance>
+                                              </target>
+                                             </handle>
+                                            </item>
+                                            <item>
+                                             <handle>
+                                              <uid>{5c243610-40b0-4d5c-b699-aef1e0d1ec3c}</uid>
+                                              <target>
+                                               <instance type="MClass">
+                                                <MClass>
+                                                 <base-MObject>
+                                                  <MObject>
+                                                   <base-MElement>
+                                                    <MElement>
+                                                     <uid>{5c243610-40b0-4d5c-b699-aef1e0d1ec3c}</uid>
+                                                     <flags>1</flags>
+                                                    </MElement>
+                                                   </base-MElement>
+                                                   <name>SubjectInputForm</name>
+                                                  </MObject>
+                                                 </base-MObject>
+                                                 <members>
+                                                  <qlist>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{d71147c7-a4b0-4d2b-81bc-2a129267cda8}</uid>
+                                                     <visibility>1</visibility>
+                                                     <type>2</type>
+                                                     <declaration>explicit SubjectInputForm(QWidget *parent = nullptr)</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{406fef46-673a-4a0c-a103-82527694730c}</uid>
+                                                     <visibility>1</visibility>
+                                                     <type>2</type>
+                                                     <declaration>~SubjectInputForm()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{e20694a9-6f25-4965-a254-d725b0e53f6c}</uid>
+                                                     <visibility>5</visibility>
+                                                     <type>2</type>
+                                                     <declaration>void completed()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{815a91ec-c6fc-491e-8828-014db8ec0a15}</uid>
+                                                     <visibility>5</visibility>
+                                                     <type>2</type>
+                                                     <declaration>void cancel()</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{d74bbf50-4988-46d3-bed8-a577a1203121}</uid>
+                                                     <visibility>5</visibility>
+                                                     <type>2</type>
+                                                     <declaration>void subjectValueChanged(int)</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{891e2ea9-bd1b-48ec-8549-610656c5861a}</uid>
+                                                     <visibility>3</visibility>
+                                                     <type>1</type>
+                                                     <declaration>Ui::SubjectInputForm *ui</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                   <item>
+                                                    <MClassMember>
+                                                     <uid>{26682a7b-bdc8-4bf2-8d85-cfe1599f2118}</uid>
+                                                     <visibility>3</visibility>
+                                                     <type>1</type>
+                                                     <declaration>QList&lt;QLineEdit*&gt; lines</declaration>
+                                                    </MClassMember>
+                                                   </item>
+                                                  </qlist>
+                                                 </members>
+                                                </MClass>
+                                               </instance>
+                                              </target>
+                                             </handle>
+                                            </item>
+                                           </qlist>
+                                          </handles>
+                                         </handles>
+                                        </children>
+                                       </MObject>
+                                      </base-MObject>
+                                     </MPackage>
                                     </instance>
                                    </target>
                                   </handle>
@@ -1528,6 +2905,122 @@
                                    </target>
                                   </handle>
                                  </item>
+                                 <item>
+                                  <handle>
+                                   <uid>{7c7403c7-305e-48db-ab59-ee81c89a4ee6}</uid>
+                                   <target>
+                                    <instance type="MAssociation">
+                                     <MAssociation>
+                                      <base-MRelation>
+                                       <MRelation>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{7c7403c7-305e-48db-ab59-ee81c89a4ee6}</uid>
+                                         </MElement>
+                                        </base-MElement>
+                                        <a>{30112dfd-795b-4443-984f-e494e45cce0f}</a>
+                                        <b>{8e2bfd57-7ba8-440c-b6dd-e91860bc1e4b}</b>
+                                       </MRelation>
+                                      </base-MRelation>
+                                      <a>
+                                       <MAssociationEnd>
+                                        <cardinality>1</cardinality>
+                                        <navigable>true</navigable>
+                                        <kind>2</kind>
+                                       </MAssociationEnd>
+                                      </a>
+                                     </MAssociation>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
+                                 <item>
+                                  <handle>
+                                   <uid>{64274731-584e-4558-898f-a691df4367c7}</uid>
+                                   <target>
+                                    <instance type="MAssociation">
+                                     <MAssociation>
+                                      <base-MRelation>
+                                       <MRelation>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{64274731-584e-4558-898f-a691df4367c7}</uid>
+                                         </MElement>
+                                        </base-MElement>
+                                        <a>{30112dfd-795b-4443-984f-e494e45cce0f}</a>
+                                        <b>{43de2b08-4050-4b98-b212-c738f78e11ce}</b>
+                                       </MRelation>
+                                      </base-MRelation>
+                                      <a>
+                                       <MAssociationEnd>
+                                        <cardinality>1</cardinality>
+                                        <navigable>true</navigable>
+                                        <kind>2</kind>
+                                       </MAssociationEnd>
+                                      </a>
+                                     </MAssociation>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
+                                 <item>
+                                  <handle>
+                                   <uid>{c45be319-5267-4723-a292-a2e9b0e4dfb3}</uid>
+                                   <target>
+                                    <instance type="MAssociation">
+                                     <MAssociation>
+                                      <base-MRelation>
+                                       <MRelation>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{c45be319-5267-4723-a292-a2e9b0e4dfb3}</uid>
+                                         </MElement>
+                                        </base-MElement>
+                                        <a>{30112dfd-795b-4443-984f-e494e45cce0f}</a>
+                                        <b>{f2af67c1-fe53-47d8-a190-4237a503e63b}</b>
+                                       </MRelation>
+                                      </base-MRelation>
+                                      <a>
+                                       <MAssociationEnd>
+                                        <cardinality>1</cardinality>
+                                        <navigable>true</navigable>
+                                        <kind>2</kind>
+                                       </MAssociationEnd>
+                                      </a>
+                                     </MAssociation>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
+                                 <item>
+                                  <handle>
+                                   <uid>{496f790b-48d0-4f7f-84da-f46b360dd365}</uid>
+                                   <target>
+                                    <instance type="MAssociation">
+                                     <MAssociation>
+                                      <base-MRelation>
+                                       <MRelation>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{496f790b-48d0-4f7f-84da-f46b360dd365}</uid>
+                                         </MElement>
+                                        </base-MElement>
+                                        <a>{30112dfd-795b-4443-984f-e494e45cce0f}</a>
+                                        <b>{bb4138ab-56d4-4727-b823-6cb29531c146}</b>
+                                       </MRelation>
+                                      </base-MRelation>
+                                      <a>
+                                       <MAssociationEnd>
+                                        <cardinality>1</cardinality>
+                                        <navigable>true</navigable>
+                                        <kind>2</kind>
+                                       </MAssociationEnd>
+                                      </a>
+                                     </MAssociation>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
                                 </qlist>
                                </handles>
                               </handles>
@@ -1538,14 +3031,14 @@
                             <qlist>
                              <item>
                               <MClassMember>
-                               <uid>{74059c87-1793-44c3-976e-3f24f9d77516}</uid>
+                               <uid>{01c03734-9aad-4d81-8f1d-a621605bd86c}</uid>
                                <type>1</type>
                                <declaration>int currentGroup</declaration>
                               </MClassMember>
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{4fb8c701-788b-48bb-abf7-7b95e450541a}</uid>
+                               <uid>{8f77a580-46f7-4713-969c-1e8508bc4263}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>explicit EducationProgressMainWindow(QWidget *parent = nullptr)</declaration>
@@ -1553,7 +3046,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{ff3c0ed4-4375-4e99-99e0-be820824ac9c}</uid>
+                               <uid>{a6cb2295-4a35-4e1a-a295-e1da72589ba1}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>~EducationProgressMainWindow()</declaration>
@@ -1561,7 +3054,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{cb8f0988-2559-42a0-97b0-21082b370154}</uid>
+                               <uid>{4851f3dd-2ad2-4b75-9b6a-bc1f1ce84896}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void addItemQuickAccessPanel()</declaration>
@@ -1569,7 +3062,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{8c5dea4a-6b75-43b3-9191-ad745a11a1d2}</uid>
+                               <uid>{f9b440c9-3506-4dd2-849b-c47a17cf5ebc}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void showAddDataWindow()</declaration>
@@ -1577,7 +3070,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{e05bce4d-b979-419c-8d7d-9bb0f4768fca}</uid>
+                               <uid>{3d15d0d6-b360-42e5-b0aa-36aca11d6fee}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void showTable(int)</declaration>
@@ -1585,7 +3078,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{1d839cd9-4168-40ab-b187-a18adbf959d3}</uid>
+                               <uid>{eeecaa6f-9838-4dac-91a7-dc12e8a9cfad}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void FormEducationChanget()</declaration>
@@ -1593,7 +3086,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{26669a1f-9dab-486f-b609-d5e8a9a0dc04}</uid>
+                               <uid>{4d691210-4ccb-456e-ad59-4b602415b55d}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void showMarkInputForm()</declaration>
@@ -1601,7 +3094,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{05630a7d-fff6-4101-88f6-4929f9ae3e0e}</uid>
+                               <uid>{d1837998-a444-48d1-bbb4-e6a542c631e6}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QWidget *w2</declaration>
@@ -1609,7 +3102,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{8c6b57f1-91b6-4675-be49-3a5a5f5ba788}</uid>
+                               <uid>{71a5c9e1-b969-4ede-a99a-81be2492d619}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QList&lt;QuickAccessPanelItem*&gt; QuickAccessItems</declaration>
@@ -1617,7 +3110,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{e512699e-9bd2-49eb-88d7-e1fc743ae7da}</uid>
+                               <uid>{1decb440-fb83-4876-aa94-3c6008016a2b}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>addDataWindow *w</declaration>
@@ -1625,7 +3118,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{7dc54d33-a4e0-4c08-a0ed-99f495447410}</uid>
+                               <uid>{ccf860ce-22d2-4d5b-a3e8-6f6da7093481}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>DatabaseHelper dbHelper</declaration>
@@ -1633,7 +3126,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{980777ad-0b88-420d-9ff5-68b01d02bcf5}</uid>
+                               <uid>{ec2afef6-e4a2-40ef-9a9f-0f549ff0d52d}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>Ui::EducationProgressMainWindow *ui</declaration>
@@ -2093,6 +3586,180 @@
                                    </target>
                                   </handle>
                                  </item>
+                                 <item>
+                                  <handle>
+                                   <uid>{ea7be071-b295-4ded-a3d8-f431e1b92312}</uid>
+                                   <target>
+                                    <instance type="MAssociation">
+                                     <MAssociation>
+                                      <base-MRelation>
+                                       <MRelation>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{ea7be071-b295-4ded-a3d8-f431e1b92312}</uid>
+                                         </MElement>
+                                        </base-MElement>
+                                        <a>{8e2bfd57-7ba8-440c-b6dd-e91860bc1e4b}</a>
+                                        <b>{e8645451-68b6-43b0-b07c-eeef05f4cf80}</b>
+                                       </MRelation>
+                                      </base-MRelation>
+                                      <a>
+                                       <MAssociationEnd>
+                                        <cardinality>*</cardinality>
+                                        <navigable>true</navigable>
+                                        <kind>2</kind>
+                                       </MAssociationEnd>
+                                      </a>
+                                     </MAssociation>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
+                                 <item>
+                                  <handle>
+                                   <uid>{a7c42e83-0d23-4c8f-8050-f3f6350a2bec}</uid>
+                                   <target>
+                                    <instance type="MAssociation">
+                                     <MAssociation>
+                                      <base-MRelation>
+                                       <MRelation>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{a7c42e83-0d23-4c8f-8050-f3f6350a2bec}</uid>
+                                         </MElement>
+                                        </base-MElement>
+                                        <a>{8e2bfd57-7ba8-440c-b6dd-e91860bc1e4b}</a>
+                                        <b>{2f3f1b12-1137-4626-81ca-ceefc91de7ca}</b>
+                                       </MRelation>
+                                      </base-MRelation>
+                                      <a>
+                                       <MAssociationEnd>
+                                        <cardinality>1</cardinality>
+                                        <navigable>true</navigable>
+                                        <kind>2</kind>
+                                       </MAssociationEnd>
+                                      </a>
+                                     </MAssociation>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
+                                 <item>
+                                  <handle>
+                                   <uid>{afbfb30b-720d-4188-9a8f-cfcf1a2735f6}</uid>
+                                   <target>
+                                    <instance type="MAssociation">
+                                     <MAssociation>
+                                      <base-MRelation>
+                                       <MRelation>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{afbfb30b-720d-4188-9a8f-cfcf1a2735f6}</uid>
+                                         </MElement>
+                                        </base-MElement>
+                                        <a>{8e2bfd57-7ba8-440c-b6dd-e91860bc1e4b}</a>
+                                        <b>{8f338dcb-c356-4e17-919c-4bd4757a658c}</b>
+                                       </MRelation>
+                                      </base-MRelation>
+                                      <a>
+                                       <MAssociationEnd>
+                                        <cardinality>1</cardinality>
+                                        <navigable>true</navigable>
+                                        <kind>2</kind>
+                                       </MAssociationEnd>
+                                      </a>
+                                     </MAssociation>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
+                                 <item>
+                                  <handle>
+                                   <uid>{c77eceef-ef1f-4c8a-96ff-fa710d3e9fc9}</uid>
+                                   <target>
+                                    <instance type="MAssociation">
+                                     <MAssociation>
+                                      <base-MRelation>
+                                       <MRelation>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{c77eceef-ef1f-4c8a-96ff-fa710d3e9fc9}</uid>
+                                         </MElement>
+                                        </base-MElement>
+                                        <a>{8e2bfd57-7ba8-440c-b6dd-e91860bc1e4b}</a>
+                                        <b>{44b3d5f0-5389-42d5-ba0c-bf41265e4673}</b>
+                                       </MRelation>
+                                      </base-MRelation>
+                                      <a>
+                                       <MAssociationEnd>
+                                        <cardinality>1</cardinality>
+                                        <navigable>true</navigable>
+                                        <kind>2</kind>
+                                       </MAssociationEnd>
+                                      </a>
+                                     </MAssociation>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
+                                 <item>
+                                  <handle>
+                                   <uid>{4aa46d73-6b64-43c4-ac84-ee5a7970bf7f}</uid>
+                                   <target>
+                                    <instance type="MAssociation">
+                                     <MAssociation>
+                                      <base-MRelation>
+                                       <MRelation>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{4aa46d73-6b64-43c4-ac84-ee5a7970bf7f}</uid>
+                                         </MElement>
+                                        </base-MElement>
+                                        <a>{8e2bfd57-7ba8-440c-b6dd-e91860bc1e4b}</a>
+                                        <b>{28afed55-aa20-41dd-b39f-f9f15a0ef893}</b>
+                                       </MRelation>
+                                      </base-MRelation>
+                                      <a>
+                                       <MAssociationEnd>
+                                        <cardinality>1</cardinality>
+                                        <navigable>true</navigable>
+                                        <kind>2</kind>
+                                       </MAssociationEnd>
+                                      </a>
+                                     </MAssociation>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
+                                 <item>
+                                  <handle>
+                                   <uid>{53de32ee-f56f-450d-bd70-1e945ef99522}</uid>
+                                   <target>
+                                    <instance type="MAssociation">
+                                     <MAssociation>
+                                      <base-MRelation>
+                                       <MRelation>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{53de32ee-f56f-450d-bd70-1e945ef99522}</uid>
+                                         </MElement>
+                                        </base-MElement>
+                                        <a>{8e2bfd57-7ba8-440c-b6dd-e91860bc1e4b}</a>
+                                        <b>{9cbd11a2-abdb-4ef1-ba62-a73f6a34b35b}</b>
+                                       </MRelation>
+                                      </base-MRelation>
+                                      <a>
+                                       <MAssociationEnd>
+                                        <cardinality>1</cardinality>
+                                        <navigable>true</navigable>
+                                        <kind>2</kind>
+                                       </MAssociationEnd>
+                                      </a>
+                                     </MAssociation>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
                                 </qlist>
                                </handles>
                               </handles>
@@ -2103,7 +3770,7 @@
                             <qlist>
                              <item>
                               <MClassMember>
-                               <uid>{eb0afad0-e0c0-4abc-bb6c-63cc10dcb5b5}</uid>
+                               <uid>{df7cb7c4-860e-4a3c-9de8-75cbbfc30048}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>explicit addDataWindow(QWidget *parent = nullptr)</declaration>
@@ -2111,7 +3778,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{f0d5500a-1fc8-419c-8566-e41d5b75b4a5}</uid>
+                               <uid>{82b8307c-6ea6-4e7c-9354-a326675bfd31}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>~addDataWindow()</declaration>
@@ -2119,7 +3786,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{a8e5ddae-6bbe-4f5e-ac25-09b61d4bf961}</uid>
+                               <uid>{41a78955-3e3b-479e-aa98-f0e240a2dec4}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void setInputForm()</declaration>
@@ -2127,7 +3794,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{7264d59e-bc7a-483d-aa08-6e71ff69efbd}</uid>
+                               <uid>{a10b7bac-31d8-4f7a-82b5-a47111f40e03}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>Ui::addDataWindow *ui</declaration>
@@ -2198,7 +3865,7 @@
                             <qlist>
                              <item>
                               <MClassMember>
-                               <uid>{b03198ad-a2a4-42a5-a2bf-330974ff1915}</uid>
+                               <uid>{98adb5c7-d870-44c6-bf02-d57a8ef4c2a5}</uid>
                                <visibility>1</visibility>
                                <type>1</type>
                                <declaration>enum Status{college, department, spesiality, group}</declaration>
@@ -2206,7 +3873,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{7d5bb536-2dad-4c24-8365-9e4419d60337}</uid>
+                               <uid>{100bf9b4-70be-447a-bb7f-8107bb7eb9eb}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>explicit QuickAccessPanelItem(QString name, Status status, int thisID, QWidget *parent = nullptr)</declaration>
@@ -2214,7 +3881,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{09cdb634-8aaa-4990-ad8b-1e6d95272428}</uid>
+                               <uid>{69552294-d784-4ad7-8aef-ea055b7eebc4}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>~QuickAccessPanelItem()</declaration>
@@ -2222,7 +3889,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{943a94a7-7f92-45a1-bdc2-dec9ef187da9}</uid>
+                               <uid>{02577b31-530b-4ade-900e-d12070eb819b}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void changeChild()</declaration>
@@ -2230,7 +3897,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{29ec908a-98ab-459a-80fd-7b9932024ebc}</uid>
+                               <uid>{90f469e7-da33-4359-9afa-faa044b35518}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void Back()</declaration>
@@ -2238,7 +3905,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{e07ba5ab-c045-4850-b063-dbca100a9832}</uid>
+                               <uid>{5358ad1e-732f-41d4-89ef-665f2ca4d529}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void Remove()</declaration>
@@ -2246,7 +3913,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{0079f61d-4c9c-4060-bbc3-d45365c127ef}</uid>
+                               <uid>{4ff64224-66a4-4909-8ce0-047792c4709f}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void Reload()</declaration>
@@ -2254,7 +3921,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{713bfb93-710a-4012-8203-f07f9df172a1}</uid>
+                               <uid>{1fb90b75-9b54-4ccb-be99-9fb5ad2bd0fe}</uid>
                                <visibility>4</visibility>
                                <type>2</type>
                                <declaration>void selected(int)</declaration>
@@ -2262,7 +3929,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{21df3609-0a10-4e03-994d-1d4ea15ea979}</uid>
+                               <uid>{416b4bc0-ebba-4544-9518-fe3dfa5652c2}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>int thisID</declaration>
@@ -2270,7 +3937,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{8c600cb9-c4e7-4eb8-b7ca-12f19a637b59}</uid>
+                               <uid>{569e1e7a-d200-4161-8e5b-9f48f9f2d1de}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QStack&lt;QPair&lt;Status, int&gt;&gt; parentList</declaration>
@@ -2278,7 +3945,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{3756b39c-0eca-4fc5-b5fb-9467326494db}</uid>
+                               <uid>{28dc2147-4322-44c7-9e69-069f13202029}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QList&lt;QPair&lt;QPushButton*, int&gt;&gt; childs</declaration>
@@ -2286,7 +3953,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{55d09e8f-25a5-4dd1-9da5-06aeb08f7d94}</uid>
+                               <uid>{6184078d-a5f0-4efe-b24d-41b2b0ed3b60}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QList&lt;int&gt; itemsID</declaration>
@@ -2294,7 +3961,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{b14aef6d-cc22-4ad6-98c6-4f898ebddb2c}</uid>
+                               <uid>{02992585-23cb-4599-86c4-2047eff359fc}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>DatabaseHelper dbHelper</declaration>
@@ -2302,7 +3969,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{f4020458-c33b-4514-a43c-9c073890eb7a}</uid>
+                               <uid>{690316b6-e201-4295-97ed-054c7b41e42e}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>Status status</declaration>
@@ -2310,7 +3977,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{fe28b912-9644-4971-8335-3e7bcfae00c7}</uid>
+                               <uid>{fd8c8b84-9f19-4d53-bc27-02b14d94bd0a}</uid>
                                <visibility>3</visibility>
                                <type>2</type>
                                <declaration>void Init(QString name,  Status status,int thisID)</declaration>
@@ -2318,7 +3985,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{c78cbe80-458e-4292-b6b0-2575765234dd}</uid>
+                               <uid>{4e14041b-d3d3-49bb-b146-cdc4996ef075}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>Ui::QuickAccessPanelItem *ui</declaration>
@@ -2463,7 +4130,7 @@
                             <qlist>
                              <item>
                               <MClassMember>
-                               <uid>{45a1347f-ab4d-4689-bcbd-f3e9dd9cf962}</uid>
+                               <uid>{55d1c18b-662a-4be0-965f-672d30d57967}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>explicit DepartmentsInputForm(QWidget *parent = nullptr)</declaration>
@@ -2471,7 +4138,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{f1a34db6-49da-4c9f-ab8a-84ef67cb141d}</uid>
+                               <uid>{09faa915-120f-4374-8990-9bfc4bee2794}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>~DepartmentsInputForm()</declaration>
@@ -2479,7 +4146,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{b7d9a065-9d16-4c0a-9022-14a9852c8d3d}</uid>
+                               <uid>{08fad02f-1d8d-4ed7-a860-b4e90e292fa9}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void completed()</declaration>
@@ -2487,7 +4154,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{a8aace7f-a3cc-4693-b9ab-e0a9b8376716}</uid>
+                               <uid>{a17db299-7c3d-472e-9815-3c48f7fd6c33}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void cancel()</declaration>
@@ -2495,7 +4162,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{aa967727-bc2c-440c-85ba-c0f7e277fc20}</uid>
+                               <uid>{31564a3c-c6fd-473d-a3db-dc49f54b82ac}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void departmentValueChanged(int)</declaration>
@@ -2503,7 +4170,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{615af33d-41b9-4f97-bab5-77b5015384ed}</uid>
+                               <uid>{32312e18-9e15-4030-8b4a-09649060598f}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>DatabaseHelper dbHelper</declaration>
@@ -2511,7 +4178,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{6d1f5bc0-3e90-4b9d-9e12-63b4fce86f6e}</uid>
+                               <uid>{81b9d70f-6171-4332-aff2-a9aa1b5471f9}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QList&lt;QLineEdit*&gt; lines</declaration>
@@ -2519,7 +4186,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{4bd893f2-a855-4413-a65e-4255afeb0fb1}</uid>
+                               <uid>{fd2f8ac3-60a2-4c2f-9772-cadaf76268f9}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>Ui::DepartmentsInputForm *ui</declaration>
@@ -2590,7 +4257,7 @@
                             <qlist>
                              <item>
                               <MClassMember>
-                               <uid>{79ab1649-6a6b-454d-b9e9-a9aaff589161}</uid>
+                               <uid>{c7469051-60ec-428e-af20-df2efdc691f7}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>explicit GroupInputForm(QWidget *parent = nullptr)</declaration>
@@ -2598,7 +4265,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{76cef8d3-bc5f-429c-baca-cc1c9cdc86f8}</uid>
+                               <uid>{8a97e2e4-f368-467f-b59c-8888db933d02}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>~GroupInputForm()</declaration>
@@ -2606,7 +4273,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{a46973d6-dd1e-467f-a2c7-4ad0c5ff243d}</uid>
+                               <uid>{188b4c75-7745-4fe0-94b2-5f7524f67cd2}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void completed()</declaration>
@@ -2614,7 +4281,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{792cec47-d5e4-41b0-8a36-19620bb71153}</uid>
+                               <uid>{c64a674a-1fe3-46ed-8da0-0674b8c81ee3}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void cancel()</declaration>
@@ -2622,7 +4289,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{c34ae4a2-6e76-4379-bfb9-821eef2d4f0a}</uid>
+                               <uid>{0f03774d-ab81-4443-8d0e-c01e77d2defc}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>DatabaseHelper dbHelper</declaration>
@@ -2630,7 +4297,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{d5e9dabc-5861-400e-8d66-ee9b5ae3db82}</uid>
+                               <uid>{fcd0625c-e058-46e7-a3ea-2e5f1247879d}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>Ui::GroupInputForm *ui</declaration>
@@ -2694,7 +4361,7 @@
                             <qlist>
                              <item>
                               <MClassMember>
-                               <uid>{2d5d49a0-4019-44c5-bd7b-e3779809349f}</uid>
+                               <uid>{46921b07-7cfb-458b-9823-1832a431a3d2}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>explicit LecturerInputForm(QWidget *parent = nullptr)</declaration>
@@ -2702,7 +4369,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{d56074a4-4709-4af3-8bce-479f782abc46}</uid>
+                               <uid>{f9eb9dff-247e-4e1a-ba34-0815828ac1b4}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>~LecturerInputForm()</declaration>
@@ -2710,7 +4377,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{477dbce8-b0ce-457c-9b1d-0a0543f6a0e2}</uid>
+                               <uid>{dec7e852-8d54-40ce-9a0b-fc5201c83b18}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void completed()</declaration>
@@ -2718,7 +4385,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{a81c9bb1-a7d0-4157-a151-7cd5f7dfd463}</uid>
+                               <uid>{e12267d8-c039-4e68-9e56-d82cfd86c559}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void cancel()</declaration>
@@ -2726,7 +4393,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{240d3c0b-b331-4ed6-b80b-d7b6c1fae35c}</uid>
+                               <uid>{b56d83af-9dd4-4392-8dc1-bb0bf343d530}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>DatabaseHelper dbHelper</declaration>
@@ -2734,7 +4401,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{bbbf59a1-cebe-4db6-b83a-26e0067c58c1}</uid>
+                               <uid>{0437ea9c-7726-4a07-8131-d0372b8ce4be}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>Ui::LecturerInputForm *ui</declaration>
@@ -2788,6 +4455,35 @@
                                    </target>
                                   </handle>
                                  </item>
+                                 <item>
+                                  <handle>
+                                   <uid>{1c9d1897-38eb-4c6d-804a-e7882d81af51}</uid>
+                                   <target>
+                                    <instance type="MAssociation">
+                                     <MAssociation>
+                                      <base-MRelation>
+                                       <MRelation>
+                                        <base-MElement>
+                                         <MElement>
+                                          <uid>{1c9d1897-38eb-4c6d-804a-e7882d81af51}</uid>
+                                         </MElement>
+                                        </base-MElement>
+                                        <a>{f2af67c1-fe53-47d8-a190-4237a503e63b}</a>
+                                        <b>{43de2b08-4050-4b98-b212-c738f78e11ce}</b>
+                                       </MRelation>
+                                      </base-MRelation>
+                                      <a>
+                                       <MAssociationEnd>
+                                        <cardinality>1</cardinality>
+                                        <navigable>true</navigable>
+                                        <kind>2</kind>
+                                       </MAssociationEnd>
+                                      </a>
+                                     </MAssociation>
+                                    </instance>
+                                   </target>
+                                  </handle>
+                                 </item>
                                 </qlist>
                                </handles>
                               </handles>
@@ -2798,7 +4494,7 @@
                             <qlist>
                              <item>
                               <MClassMember>
-                               <uid>{a937c528-1189-4459-854b-b980205d0ec6}</uid>
+                               <uid>{a8974797-af30-4652-a0cd-3653b09a6709}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>explicit MarkInputForm(QWidget *parent = nullptr)</declaration>
@@ -2806,7 +4502,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{88e98c2f-f081-44da-9513-3b510b391acf}</uid>
+                               <uid>{93d37c3b-3ac1-464f-b4a3-9c5c44b1b180}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>~MarkInputForm()</declaration>
@@ -2814,7 +4510,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{4a527a6b-a61d-4470-83cc-e6977a64fa91}</uid>
+                               <uid>{015da797-0344-4f9c-a77d-b7b096b2ebce}</uid>
                                <visibility>7</visibility>
                                <type>2</type>
                                <declaration>void groupSelected(int)</declaration>
@@ -2822,7 +4518,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{71c3ea9f-f413-470b-9587-c154e27540cb}</uid>
+                               <uid>{e797d437-ebd3-4e0c-8d7e-f00aee8d8458}</uid>
                                <visibility>7</visibility>
                                <type>2</type>
                                <declaration>void completed()</declaration>
@@ -2830,7 +4526,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{289e2b8a-6d46-405f-bf7d-57aec5d57199}</uid>
+                               <uid>{0c49e732-5c55-4801-ba8c-946d1dafa3bf}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>int currentGroup</declaration>
@@ -2838,7 +4534,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{5ecf5066-5d35-49c1-a329-c24efad188fa}</uid>
+                               <uid>{ecb2db21-ea41-4590-934d-ab965a8e0cca}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QList&lt;QPair&lt;QLineEdit*, int&gt;&gt; lines</declaration>
@@ -2846,7 +4542,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{4d2a1588-2500-42be-a809-4b605a4d4595}</uid>
+                               <uid>{5dbbaf44-9925-4a3d-b434-cfa7febc5d2f}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>DatabaseHelper dbHelper</declaration>
@@ -2854,7 +4550,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{f3ee1cd9-ef78-47bd-a55f-023bba515a28}</uid>
+                               <uid>{d168ff44-ced1-4dcb-87a5-6cc625b50fea}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>Ui::MarkInputForm *ui</declaration>
@@ -2862,7 +4558,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{b8392b7e-8bce-49c8-8d45-d998acae2994}</uid>
+                               <uid>{e2c5d3cf-eab8-4688-b46d-c3dfa2a37b0f}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QuickAccessPanelItem *panel</declaration>
@@ -2933,7 +4629,7 @@
                             <qlist>
                              <item>
                               <MClassMember>
-                               <uid>{ed80638b-0622-4e16-95db-91352947b666}</uid>
+                               <uid>{3b0b63d2-ff0d-446b-a461-498cfb9d9787}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>explicit SpecialiyInputForm(QWidget *parent = nullptr)</declaration>
@@ -2941,7 +4637,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{1bc21789-e73b-4ca5-b238-a364bac8d7eb}</uid>
+                               <uid>{7caccab0-cb3f-45b3-9169-a9759f7a5a2e}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>~SpecialiyInputForm()</declaration>
@@ -2949,7 +4645,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{77234182-b02f-4b35-af17-f4c20bcdbad2}</uid>
+                               <uid>{dadd7022-2652-4359-bcb5-721b45057d11}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void completed()</declaration>
@@ -2957,7 +4653,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{c814d96b-5894-4ecb-bf10-e54d265ed995}</uid>
+                               <uid>{2dcb0727-7119-4f56-b1bb-433571e43f79}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void cancel()</declaration>
@@ -2965,7 +4661,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{f0ef56a4-7150-48b4-8535-b5c071e43bdd}</uid>
+                               <uid>{2a878e69-fd27-4e45-a8f0-4d8017f19ead}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>DatabaseHelper dbHelper</declaration>
@@ -2973,7 +4669,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{0b173929-1a82-45a7-ac79-33012f3f5069}</uid>
+                               <uid>{40d2908d-194d-4c4b-9f54-c879c951db0d}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QList&lt;QPair&lt;int, int&gt;&gt; departments</declaration>
@@ -2981,7 +4677,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{cb2d44a7-ab3d-4598-90d2-20765460b952}</uid>
+                               <uid>{3ea681f9-37d7-4eba-a8c0-65dd682893c7}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>Ui::SpecialiyInputForm *ui</declaration>
@@ -3118,7 +4814,7 @@
                             <qlist>
                              <item>
                               <MClassMember>
-                               <uid>{4db3fb2b-f390-4617-89a1-1bdfe0abae10}</uid>
+                               <uid>{92b7eae3-0843-487a-a9ef-9db7edbb14c2}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>explicit StudenrInputForm(QWidget *parent = nullptr)</declaration>
@@ -3126,7 +4822,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{f2e323aa-ea67-44ce-9c79-1cd1b9705be6}</uid>
+                               <uid>{03b486e4-79c2-41ec-91a2-ed6557bd719c}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>~StudenrInputForm()</declaration>
@@ -3134,7 +4830,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{78a7671b-905c-48e0-81d5-3b07e6a7e337}</uid>
+                               <uid>{ff889efd-fac3-4542-9a0c-20a7b14f139f}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void completed()</declaration>
@@ -3142,7 +4838,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{0e514272-5605-4ff2-948d-50a13a918255}</uid>
+                               <uid>{35ffc1c5-7430-447c-8a46-2210790b7082}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void cancel()</declaration>
@@ -3150,7 +4846,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{c71e9847-541e-4ca9-8bfc-100c23d4eef7}</uid>
+                               <uid>{1be55394-0454-494d-b71d-20fec3beb1ce}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>Ui::StudenrInputForm *ui</declaration>
@@ -3158,7 +4854,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{28d10bdc-fc19-4764-887b-2007e1fa33e5}</uid>
+                               <uid>{dbf0494d-6d4f-4b1c-93b6-83ca7f258237}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>DatabaseHelper dbHelper</declaration>
@@ -3222,7 +4918,7 @@
                             <qlist>
                              <item>
                               <MClassMember>
-                               <uid>{af2ac586-7b0a-4090-9c29-bc159cc9a7b4}</uid>
+                               <uid>{51ee7010-2be9-4e9a-9189-e7e4f36e0b2c}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>explicit SubjectInputForm(QWidget *parent = nullptr)</declaration>
@@ -3230,7 +4926,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{967b184a-8f61-4121-91a4-5a93f80c8916}</uid>
+                               <uid>{850637fd-c11a-47e5-a3c1-c5e6c40fd73b}</uid>
                                <visibility>1</visibility>
                                <type>2</type>
                                <declaration>~SubjectInputForm()</declaration>
@@ -3238,7 +4934,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{31a2b4e3-5468-4b19-8bc3-ff5a268390a6}</uid>
+                               <uid>{210c85d5-d58a-4c04-b272-f0bec21cd6ac}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void completed()</declaration>
@@ -3246,7 +4942,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{1154b6b5-0ace-4797-b2b6-c8c87d840be5}</uid>
+                               <uid>{a13a8c10-3a32-458a-894b-477acd26463e}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void cancel()</declaration>
@@ -3254,7 +4950,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{667c0ca8-37f8-4a97-8e27-710d41e32e01}</uid>
+                               <uid>{5bfa7ed8-7b2d-4efc-8341-3c96101223c9}</uid>
                                <visibility>5</visibility>
                                <type>2</type>
                                <declaration>void subjectValueChanged(int)</declaration>
@@ -3262,7 +4958,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{1c4ba842-7fa1-43c5-b4b3-f3afaebb9f78}</uid>
+                               <uid>{dd127bab-dfc0-4212-bea1-0764998c8a36}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>DatabaseHelper dbHelper</declaration>
@@ -3270,7 +4966,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{3c56a75b-330f-479d-a91a-76eebfc46d93}</uid>
+                               <uid>{9a2961a7-c8b1-4a4f-8064-c2f9b3e7adb3}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>Ui::SubjectInputForm *ui</declaration>
@@ -3278,7 +4974,7 @@
                              </item>
                              <item>
                               <MClassMember>
-                               <uid>{5f86a362-002d-447f-9c80-ee595dee212c}</uid>
+                               <uid>{71a7b20a-844a-4a67-a741-1684f31cccaa}</uid>
                                <visibility>3</visibility>
                                <type>1</type>
                                <declaration>QList&lt;QLineEdit*&gt; lines</declaration>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
+<<<<<<< HEAD
 <!-- Written by QtCreator 4.8.0, 2018-12-15T17:24:25. -->
 <qtcreator>
  <data>
@@ -829,3 +830,7 @@
   <value type="int">20</value>
  </data>
 </qtcreator>
+=======
+<!-- Written by QtCreator 4.7.2, 2018-12-15T12:50:42. -->
+<qtcreator/>
+>>>>>>> 0e6ec856a4167d4ecd1c2d2e7a1937b55a32621b

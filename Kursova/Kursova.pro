@@ -26,7 +26,6 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp \
     databasehelper.cpp \
     EducationProgressForms/educationprogressmainwindow.cpp \
     EducationProgressForms/quickaccesspanelitem.cpp \
@@ -36,10 +35,10 @@ SOURCES += \
     EducationProgressForms/InputForms/subjectinputform.cpp \
     EducationProgressForms/InputForms/departmentsinputform.cpp \
     EducationProgressForms/InputForms/groupinputform.cpp \
-    EducationProgressForms/InputForms/specialiyinputform.cpp
+    EducationProgressForms/InputForms/specialiyinputform.cpp \
+    EducationProgressForms/InputForms/markinputform.cpp
 
 HEADERS += \
-        mainwindow.h \
     databasehelper.h \
     EducationProgressForms/educationprogressmainwindow.h \
     EducationProgressForms/quickaccesspanelitem.h \
@@ -49,10 +48,10 @@ HEADERS += \
     EducationProgressForms/InputForms/subjectinputform.h \
     EducationProgressForms/InputForms/departmentsinputform.h \
     EducationProgressForms/InputForms/groupinputform.h \
-    EducationProgressForms/InputForms/specialiyinputform.h
+    EducationProgressForms/InputForms/specialiyinputform.h \
+    EducationProgressForms/InputForms/markinputform.h
 
 FORMS += \
-        mainwindow.ui \
     EducationProgressForms/educationprogressmainwindow.ui \
     EducationProgressForms/quickaccesspanelitem.ui \
     EducationProgressForms/adddatawindow.ui \
@@ -61,9 +60,15 @@ FORMS += \
     EducationProgressForms/InputForms/subjectinputform.ui \
     EducationProgressForms/InputForms/departmentsinputform.ui \
     EducationProgressForms/InputForms/groupinputform.ui \
-    EducationProgressForms/InputForms/specialiyinputform.ui
+    EducationProgressForms/InputForms/specialiyinputform.ui \
+    EducationProgressForms/InputForms/markinputform.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+DISTFILES += \
+    diagram.qmodel
+
+STATECHARTS +=

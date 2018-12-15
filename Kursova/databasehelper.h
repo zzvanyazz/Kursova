@@ -6,10 +6,11 @@
 class DatabaseHelper
 {
 
-    QSqlDatabase db ;
+
     void chek(QSqlQuery*);
 
 public:
+     QSqlDatabase db ;
 
 
 
@@ -32,6 +33,9 @@ public:
 
 
 
+
+
+
     // add------------------------------------------
     void addDepartment(QString name);
     void addStudent(int grup, QString name, QString surname, QString lastname,  bool form_of_education);
@@ -41,7 +45,7 @@ public:
     void addSubject(QString name);
     void addLesson(int grup, int day_of_week, int number_of_week, int number_of_lesson,
                    int subject, int lecturer,  QString classroom);
-    void addMark(int student, int grup, bool semester, int subject, int form_of_control, int lecturer, int mark);
+    void addMark(int student, int grup, bool semester, int subject, int mark);
 
 
     //get------------------------------------------
@@ -67,7 +71,7 @@ public:
     void setSubject(int ID, QString name);
     void setLesson(int ID , int grup, int day_of_week, int number_of_week, int number_of_lesson,
                    int subject, int lecturer,  QString classroom);
-    void setMark(int ID, int student, int grup, bool semester, int subject, int form_of_control, int lecturer, int mark);
+    void setMark(int ID, int student, int grup, bool semester, int subject, int mark);
 
 
 

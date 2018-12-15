@@ -3,13 +3,11 @@
 #include <QDir>
 #include <QDebug>
 
-
-
 DatabaseHelper::DatabaseHelper(){
     db =  QSqlDatabase::addDatabase("QSQLITE");
     db.setDatabaseName("college.db");
 
-    //db.setDatabaseName( "college.db");
+
     if(!db.open()) {
         QMessageBox::warning(nullptr, "Error open", db.lastError().text());
         return;
@@ -56,7 +54,7 @@ void DatabaseHelper::addDepartment(QString name){
 
 void DatabaseHelper::addStudent(int grup, QString name, QString surname, QString lastname,  bool form_of_education){
     QSqlQuery query(db);
-    query.prepare("INSERT INTO students (grup, name, surname, lastname, form_of_education) "
+    query.prepare("INSERT INTO student (grup, name, surname, lastname, form_of_education) "
                   "VALUES (:grup, :name, :surname, :lastname, :form_of_education)");
     query.bindValue(":grup", grup);
     query.bindValue(":name", name);
@@ -124,16 +122,15 @@ void DatabaseHelper::addLesson(int grup, int day_of_week, int number_of_week, in
     query.bindValue(":classroom", classroom);
     chek(&query);
 }
-void DatabaseHelper::addMark(int student, int grup, bool semester, int subject, int form_of_control, int lecturer, int mark){
+void DatabaseHelper::addMark(int student, int grup, bool semester, int subject, int mark){
     QSqlQuery query(db);
-    query.prepare("INSERT INTO education_progress (student, grup, semester, subject, form_of_control, lecturer, mark) "
-                  "VALUES (:student, :grup, :semester, :subject, :form_of_control, :lecturer, :mark)");
+    query.prepare("INSERT INTO education_progress (student, \"group\", semester, subject, mark) "
+                  "VALUES (:student, :grup, :semester, :subject, :mark)");
     query.bindValue(":student", student);
     query.bindValue(":grup", grup);
     query.bindValue(":semester", semester);
     query.bindValue(":subject", subject);
-    query.bindValue(":form_of_control", form_of_control);
-    query.bindValue(":lecturer", lecturer);
+
     query.bindValue(":mark", mark);
 
     chek(&query);
@@ -234,7 +231,7 @@ void DatabaseHelper::setSpesialty(int ID, int department, QString name){
 }
 void DatabaseHelper::setGroup(int ID, int number, QString name, int spesiality, int curator){
     QSqlQuery query(db);
-    query.prepare("UPDATE groups number = :number, name = :name, spesiality = :spesiality, curator = :curator WHERE ID = "+ QString().number(ID));
+    query.prepare("UPDATE groups SET number = :number, name = :name, spesiality = :spesiality, curator = :curator WHERE ID = "+ QString().number(ID));
     query.bindValue(":number", number);
     query.bindValue(":name", name);
     query.bindValue(":spesiality", spesiality);
@@ -243,7 +240,7 @@ void DatabaseHelper::setGroup(int ID, int number, QString name, int spesiality, 
 }
 void DatabaseHelper::setLecturer(int ID, QString name, QString surname, QString lastname){
     QSqlQuery query(db);
-    query.prepare("UPDATE lecturers name = :name, surname = :surname, lastname =:lastname WHERE ID ="+QString().number(ID) );
+    query.prepare("UPDATE lecturers SET name = :name, surname = :surname, lastname =:lastname WHERE ID ="+QString().number(ID) );
 
     query.bindValue(":name", name);
     query.bindValue(":surname", surname);
@@ -254,14 +251,14 @@ void DatabaseHelper::setLecturer(int ID, QString name, QString surname, QString 
 }
 void DatabaseHelper::setSubject(int ID, QString name){
     QSqlQuery query(db);
-    query.prepare("UPDATE subjects name = :name VALUES ID = "+QString().number(ID));
+    query.prepare("UPDATE subjects SET name = :name VALUES ID = "+QString().number(ID));
     query.bindValue(":name", name);
     chek(&query);
 }
 void DatabaseHelper::setLesson(int ID , int grup, int day_of_week, int number_of_week, int number_of_lesson,
                                int subject, int lecturer,  QString classroom){
     QSqlQuery query(db);
-    query.prepare("UPDATE schedule grup = :grup, day_of_week = :day_of_week, "
+    query.prepare("UPDATE schedule SET grup = :grup, day_of_week = :day_of_week, "
                   "number_of_week = :number_of_week, number_of_lesson = :number_of_lesson, "
                   "subject = :subject, lecturer = :lecturer, classroom = :classroom WHERE ID = " +QString().number(ID));
 
@@ -275,17 +272,15 @@ void DatabaseHelper::setLesson(int ID , int grup, int day_of_week, int number_of
     chek(&query);
 
 }
-void DatabaseHelper::setMark(int ID, int student, int grup, bool semester, int subject, int form_of_control, int lecturer, int mark){
+void DatabaseHelper::setMark(int ID, int student, int grup, bool semester, int subject, int mark){
     QSqlQuery query(db);
-    query.prepare("UPDATE education_progress student = :student, grup= :grup, semester = :semester,"
-                  " subject = :subject, form_of_control = :form_of_control, lecturer = :lecturer, mark = :mark WHERE ID = " + QString().number(ID));
+    query.prepare("UPDATE education_progress SET student = :student, \"group\"= :grup, semester = :semester,"
+                  " subject = :subject, mark = :mark WHERE ID = " + QString().number(ID));
 
     query.bindValue(":student", student);
     query.bindValue(":grup", grup);
     query.bindValue(":semester", semester);
     query.bindValue(":subject", subject);
-    query.bindValue(":form_of_control", form_of_control);
-    query.bindValue(":lecturer", lecturer);
     query.bindValue(":mark", mark);
 
     chek(&query);

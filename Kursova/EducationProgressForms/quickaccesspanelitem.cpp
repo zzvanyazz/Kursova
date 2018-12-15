@@ -3,6 +3,9 @@
 #include <databasehelper.h>
 #include <QPushButton>
 #include <QDebug>
+#include <QMainWindow>
+#include <EducationProgressForms/educationprogressmainwindow.h>
+#include <QMessageBox>
 
 QuickAccessPanelItem::QuickAccessPanelItem(QString name,  Status _status, int thisID, QWidget *parent) :
     QWidget(parent),
@@ -12,8 +15,8 @@ QuickAccessPanelItem::QuickAccessPanelItem(QString name,  Status _status, int th
     ui->setupUi(this);
     ui->SubItemsWidget->setAutoFillBackground(true);
 
-    connect(ui->ButtonBack, SIGNAL(pressed()), this,SLOT(Back()) );
-       connect(ui->ButtonRemove, SIGNAL(pressed()), this,SLOT(Remove()) );
+    connect(ui->ButtonBack, SIGNAL(pressed()), this,SLOT(Back()));
+    connect(ui->ButtonRemove, SIGNAL(pressed()), this,SLOT(Remove()));
 
     Init(name, _status, thisID);
 
@@ -31,6 +34,7 @@ void QuickAccessPanelItem::Init(QString name, Status _status, int _thisID){
 
         query =  dbHelper.getDepartment();
 
+        if(!query->first())hide();
         break;
 
     case department:
@@ -40,9 +44,14 @@ void QuickAccessPanelItem::Init(QString name, Status _status, int _thisID){
 
     case spesiality:
         query =  dbHelper.getGroup(" spesiality = " + QString().number(_thisID));
-
         break;
     case group:
+        emit selected(_thisID);
+        //((EducationProgressMainWindow*)parent())->showTable();
+        return;
+    }
+    if(!query->first()){
+        QMessageBox::warning(this, "Помилка", "Пусто");
         return;
     }
 
@@ -50,7 +59,7 @@ void QuickAccessPanelItem::Init(QString name, Status _status, int _thisID){
     ui->Name->setText(name);
     status = _status;
     thisID = _thisID;
-    parent.push(QPair<Status, int>(status, thisID));
+    parentList.push(QPair<Status, int>(status, thisID));
 
     itemsID.clear();
 
@@ -59,18 +68,12 @@ void QuickAccessPanelItem::Init(QString name, Status _status, int _thisID){
             itemsID.append(query->value("ID").toInt());
         }while (query->next());
     }else {return;}
-
-
-
     for(QPair<QPushButton*, int> p: childs){
         ui->SubItemsWidget->layout()->removeWidget(p.first);
         qDebug() << 0.5 <<'\n';
         p.first->hide();
-        delete p.first;
-    }
+        delete p.first;}
     childs.clear();
-    
-
     for(int ID : itemsID){
         QPushButton* pushButton = new QPushButton(this);
         childs.append(QPair<QPushButton*, int>(pushButton, ID));
@@ -83,35 +86,28 @@ void QuickAccessPanelItem::Init(QString name, Status _status, int _thisID){
             query->first();
             text = query->value((int)DatabaseHelper::ColumnsOfDepartment::name).toString();
             break;
-
         case department:
             query = dbHelper.getSpesialty("ID = "+QString().number(ID));
             query->first();
             text = query->value((int)DatabaseHelper::ColumnsOfSpesiality::name).toString();
             break;
-
         case spesiality:
             query = dbHelper.getGroup("ID = "+QString().number(ID));
             query->first();
             text =  query->value((int)DatabaseHelper::ColumnsOfGroup::number).toString();
 
-
         }
-
-
         pushButton->setText(text);
         qDebug() << 1 <<'\n';
-        ui->SubItemsWidget->layout()->addWidget(pushButton);
-    }
-
+        ui->SubItemsWidget->layout()->addWidget(pushButton);}
 }
 void QuickAccessPanelItem::Back(){
-    if(parent.length() == 1) return;
+    if(parentList.length() == 1) return;
     QSqlQuery *q;
     QString name;
-parent.pop();
+    parentList.pop();
 
-    QPair<Status, int>p = parent.pop();
+    QPair<Status, int>p = parentList.pop();
     switch(p.first) {
     case college:
         Init("college", college, p.second);
@@ -179,8 +175,36 @@ void QuickAccessPanelItem::changeChild(){
 
     
 }
+void QuickAccessPanelItem::Reload(){
+    QMessageBox::warning(this, "www", "www");
+    QSqlQuery *q;
+    QString name;
 
+
+    QPair<Status, int>p = parentList.pop();
+    switch(p.first) {
+    case college:
+        Init("college", college, p.second);
+        break;
+
+    case department:
+
+        q = dbHelper.getDepartment("ID = "+QString().number(p.second));
+        q->first();
+
+        name =  q->value((int)DatabaseHelper::ColumnsOfDepartment::name).toString();
+        Init(name, department, p.second);
+        break;
+    case spesiality:
+
+        q = dbHelper.getSpesialty("ID = "+QString().number(p.second));
+        q->first();
+        name=  q->value((int)DatabaseHelper::ColumnsOfSpesiality::name).toString();
+        Init(name, department, p.second);
+    }
+}
 void QuickAccessPanelItem::Remove(){
+    if(block)return;
     this->hide();
     delete this;
 }

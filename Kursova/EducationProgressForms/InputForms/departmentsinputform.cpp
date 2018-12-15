@@ -22,10 +22,9 @@ void DepartmentsInputForm::completed(){
     for(QLineEdit  *l : lines){
         if(!l->text().isEmpty())
             dbHelper.addDepartment(l->text());
-
     }
-    if(ui->departmentCounter->value() == 1) cancel();
-    ui->departmentCounter->setValue(ui->departmentCounter->value()-1);
+    cancel();
+
 
 }
 void DepartmentsInputForm::cancel(){

@@ -34,7 +34,8 @@ private:
      QWidget *w2;
     QList<QuickAccessPanelItem*> QuickAccessItems;
      addDataWindow *w;
-    DatabaseHelper dbHelper;
+
+
     Ui::EducationProgressMainWindow *ui;
 
 };

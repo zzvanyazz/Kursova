@@ -19,7 +19,7 @@ private slots:
     void cancel();
 
 private:
-    DatabaseHelper dbHelper;
+
     Ui::GroupInputForm *ui;
 };
 

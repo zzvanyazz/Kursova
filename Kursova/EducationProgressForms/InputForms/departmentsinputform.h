@@ -21,7 +21,7 @@ private slots:
     void departmentValueChanged(int);
 
 private:
-    DatabaseHelper dbHelper;
+
     QList<QLineEdit*> lines;
     Ui::DepartmentsInputForm *ui;
 };

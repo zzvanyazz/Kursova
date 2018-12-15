@@ -1,3 +1,5 @@
+
+
 #ifndef SPECIALIYINPUTFORM_H
 #define SPECIALIYINPUTFORM_H
 
@@ -19,7 +21,7 @@ private slots:
     void cancel();
 
 private:
-    DatabaseHelper dbHelper;
+
     QList<QPair<int, int>> departments;
     Ui::SpecialiyInputForm *ui;
 };

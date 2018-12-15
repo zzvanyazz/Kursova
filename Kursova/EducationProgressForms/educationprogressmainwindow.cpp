@@ -5,6 +5,7 @@
 #include <EducationProgressForms/quickaccesspanelitem.h>
 #include <EducationProgressForms/adddatawindow.h>
 #include <EducationProgressForms/InputForms/markinputform.h>
+
 EducationProgressMainWindow::EducationProgressMainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::EducationProgressMainWindow)
@@ -16,6 +17,7 @@ EducationProgressMainWindow::EducationProgressMainWindow(QWidget *parent) :
     connect(ui->ButtonShowAddWindow2, SIGNAL (pressed()),this, SLOT (showAddDataWindow()));
     connect(ui->ButtonShowInpuMarksForm, SIGNAL (pressed()),this, SLOT (showMarkInputForm()));
     connect(ui->CheckFormOfEducation, &QCheckBox::stateChanged, this, &EducationProgressMainWindow::FormEducationChanged);
+
 
     w2 = new QWidget(this);
 
@@ -79,27 +81,27 @@ void EducationProgressMainWindow::showTable(int GroupID){
 
 
     QSqlQuery *students = dbHelper.getStudent("Grup = "+QString().number(GroupID)+" group by surname");
-    QSqlQuery*  subjects = new QSqlQuery(dbHelper.db);
-    subjects->exec("SELECT DISTINCT subject FROM education_progress WHERE \"group\"="+QString().number(GroupID)+";");
+    QSqlQuery  subjects = dbHelper.exec("SELECT DISTINCT subject FROM education_progress WHERE \"group\"="+QString().number(GroupID)+";");
+
     QLabel *empty = new QLabel();
     empty->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum );
     Table->addWidget(empty, i, j);
-    if(subjects->first()){
+    if(subjects.first()){
         do{
             j++;
             QLabel *n = new QLabel;
-            QSqlQuery *Sub = dbHelper.getSubject("ID = "+QString().number(subjects->value(0).toInt()));
+            QSqlQuery *Sub = dbHelper.getSubject("ID = "+QString().number(  subjects.value(0).toInt()));
             n->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Minimum);
             Sub->first();
             n->setText(Sub->value((int)DatabaseHelper::ColumnsOfSubject::name).toString());
             Table->addWidget(n, i, j);
 
 
-        }while(subjects->next());
+        }while(subjects.next());
     }
     i++;
     j = 0;
-    if(students->first()&&subjects->first()){
+    if(students->first()&&subjects.first()){
         do{
             QLabel *name = new QLabel;
             name->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum );
@@ -110,15 +112,15 @@ void EducationProgressMainWindow::showTable(int GroupID){
 
             do{
                 j++;
-                QSqlQuery *data = new QSqlQuery(dbHelper.db);
-                data->exec("SELECT mark from education_progress WHERE student = "+students->value((int)DatabaseHelper::ColumnsOfStudent::ID).toString()
-                           +" AND subject = "+subjects->value(0).toString()+" AND semester = "+QString().number(ui->comboBoxSemester->currentIndex()));
+                QSqlQuery data = dbHelper.exec("SELECT mark from education_progress WHERE student = "+students->value((int)DatabaseHelper::ColumnsOfStudent::ID).toString()
+                                                +" AND subject = "+subjects.value(0).toString()+" AND semester = "+QString().number(ui->comboBoxSemester->currentIndex()));
+
                 QLabel *mark = new QLabel;
 
                 mark->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum );
                 mark->setStyleSheet("background-color: rgb(203, 250, 255)");
-                if (data->first()){
-                    mark->setText(data->value(0).toString());
+                if (data.first()){
+                    mark->setText(data.value(0).toString());
                     Table->addWidget(mark, i , j);
                 }else {
                     mark->setText("/");
@@ -126,8 +128,8 @@ void EducationProgressMainWindow::showTable(int GroupID){
                 }
 
 
-            }while(subjects->next());
-            subjects->first();
+            }while(subjects.next());
+            subjects.first();
             i++;
             j = 0;
         }while(students->next());

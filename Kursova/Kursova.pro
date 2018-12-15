@@ -36,7 +36,9 @@ SOURCES += \
     EducationProgressForms/InputForms/departmentsinputform.cpp \
     EducationProgressForms/InputForms/groupinputform.cpp \
     EducationProgressForms/InputForms/specialiyinputform.cpp \
-    EducationProgressForms/InputForms/markinputform.cpp
+    EducationProgressForms/InputForms/markinputform.cpp \
+    EducationProgressForms/repairdatamainwindow.cpp \
+    EducationProgressForms/RepairForms/departmentrepairform.cpp
 
 HEADERS += \
     databasehelper.h \
@@ -49,7 +51,10 @@ HEADERS += \
     EducationProgressForms/InputForms/departmentsinputform.h \
     EducationProgressForms/InputForms/groupinputform.h \
     EducationProgressForms/InputForms/specialiyinputform.h \
-    EducationProgressForms/InputForms/markinputform.h
+    EducationProgressForms/InputForms/markinputform.h \
+    EducationProgressForms/repairdatamainwindow.h \
+    EducationProgressForms/RepairForms/departmentrepairform.h
+
 
 FORMS += \
     EducationProgressForms/educationprogressmainwindow.ui \
@@ -61,7 +66,10 @@ FORMS += \
     EducationProgressForms/InputForms/departmentsinputform.ui \
     EducationProgressForms/InputForms/groupinputform.ui \
     EducationProgressForms/InputForms/specialiyinputform.ui \
-    EducationProgressForms/InputForms/markinputform.ui
+    EducationProgressForms/InputForms/markinputform.ui \
+    EducationProgressForms/repairdatamainwindow.ui \
+    EducationProgressForms/RepairForms/departmentrepairform.ui
+
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

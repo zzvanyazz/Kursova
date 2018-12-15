@@ -25,7 +25,7 @@ public slots:
 private:
     int currentGroup;
     QList<QPair<QLineEdit*, int>> lines;
-    DatabaseHelper dbHelper;
+
     Ui::MarkInputForm *ui;
     QuickAccessPanelItem *panel;
 };

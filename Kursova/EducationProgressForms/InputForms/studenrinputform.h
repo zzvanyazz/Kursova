@@ -22,7 +22,7 @@ private slots:
 
 private:
     Ui::StudenrInputForm *ui;
-    DatabaseHelper dbHelper;
+
 };
 
 #endif // STUDENRINPUTFORM_H

@@ -36,7 +36,7 @@ private:
     QStack<QPair<Status, int>> parentList;
     QList<QPair<QPushButton*, int>> childs;
     QList<int> itemsID;
-    DatabaseHelper dbHelper;
+
     Status status;
 
      void Init(QString name,  Status status,int thisID);

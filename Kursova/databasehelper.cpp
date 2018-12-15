@@ -15,20 +15,23 @@ DatabaseHelper::DatabaseHelper(){
 
 
 
+
 }
 DatabaseHelper::~DatabaseHelper(){
     db.close();
 }
 
 
-bool DatabaseHelper::exec(QString e){
+QSqlQuery DatabaseHelper::exec(QString e){
+    if(!db.isOpen())  {  db =  QSqlDatabase::addDatabase("QSQLITE");
+        db.setDatabaseName("college.db");
+    }
+    if(!db.open()) {
+        QMessageBox::warning(nullptr, "Error open", db.lastError().text());
 
-    QSqlQuery query(db);
+    }
 
-    if(! query.exec(e)){
-        QMessageBox::warning(nullptr, "Error", query.lastError().text());
-        return false;
-    }else return true;
+    return db.exec(e);
 
 
 

@@ -3,14 +3,14 @@
 #define DatabasePath "college.db"
 #include <QtSql>
 
-class DatabaseHelper
+static class DatabaseHelper
 {
 
 
     void chek(QSqlQuery*);
-
+ QSqlDatabase db ;
 public:
-     QSqlDatabase db ;
+
 
 
 
@@ -29,7 +29,7 @@ public:
     DatabaseHelper();
     ~DatabaseHelper();
 
-    bool exec(QString);
+    QSqlQuery exec(QString);
 
 
 
@@ -87,6 +87,6 @@ public:
 
 
 
-};
+} dbHelper;
 
 #endif // DATABASEHELPER_H

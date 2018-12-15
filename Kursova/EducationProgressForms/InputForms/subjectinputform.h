@@ -21,7 +21,7 @@ private slots:
     void subjectValueChanged(int);
 
 private:
-    DatabaseHelper dbHelper;
+
     Ui::SubjectInputForm *ui;
     QList<QLineEdit*> lines;
 };

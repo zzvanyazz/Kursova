@@ -6,6 +6,8 @@
 #include <QDebug>
 #include <EducationProgressForms/educationprogressmainwindow.h>
 #include <EducationProgressForms/adddatawindow.h>
+#include <EducationProgressForms/RepairForms/departmentrepairform.h>
+
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
@@ -18,7 +20,7 @@ int main(int argc, char *argv[])
     qDebug() << stack.pop() << endl;
     qDebug() <<  "test 3 " << endl;
 
-    EducationProgressMainWindow w;
+    DepartmentRepairForm w;
 
     w.show();
 

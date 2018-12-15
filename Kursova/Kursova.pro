@@ -39,7 +39,11 @@ SOURCES += \
     EducationProgressForms/InputForms/markinputform.cpp \
     EducationProgressForms/repairdatamainwindow.cpp \
     EducationProgressForms/RepairForms/departmentrepairform.cpp \
-    EducationProgressForms/RepairForms/specialityrepairform.cpp
+    EducationProgressForms/RepairForms/specialityrepairform.cpp \
+    EducationProgressForms/RepairForms/grouprepairform.cpp \
+    EducationProgressForms/RepairForms/studentrepairform.cpp \
+    EducationProgressForms/RepairForms/lecturerrepairform.cpp \
+    EducationProgressForms/RepairForms/subjectrepairform.cpp
 
 HEADERS += \
     databasehelper.h \
@@ -55,7 +59,11 @@ HEADERS += \
     EducationProgressForms/InputForms/markinputform.h \
     EducationProgressForms/repairdatamainwindow.h \
     EducationProgressForms/RepairForms/departmentrepairform.h \
-    EducationProgressForms/RepairForms/specialityrepairform.h
+    EducationProgressForms/RepairForms/specialityrepairform.h \
+    EducationProgressForms/RepairForms/grouprepairform.h \
+    EducationProgressForms/RepairForms/studentrepairform.h \
+    EducationProgressForms/RepairForms/lecturerrepairform.h \
+    EducationProgressForms/RepairForms/subjectrepairform.h
 
 
 FORMS += \
@@ -71,7 +79,11 @@ FORMS += \
     EducationProgressForms/InputForms/markinputform.ui \
     EducationProgressForms/repairdatamainwindow.ui \
     EducationProgressForms/RepairForms/departmentrepairform.ui \
-    EducationProgressForms/RepairForms/specialityrepairform.ui
+    EducationProgressForms/RepairForms/specialityrepairform.ui \
+    EducationProgressForms/RepairForms/grouprepairform.ui \
+    EducationProgressForms/RepairForms/studentrepairform.ui \
+    EducationProgressForms/RepairForms/lecturerrepairform.ui \
+    EducationProgressForms/RepairForms/subjectrepairform.ui
 
 
 # Default rules for deployment.

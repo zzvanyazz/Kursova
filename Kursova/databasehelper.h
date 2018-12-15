@@ -21,8 +21,8 @@ public:
     enum class ColumnsOfGroup             {ID, number, name, spesiality, curator};
     enum class ColumnsOfStudent           {ID, group, name, surname ,lastname , form_of_education};
     enum class ColumsOfLecturers          {ID, name, surname, lastname};
-    enum class ColumnsOfSchedule          {ID, group, day_of_week, number_of_week, number_of_lesson, subject, lecturer, classroom};
-    enum class ColumnsOfEducationProgress {ID, student, group, semester, subject, form_of_control, lecturer, mark};
+    enum class ColumnsOfSchedule          {ID, group, day_of_week, number_of_lesson, subject, lecturer, classroom};
+    enum class ColumnsOfEducationProgress {ID, student, group, semester, subject, mark};
 
 
 

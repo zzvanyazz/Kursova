@@ -32,8 +32,8 @@ void MarkInputForm::groupSelected(int id){
         do{
 
             ui->studentscomboBox->addItem( student->value((int)DatabaseHelper::ColumnsOfStudent::surname).toString()+ " "
-                                   +student->value((int)DatabaseHelper::ColumnsOfStudent::name).toString(),
-                                   student->value((int)DatabaseHelper::ColumnsOfStudent::ID));
+                                           +student->value((int)DatabaseHelper::ColumnsOfStudent::name).toString(),
+                                           student->value((int)DatabaseHelper::ColumnsOfStudent::ID));
 
 
         }while(student->next());
@@ -65,10 +65,25 @@ void MarkInputForm::groupSelected(int id){
             ui->scrollAreaWidgetContents->layout()->addWidget(w);
         }while(subjects->next());
     }else{}
+    QSqlQuery marks = dbHelper.exec("SELECT * FROM education_progress WHERE student = "+QString().number( ui->studentscomboBox->currentData().toInt()));
+    if (marks.first()){
+        do{
+
+            for( QPair<QLineEdit*, int> l : lines){
+                if (l.second == marks.value((int)DatabaseHelper::ColumnsOfEducationProgress::subject).toInt()){
+                    l.first->setText(marks.value((int)DatabaseHelper::ColumnsOfEducationProgress::mark).toString());
+
+                }
+            }
+
+        }while (marks.next()) ;
+
+
+    }
 }
 
 void MarkInputForm::completed(){
-
+    dbHelper.exec("DELETE FROM education_progress WHERE student = "+ui->studentscomboBox->currentData().toString());
     for(QPair<QLineEdit*, int> l : lines){
         if(!l.first->text().isEmpty()){
             dbHelper.addMark(ui->studentscomboBox->currentData().toInt(), currentGroup, ui->comboBoxSemester->currentIndex(), l.second, l.first->text().toInt());

@@ -5,6 +5,7 @@
 #include <EducationProgressForms/quickaccesspanelitem.h>
 #include <EducationProgressForms/adddatawindow.h>
 #include <EducationProgressForms/InputForms/markinputform.h>
+#include <EducationProgressForms/repairdatamainwindow.h>
 
 EducationProgressMainWindow::EducationProgressMainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -14,8 +15,9 @@ EducationProgressMainWindow::EducationProgressMainWindow(QWidget *parent) :
     ui->setupUi(this);
 
     connect(ui->ButtonAddPanelItem, SIGNAL (pressed()),this, SLOT (addItemQuickAccessPanel()));
-    connect(ui->ButtonShowAddWindow2, SIGNAL (pressed()),this, SLOT (showAddDataWindow()));
+    connect(ui->ButtonShowAddWindow, SIGNAL (pressed()),this, SLOT (showAddDataWindow()));
     connect(ui->ButtonShowInpuMarksForm, SIGNAL (pressed()),this, SLOT (showMarkInputForm()));
+    connect(ui->ButtonShowRepairWindow, &QPushButton::pressed, this, &EducationProgressMainWindow::showRepairWindow);
     connect(ui->CheckFormOfEducation, &QCheckBox::stateChanged, this, &EducationProgressMainWindow::FormEducationChanged);
 
 
@@ -136,6 +138,12 @@ void EducationProgressMainWindow::showTable(int GroupID){
     }
     else;
 
+}
+
+
+void EducationProgressMainWindow::showRepairWindow(){
+    RepairDataMainWindow *r = new RepairDataMainWindow();
+    r->show();
 }
 
 

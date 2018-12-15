@@ -28,6 +28,7 @@ private slots:
     void showTable(int);
 void FormEducationChanged();
     void showMarkInputForm();
+    void showRepairWindow();
 
 
 private:

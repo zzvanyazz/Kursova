@@ -10,6 +10,7 @@ DepartmentRepairForm::DepartmentRepairForm(QWidget *parent) :
     ui->setupUi(this);
     connect(ui->ButtonOk, &QPushButton::pressed, this, &DepartmentRepairForm::completed);
     connect(ui->ButtonDelete, &QPushButton::pressed, this, &DepartmentRepairForm::deleteDepartment );
+    connect(ui->ButtonCancel, &QPushButton::pressed, this, &DepartmentRepairForm::cancel );
     setDepartments();
 }
 

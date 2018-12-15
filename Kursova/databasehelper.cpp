@@ -70,7 +70,7 @@ void DatabaseHelper::addStudent(int grup, QString name, QString surname, QString
 
 void DatabaseHelper::addSpesialty(int department, QString name){
     QSqlQuery query(db);
-    query.prepare("INSERT INTO spesialty (department, name) "
+    query.prepare("INSERT INTO spesiality (department, name) "
                   "VALUES (:department, :name)");
     query.bindValue(":department", department);
     query.bindValue(":name", name);
@@ -224,7 +224,7 @@ void DatabaseHelper::setStudent(int ID, int grup, QString name, QString surname,
 }
 void DatabaseHelper::setSpesialty(int ID, int department, QString name){
     QSqlQuery query(db);
-    query.prepare("UPDATE spesialty SET department = 1,   name = :name  WHERE ID = "+QString().number(ID));
+    query.prepare("UPDATE spesiality SET department = 1,   name = :name  WHERE ID = "+QString().number(ID));
 
 
     query.bindValue(":department", department);

@@ -356,7 +356,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="ButtonShowAddWindow2">
+           <widget class="QPushButton" name="ButtonShowAddWindow">
             <property name="text">
              <string>+</string>
             </property>
@@ -370,7 +370,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton">
+           <widget class="QPushButton" name="ButtonShowRepairWindow">
             <property name="text">
              <string>Редагувати</string>
             </property>

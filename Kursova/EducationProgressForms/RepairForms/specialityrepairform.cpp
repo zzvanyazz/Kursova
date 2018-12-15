@@ -9,10 +9,11 @@ SpecialityRepairForm::SpecialityRepairForm(QWidget *parent) :
 {
     ui->setupUi(this);
     connect(ui->ButtonOk, &QPushButton::pressed, this, &SpecialityRepairForm::completed);
-        connect(ui->ButtonDelete, &QPushButton::pressed, this, &SpecialityRepairForm::deleteDepartment );
-        setSpesiality();
+    connect(ui->ButtonDelete, &QPushButton::pressed, this, &SpecialityRepairForm::deleteDepartment );
+    connect(ui->ButtonCancel, &QPushButton::pressed, this, &SpecialityRepairForm::cancel );
+    setSpesiality();
 
-       ui->findComboBox->addItem("sadvcdscv");
+
 }
 
 void SpecialityRepairForm::setSpesiality(){
@@ -20,19 +21,19 @@ void SpecialityRepairForm::setSpesiality(){
     ui->findComboBox->clear();
     int i = 0;
 
-    if(!spesiality->first()) {QMessageBox::warning(this, "Помилка", "Ви не ввели жодної спеціальності");}
+    if(!spesiality->first()) {QMessageBox::warning(this, "Помилка", "Ви не ввели жодної спеціальності"); cancel();}
 
     else{
 
         do{
-            QMessageBox::warning(this, "Помилка", spesiality->value((int)DatabaseHelper::ColumnsOfSpesiality::name).toString());
-            ui->findComboBox->addItem("spesiality->value((int)DatabaseHelper::ColumnsOfSpesiality::name).toString()");
+            // QMessageBox::warning(this, "Помилка", spesiality->value((int)DatabaseHelper::ColumnsOfSpesiality::name).toString());
+            ui->findComboBox->addItem(spesiality->value((int)DatabaseHelper::ColumnsOfSpesiality::name).toString());
             spe.append(QPair<int, int>(i, spesiality->value((int)DatabaseHelper::ColumnsOfSpesiality::ID).toInt()));
             i++;
         }while(spesiality->next());
     }
     QSqlQuery* departments =  dbHelper.getDepartment();
-    ui->findComboBox->clear();
+
     if(!departments->first()) {QMessageBox::warning(this, "Помилка", "Ви не ввели жодного відділення");}
     else{
         do{
@@ -53,8 +54,8 @@ void SpecialityRepairForm::deleteDepartment(){
     for(QPair<int, int > i : spe ){
         if(c == i.first){
             dbHelper.exec("DELETE FROM spesiality WHERE ID = "+QString().number(i.second));
-        setSpesiality();
-        return;
+            setSpesiality();
+            return;
         }
     }
 }
@@ -72,7 +73,8 @@ void SpecialityRepairForm::completed(){
     }
 }
 void SpecialityRepairForm::cancel(){
-     ((QMainWindow*) parentWidget()->parent())->hide();
+    hide();
+    ((QMainWindow*) parentWidget()->parent())->hide();
 }
 
 

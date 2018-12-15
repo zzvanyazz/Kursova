@@ -92,6 +92,7 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 DISTFILES += \
-    diagram.qmodel
+    diagram.qmodel \
+    diagram_copy.qmodel
 
 STATECHARTS +=

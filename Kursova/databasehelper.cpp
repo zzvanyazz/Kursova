@@ -160,7 +160,7 @@ QSqlQuery* DatabaseHelper::getStudent(QString where ){
 QSqlQuery* DatabaseHelper::getSpesialty(QString where ){
     QSqlQuery*  query = new QSqlQuery(db);
 
-    query->exec("SELECT * FROM spesialty WHERE " + where);
+    query->exec("SELECT * FROM spesiality WHERE " + where);
 
     return query;
 }

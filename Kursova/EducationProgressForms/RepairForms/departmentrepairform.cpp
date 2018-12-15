@@ -36,18 +36,26 @@ void DepartmentRepairForm::deleteDepartment(){
 
     int c = ui->findComboBox->currentIndex();
     for(QPair<int, int > i : dep ){
-        if(c == i.first)
+        if(c == i.first){
             dbHelper.exec("DELETE FROM departments WHERE ID = "+QString().number(i.second));
-        setDepartments();
-        return;
+            setDepartments();
+            return;
+        }
     }
 
 }
 void DepartmentRepairForm::completed(){
     if(ui->lineEditInput->text().isEmpty()) return;
-    dbHelper.setDepartment(ui->findComboBox->currentData().toInt(), ui->lineEditInput->text());
-    ui->lineEditInput->clear();
-    setDepartments();
+    int c = ui->findComboBox->currentIndex();
+    for(QPair<int, int > i : dep ){
+        if(c == i.first){
+            dbHelper.setDepartment(i.second, ui->lineEditInput->text());
+            ui->lineEditInput->clear();
+            setDepartments();
+
+            return;
+        }
+    }
 
 }
 void DepartmentRepairForm::cancel(){

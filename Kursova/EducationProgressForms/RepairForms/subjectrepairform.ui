@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>DepartmentRepairForm</class>
- <widget class="QWidget" name="DepartmentRepairForm">
+ <class>SubjectRepairForm</class>
+ <widget class="QWidget" name="SubjectRepairForm">
   <property name="geometry">
    <rect>
     <x>0</x>

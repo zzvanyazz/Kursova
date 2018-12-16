@@ -65,7 +65,8 @@ void MarkInputForm::groupSelected(int id){
             ui->scrollAreaWidgetContents->layout()->addWidget(w);
         }while(subjects->next());
     }else{}
-    QSqlQuery marks = dbHelper.exec("SELECT * FROM education_progress WHERE student = "+QString().number( ui->studentscomboBox->currentData().toInt()));
+    QSqlQuery marks = dbHelper.exec("SELECT * FROM education_progress WHERE student = "+QString().number( ui->studentscomboBox->currentData().toInt()) +
+                                    " and semester = " + QString().number(ui->comboBoxSemester->currentIndex()));
     if (marks.first()){
         do{
 

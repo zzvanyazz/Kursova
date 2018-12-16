@@ -173,7 +173,7 @@ qmake: FORCE
 qmake_all: FORCE
 
 dist:
-	$(ZIP) Kursova.zip $(SOURCES) $(DIST) ..\Kursova\Kursova.pro E:\Qt\5.11.2\mingw53_32\mkspecs\features\spec_pre.prf E:\Qt\5.11.2\mingw53_32\mkspecs\qdevice.pri E:\Qt\5.11.2\mingw53_32\mkspecs\features\device_config.prf E:\Qt\5.11.2\mingw53_32\mkspecs\common\sanitize.conf E:\Qt\5.11.2\mingw53_32\mkspecs\common\gcc-base.conf E:\Qt\5.11.2\mingw53_32\mkspecs\common\g++-base.conf E:\Qt\5.11.2\mingw53_32\mkspecs\common\angle.conf E:\Qt\5.11.2\mingw53_32\mkspecs\common\windows-vulkan.conf E:\Qt\5.11.2\mingw53_32\mkspecs\common\g++-win32.conf E:\Qt\5.11.2\mingw53_32\mkspecs\qconfig.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3danimation.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3danimation_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dcore.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dcore_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dextras.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dextras_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dinput.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dinput_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dlogic.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dlogic_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquick.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquick_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickanimation.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickanimation_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickextras.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickextras_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickinput.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickinput_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickrender.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickrender_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickscene2d.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickscene2d_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3drender.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3drender_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_accessibility_support_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axbase.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axbase_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axcontainer.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axcontainer_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axserver.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axserver_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_bluetooth.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_bluetooth_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_bootstrap_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_charts.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_charts_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_concurrent.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_concurrent_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_core.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_core_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_datavisualization.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_datavisualization_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_dbus.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_dbus_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_designer.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_designer_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_designercomponents_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_devicediscovery_support_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_edid_support_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_egl_support_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_eventdispatcher_support_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_fb_support_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_fontdatabase_support_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_gamepad.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_gamepad_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_gui.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_gui_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_help.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_help_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_location.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_location_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_multimedia.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_multimedia_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_multimediawidgets.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_multimediawidgets_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_network.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_network_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_networkauth.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_networkauth_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_nfc.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_nfc_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_opengl.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_opengl_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_openglextensions.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_openglextensions_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_packetprotocol_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_platformcompositor_support_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_positioning.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_positioning_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_positioningquick.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_positioningquick_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_printsupport.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_printsupport_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_purchasing.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_purchasing_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qml.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qml_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qmldebug_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qmldevtools_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qmltest.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qmltest_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quick.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quick_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quickcontrols2.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quickcontrols2_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quickparticles_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quicktemplates2_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quickwidgets.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quickwidgets_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_remoteobjects.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_remoteobjects_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_repparser.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_repparser_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_script.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_script_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_scripttools.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_scripttools_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_scxml.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_scxml_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_sensors.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_sensors_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_serialbus.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_serialbus_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_serialport.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_serialport_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_sql.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_sql_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_svg.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_svg_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_testlib.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_testlib_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_texttospeech.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_texttospeech_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_theme_support_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_uiplugin.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_uitools.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_uitools_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_webchannel.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_webchannel_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_websockets.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_websockets_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_widgets.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_widgets_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_windowsuiautomation_support_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_winextras.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_winextras_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_xml.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_xml_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_xmlpatterns.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_xmlpatterns_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\features\qt_functions.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\qt_config.prf E:\Qt\5.11.2\mingw53_32\mkspecs\win32-g++\qmake.conf E:\Qt\5.11.2\mingw53_32\mkspecs\features\spec_post.prf .qmake.stash E:\Qt\5.11.2\mingw53_32\mkspecs\features\exclusive_builds.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\toolchain.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\default_pre.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\win32\default_pre.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\resolve_config.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\exclusive_builds_post.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\default_post.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\build_pass.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\qml_debug.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\precompile_header.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\warn_on.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\qt.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\resources.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\moc.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\win32\opengl.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\uic.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\qmake_use.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\file_copies.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\win32\windows.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\testcase_targets.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\exceptions.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\yacc.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\lex.prf ..\Kursova\Kursova.pro E:\Qt\5.11.2\mingw53_32\lib\qtmaind.prl E:\Qt\5.11.2\mingw53_32\lib\Qt5Widgetsd.prl E:\Qt\5.11.2\mingw53_32\lib\Qt5Guid.prl E:\Qt\5.11.2\mingw53_32\lib\Qt5Sqld.prl E:\Qt\5.11.2\mingw53_32\lib\Qt5Cored.prl    E:\Qt\5.11.2\mingw53_32\mkspecs\features\data\dummy.cpp ..\Kursova\databasehelper.h ..\Kursova\EducationProgressForms\educationprogressmainwindow.h ..\Kursova\EducationProgressForms\quickaccesspanelitem.h ..\Kursova\EducationProgressForms\adddatawindow.h ..\Kursova\EducationProgressForms\InputForms\studenrinputform.h ..\Kursova\EducationProgressForms\InputForms\lecturerinputform.h ..\Kursova\EducationProgressForms\InputForms\subjectinputform.h ..\Kursova\EducationProgressForms\InputForms\departmentsinputform.h ..\Kursova\EducationProgressForms\InputForms\groupinputform.h ..\Kursova\EducationProgressForms\InputForms\specialiyinputform.h ..\Kursova\EducationProgressForms\InputForms\markinputform.h ..\Kursova\EducationProgressForms\repairdatamainwindow.h ..\Kursova\EducationProgressForms\RepairForms\departmentrepairform.h ..\Kursova\EducationProgressForms\RepairForms\specialityrepairform.h ..\Kursova\EducationProgressForms\RepairForms\grouprepairform.h ..\Kursova\EducationProgressForms\RepairForms\studentrepairform.h ..\Kursova\EducationProgressForms\RepairForms\lecturerrepairform.h ..\Kursova\EducationProgressForms\RepairForms\subjectrepairform.h  ..\Kursova\main.cpp ..\Kursova\databasehelper.cpp ..\Kursova\EducationProgressForms\educationprogressmainwindow.cpp ..\Kursova\EducationProgressForms\quickaccesspanelitem.cpp ..\Kursova\EducationProgressForms\adddatawindow.cpp ..\Kursova\EducationProgressForms\InputForms\studenrinputform.cpp ..\Kursova\EducationProgressForms\InputForms\lecturerinputform.cpp ..\Kursova\EducationProgressForms\InputForms\subjectinputform.cpp ..\Kursova\EducationProgressForms\InputForms\departmentsinputform.cpp ..\Kursova\EducationProgressForms\InputForms\groupinputform.cpp ..\Kursova\EducationProgressForms\InputForms\specialiyinputform.cpp ..\Kursova\EducationProgressForms\InputForms\markinputform.cpp ..\Kursova\EducationProgressForms\repairdatamainwindow.cpp ..\Kursova\EducationProgressForms\RepairForms\departmentrepairform.cpp ..\Kursova\EducationProgressForms\RepairForms\specialityrepairform.cpp ..\Kursova\EducationProgressForms\RepairForms\grouprepairform.cpp ..\Kursova\EducationProgressForms\RepairForms\studentrepairform.cpp ..\Kursova\EducationProgressForms\RepairForms\lecturerrepairform.cpp ..\Kursova\EducationProgressForms\RepairForms\subjectrepairform.cpp ..\Kursova\EducationProgressForms\educationprogressmainwindow.ui ..\Kursova\EducationProgressForms\quickaccesspanelitem.ui ..\Kursova\EducationProgressForms\adddatawindow.ui ..\Kursova\EducationProgressForms\InputForms\studenrinputform.ui ..\Kursova\EducationProgressForms\InputForms\lecturerinputform.ui ..\Kursova\EducationProgressForms\InputForms\subjectinputform.ui ..\Kursova\EducationProgressForms\InputForms\departmentsinputform.ui ..\Kursova\EducationProgressForms\InputForms\groupinputform.ui ..\Kursova\EducationProgressForms\InputForms\specialiyinputform.ui ..\Kursova\EducationProgressForms\InputForms\markinputform.ui ..\Kursova\EducationProgressForms\repairdatamainwindow.ui ..\Kursova\EducationProgressForms\RepairForms\departmentrepairform.ui ..\Kursova\EducationProgressForms\RepairForms\specialityrepairform.ui ..\Kursova\EducationProgressForms\RepairForms\grouprepairform.ui ..\Kursova\EducationProgressForms\RepairForms\studentrepairform.ui ..\Kursova\EducationProgressForms\RepairForms\lecturerrepairform.ui EducationProgressForms\RepairForms\subjectrepairform.ui    
+	$(ZIP) Kursova.zip $(SOURCES) $(DIST) ..\Kursova\Kursova.pro E:\Qt\5.11.2\mingw53_32\mkspecs\features\spec_pre.prf E:\Qt\5.11.2\mingw53_32\mkspecs\qdevice.pri E:\Qt\5.11.2\mingw53_32\mkspecs\features\device_config.prf E:\Qt\5.11.2\mingw53_32\mkspecs\common\sanitize.conf E:\Qt\5.11.2\mingw53_32\mkspecs\common\gcc-base.conf E:\Qt\5.11.2\mingw53_32\mkspecs\common\g++-base.conf E:\Qt\5.11.2\mingw53_32\mkspecs\common\angle.conf E:\Qt\5.11.2\mingw53_32\mkspecs\common\windows-vulkan.conf E:\Qt\5.11.2\mingw53_32\mkspecs\common\g++-win32.conf E:\Qt\5.11.2\mingw53_32\mkspecs\qconfig.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3danimation.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3danimation_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dcore.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dcore_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dextras.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dextras_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dinput.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dinput_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dlogic.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dlogic_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquick.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquick_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickanimation.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickanimation_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickextras.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickextras_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickinput.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickinput_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickrender.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickrender_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickscene2d.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3dquickscene2d_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3drender.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_3drender_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_accessibility_support_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axbase.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axbase_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axcontainer.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axcontainer_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axserver.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_axserver_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_bluetooth.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_bluetooth_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_bootstrap_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_charts.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_charts_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_concurrent.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_concurrent_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_core.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_core_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_datavisualization.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_datavisualization_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_dbus.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_dbus_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_designer.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_designer_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_designercomponents_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_devicediscovery_support_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_edid_support_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_egl_support_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_eventdispatcher_support_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_fb_support_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_fontdatabase_support_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_gamepad.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_gamepad_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_gui.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_gui_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_help.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_help_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_location.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_location_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_multimedia.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_multimedia_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_multimediawidgets.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_multimediawidgets_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_network.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_network_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_networkauth.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_networkauth_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_nfc.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_nfc_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_opengl.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_opengl_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_openglextensions.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_openglextensions_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_packetprotocol_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_platformcompositor_support_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_positioning.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_positioning_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_positioningquick.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_positioningquick_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_printsupport.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_printsupport_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_purchasing.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_purchasing_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qml.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qml_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qmldebug_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qmldevtools_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qmltest.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qmltest_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_qtmultimediaquicktools_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quick.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quick_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quickcontrols2.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quickcontrols2_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quickparticles_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quicktemplates2_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quickwidgets.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_quickwidgets_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_remoteobjects.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_remoteobjects_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_repparser.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_repparser_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_script.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_script_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_scripttools.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_scripttools_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_scxml.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_scxml_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_sensors.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_sensors_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_serialbus.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_serialbus_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_serialport.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_serialport_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_sql.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_sql_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_svg.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_svg_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_testlib.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_testlib_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_texttospeech.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_texttospeech_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_theme_support_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_uiplugin.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_uitools.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_uitools_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_webchannel.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_webchannel_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_websockets.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_websockets_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_widgets.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_widgets_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_windowsuiautomation_support_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_winextras.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_winextras_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_xml.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_xml_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_xmlpatterns.pri E:\Qt\5.11.2\mingw53_32\mkspecs\modules\qt_lib_xmlpatterns_private.pri E:\Qt\5.11.2\mingw53_32\mkspecs\features\qt_functions.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\qt_config.prf E:\Qt\5.11.2\mingw53_32\mkspecs\win32-g++\qmake.conf E:\Qt\5.11.2\mingw53_32\mkspecs\features\spec_post.prf .qmake.stash E:\Qt\5.11.2\mingw53_32\mkspecs\features\exclusive_builds.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\toolchain.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\default_pre.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\win32\default_pre.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\resolve_config.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\exclusive_builds_post.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\default_post.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\build_pass.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\qml_debug.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\precompile_header.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\warn_on.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\qt.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\resources.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\moc.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\win32\opengl.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\uic.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\qmake_use.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\file_copies.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\win32\windows.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\testcase_targets.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\exceptions.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\yacc.prf E:\Qt\5.11.2\mingw53_32\mkspecs\features\lex.prf ..\Kursova\Kursova.pro E:\Qt\5.11.2\mingw53_32\lib\qtmaind.prl E:\Qt\5.11.2\mingw53_32\lib\Qt5Widgetsd.prl E:\Qt\5.11.2\mingw53_32\lib\Qt5Guid.prl E:\Qt\5.11.2\mingw53_32\lib\Qt5Sqld.prl E:\Qt\5.11.2\mingw53_32\lib\Qt5Cored.prl    E:\Qt\5.11.2\mingw53_32\mkspecs\features\data\dummy.cpp ..\Kursova\databasehelper.h ..\Kursova\EducationProgressForms\educationprogressmainwindow.h ..\Kursova\EducationProgressForms\quickaccesspanelitem.h ..\Kursova\EducationProgressForms\adddatawindow.h ..\Kursova\EducationProgressForms\InputForms\studenrinputform.h ..\Kursova\EducationProgressForms\InputForms\lecturerinputform.h ..\Kursova\EducationProgressForms\InputForms\subjectinputform.h ..\Kursova\EducationProgressForms\InputForms\departmentsinputform.h ..\Kursova\EducationProgressForms\InputForms\groupinputform.h ..\Kursova\EducationProgressForms\InputForms\specialiyinputform.h ..\Kursova\EducationProgressForms\InputForms\markinputform.h ..\Kursova\EducationProgressForms\repairdatamainwindow.h ..\Kursova\EducationProgressForms\RepairForms\departmentrepairform.h ..\Kursova\EducationProgressForms\RepairForms\specialityrepairform.h ..\Kursova\EducationProgressForms\RepairForms\grouprepairform.h ..\Kursova\EducationProgressForms\RepairForms\studentrepairform.h ..\Kursova\EducationProgressForms\RepairForms\lecturerrepairform.h ..\Kursova\EducationProgressForms\RepairForms\subjectrepairform.h  ..\Kursova\main.cpp ..\Kursova\databasehelper.cpp ..\Kursova\EducationProgressForms\educationprogressmainwindow.cpp ..\Kursova\EducationProgressForms\quickaccesspanelitem.cpp ..\Kursova\EducationProgressForms\adddatawindow.cpp ..\Kursova\EducationProgressForms\InputForms\studenrinputform.cpp ..\Kursova\EducationProgressForms\InputForms\lecturerinputform.cpp ..\Kursova\EducationProgressForms\InputForms\subjectinputform.cpp ..\Kursova\EducationProgressForms\InputForms\departmentsinputform.cpp ..\Kursova\EducationProgressForms\InputForms\groupinputform.cpp ..\Kursova\EducationProgressForms\InputForms\specialiyinputform.cpp ..\Kursova\EducationProgressForms\InputForms\markinputform.cpp ..\Kursova\EducationProgressForms\repairdatamainwindow.cpp ..\Kursova\EducationProgressForms\RepairForms\departmentrepairform.cpp ..\Kursova\EducationProgressForms\RepairForms\specialityrepairform.cpp ..\Kursova\EducationProgressForms\RepairForms\grouprepairform.cpp ..\Kursova\EducationProgressForms\RepairForms\studentrepairform.cpp ..\Kursova\EducationProgressForms\RepairForms\lecturerrepairform.cpp ..\Kursova\EducationProgressForms\RepairForms\subjectrepairform.cpp ..\Kursova\EducationProgressForms\educationprogressmainwindow.ui ..\Kursova\EducationProgressForms\quickaccesspanelitem.ui ..\Kursova\EducationProgressForms\adddatawindow.ui ..\Kursova\EducationProgressForms\InputForms\studenrinputform.ui ..\Kursova\EducationProgressForms\InputForms\lecturerinputform.ui ..\Kursova\EducationProgressForms\InputForms\subjectinputform.ui ..\Kursova\EducationProgressForms\InputForms\departmentsinputform.ui ..\Kursova\EducationProgressForms\InputForms\groupinputform.ui ..\Kursova\EducationProgressForms\InputForms\specialiyinputform.ui ..\Kursova\EducationProgressForms\InputForms\markinputform.ui ..\Kursova\EducationProgressForms\repairdatamainwindow.ui ..\Kursova\EducationProgressForms\RepairForms\departmentrepairform.ui ..\Kursova\EducationProgressForms\RepairForms\specialityrepairform.ui ..\Kursova\EducationProgressForms\RepairForms\grouprepairform.ui ..\Kursova\EducationProgressForms\RepairForms\studentrepairform.ui ..\Kursova\EducationProgressForms\RepairForms\lecturerrepairform.ui ..\Kursova\EducationProgressForms\RepairForms\subjectrepairform.ui    
 
 clean: compiler_clean 
 	-$(DEL_FILE) debug\main.o debug\databasehelper.o debug\educationprogressmainwindow.o debug\quickaccesspanelitem.o debug\adddatawindow.o debug\studenrinputform.o debug\lecturerinputform.o debug\subjectinputform.o debug\departmentsinputform.o debug\groupinputform.o debug\specialiyinputform.o debug\markinputform.o debug\repairdatamainwindow.o debug\departmentrepairform.o debug\specialityrepairform.o debug\grouprepairform.o debug\studentrepairform.o debug\lecturerrepairform.o debug\subjectrepairform.o debug\moc_educationprogressmainwindow.o debug\moc_quickaccesspanelitem.o debug\moc_adddatawindow.o debug\moc_studenrinputform.o debug\moc_lecturerinputform.o debug\moc_subjectinputform.o debug\moc_departmentsinputform.o debug\moc_groupinputform.o debug\moc_specialiyinputform.o debug\moc_markinputform.o debug\moc_repairdatamainwindow.o debug\moc_departmentrepairform.o debug\moc_specialityrepairform.o debug\moc_grouprepairform.o debug\moc_studentrepairform.o debug\moc_lecturerrepairform.o debug\moc_subjectrepairform.o
@@ -4374,9 +4374,9 @@ ui_lecturerrepairform.h: ../Kursova/EducationProgressForms/RepairForms/lecturerr
 		E:/Qt/5.11.2/mingw53_32/bin/uic.exe
 	E:\Qt\5.11.2\mingw53_32\bin\uic.exe ..\Kursova\EducationProgressForms\RepairForms\lecturerrepairform.ui -o ui_lecturerrepairform.h
 
-ui_subjectrepairform.h: EducationProgressForms/RepairForms/subjectrepairform.ui \
+ui_subjectrepairform.h: ../Kursova/EducationProgressForms/RepairForms/subjectrepairform.ui \
 		E:/Qt/5.11.2/mingw53_32/bin/uic.exe
-	E:\Qt\5.11.2\mingw53_32\bin\uic.exe EducationProgressForms\RepairForms\subjectrepairform.ui -o ui_subjectrepairform.h
+	E:\Qt\5.11.2\mingw53_32\bin\uic.exe ..\Kursova\EducationProgressForms\RepairForms\subjectrepairform.ui -o ui_subjectrepairform.h
 
 compiler_yacc_decl_make_all:
 compiler_yacc_decl_clean:
@@ -5194,48 +5194,19 @@ debug/educationprogressmainwindow.o: ../Kursova/EducationProgressForms/education
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qstandarditemmodel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlQueryModel \
 		ui_educationprogressmainwindow.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QCheckBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QComboBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLineEdit \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMenuBar \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmenubar.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmenu.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QScrollArea \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qscrollarea.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QStatusBar \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstatusbar.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QtWidgets \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QtWidgetsDepends \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/QtGui \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/QtGuiDepends \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qabstracttextdocumentlayout.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextlayout.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qglyphrun.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qrawfont.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qfontdatabase.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextdocument.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qaccessible.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qaccessiblebridge.h \
@@ -5255,6 +5226,8 @@ debug/educationprogressmainwindow.o: ../Kursova/EducationProgressForms/education
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qgenericmatrix.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qgenericplugin.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qgenericpluginfactory.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qiconengine.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qiconengineplugin.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qimageiohandler.h \
@@ -5327,8 +5300,17 @@ debug/educationprogressmainwindow.o: ../Kursova/EducationProgressForms/education
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtexttable.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtguiversion.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qaccessiblewidget.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qbuttongroup.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcalendarwidget.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcolordialog.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcolormap.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcolumnview.h \
@@ -5368,16 +5350,21 @@ debug/educationprogressmainwindow.o: ../Kursova/EducationProgressForms/education
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgraphicstransform.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/QVector3D \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgraphicsview.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qscrollarea.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgroupbox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qheaderview.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qinputdialog.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qitemeditorfactory.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qkeyeventtransition.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qkeysequenceedit.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlcdnumber.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistwidget.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmdiarea.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmdisubwindow.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmenu.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmenubar.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmouseeventtransition.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qopenglwidget.h \
@@ -5394,6 +5381,7 @@ debug/educationprogressmainwindow.o: ../Kursova/EducationProgressForms/education
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QScrollerProperties \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qscrollerproperties.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/QMetaType \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qshortcut.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsizegrip.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qspinbox.h \
@@ -5401,6 +5389,7 @@ debug/educationprogressmainwindow.o: ../Kursova/EducationProgressForms/education
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsplitter.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstackedlayout.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstackedwidget.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstatusbar.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyleditemdelegate.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstylefactory.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstylepainter.h \
@@ -5685,20 +5674,6 @@ debug/quickaccesspanelitem.o: ../Kursova/EducationProgressForms/quickaccesspanel
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/QPair \
 		ui_quickaccesspanelitem.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/QDebug \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMainWindow \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmainwindow.h \
@@ -5821,30 +5796,15 @@ debug/adddatawindow.o: ../Kursova/EducationProgressForms/adddatawindow.cpp ../Ku
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
 		ui_adddatawindow.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		../Kursova/EducationProgressForms/InputForms/departmentsinputform.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QtWidgets \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QtWidgetsDepends \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/QtCore \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/QtCoreDepends \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractanimation.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstracteventdispatcher.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractitemmodel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractnativeeventfilter.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractproxymodel.h \
@@ -5861,6 +5821,7 @@ debug/adddatawindow.o: ../Kursova/EducationProgressForms/adddatawindow.cpp ../Ku
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcollator.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcommandlineoption.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcommandlineparser.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcryptographichash.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qdatetime.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qdeadlinetimer.h \
@@ -5983,6 +5944,8 @@ debug/adddatawindow.o: ../Kursova/EducationProgressForms/adddatawindow.cpp ../Ku
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qgenericmatrix.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qgenericplugin.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qgenericpluginfactory.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qiconengine.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qiconengineplugin.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qimageiohandler.h \
@@ -6056,6 +6019,7 @@ debug/adddatawindow.o: ../Kursova/EducationProgressForms/adddatawindow.cpp ../Ku
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtexttable.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qvalidator.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtguiversion.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyleoption.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractspinbox.h \
@@ -6070,6 +6034,12 @@ debug/adddatawindow.o: ../Kursova/EducationProgressForms/adddatawindow.cpp ../Ku
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qaccessiblewidget.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qbuttongroup.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcalendarwidget.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
@@ -6079,6 +6049,7 @@ debug/adddatawindow.o: ../Kursova/EducationProgressForms/adddatawindow.cpp ../Ku
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcolumnview.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcombobox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcommandlinkbutton.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcommonstyle.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcompleter.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdatawidgetmapper.h \
@@ -6147,6 +6118,7 @@ debug/adddatawindow.o: ../Kursova/EducationProgressForms/adddatawindow.cpp ../Ku
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QScrollerProperties \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qscrollerproperties.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/QMetaType \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qshortcut.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsizegrip.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qspinbox.h \
@@ -6458,44 +6430,19 @@ debug/studenrinputform.o: ../Kursova/EducationProgressForms/InputForms/studenrin
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlresult.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qtsqlversion.h \
 		ui_studenrinputform.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QCheckBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QComboBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLineEdit \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpinBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qspinbox.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QtWidgets \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QtWidgetsDepends \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/QtGui \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/QtGuiDepends \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qabstracttextdocumentlayout.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextlayout.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qglyphrun.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qrawfont.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qfontdatabase.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextdocument.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qaccessible.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qaccessiblebridge.h \
@@ -6515,6 +6462,8 @@ debug/studenrinputform.o: ../Kursova/EducationProgressForms/InputForms/studenrin
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qgenericmatrix.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qgenericplugin.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qgenericpluginfactory.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qiconengine.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qiconengineplugin.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qimageiohandler.h \
@@ -6587,16 +6536,25 @@ debug/studenrinputform.o: ../Kursova/EducationProgressForms/InputForms/studenrin
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextlist.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtexttable.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtguiversion.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qaccessiblewidget.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qbuttongroup.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcalendarwidget.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcolordialog.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdialog.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcolormap.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcolumnview.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcommandlinkbutton.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcommonstyle.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcompleter.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdatawidgetmapper.h \
@@ -6636,9 +6594,11 @@ debug/studenrinputform.o: ../Kursova/EducationProgressForms/InputForms/studenrin
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgroupbox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qheaderview.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qinputdialog.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qitemeditorfactory.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qkeyeventtransition.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qkeysequenceedit.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlcdnumber.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistwidget.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmainwindow.h \
@@ -6662,8 +6622,10 @@ debug/studenrinputform.o: ../Kursova/EducationProgressForms/InputForms/studenrin
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QScrollerProperties \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qscrollerproperties.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/QMetaType \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qshortcut.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsizegrip.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qspinbox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsplashscreen.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsplitter.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstackedlayout.h \
@@ -6949,41 +6911,19 @@ debug/lecturerinputform.o: ../Kursova/EducationProgressForms/InputForms/lecturer
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlresult.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qtsqlversion.h \
 		ui_lecturerinputform.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLineEdit \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpinBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qspinbox.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QtWidgets \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QtWidgetsDepends \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/QtGui \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/QtGuiDepends \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qabstracttextdocumentlayout.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextlayout.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qglyphrun.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qrawfont.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qfontdatabase.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextdocument.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qaccessible.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qaccessiblebridge.h \
@@ -7003,6 +6943,8 @@ debug/lecturerinputform.o: ../Kursova/EducationProgressForms/InputForms/lecturer
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qgenericmatrix.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qgenericplugin.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qgenericpluginfactory.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qiconengine.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qiconengineplugin.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qimageiohandler.h \
@@ -7075,9 +7017,16 @@ debug/lecturerinputform.o: ../Kursova/EducationProgressForms/InputForms/lecturer
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextlist.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtexttable.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtguiversion.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qaccessiblewidget.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qbuttongroup.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcalendarwidget.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
@@ -7086,6 +7035,7 @@ debug/lecturerinputform.o: ../Kursova/EducationProgressForms/InputForms/lecturer
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcolormap.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcolumnview.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcommandlinkbutton.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcommonstyle.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcompleter.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdatawidgetmapper.h \
@@ -7125,9 +7075,11 @@ debug/lecturerinputform.o: ../Kursova/EducationProgressForms/InputForms/lecturer
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgroupbox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qheaderview.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qinputdialog.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qitemeditorfactory.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qkeyeventtransition.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qkeysequenceedit.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlcdnumber.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistwidget.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmainwindow.h \
@@ -7151,8 +7103,10 @@ debug/lecturerinputform.o: ../Kursova/EducationProgressForms/InputForms/lecturer
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QScrollerProperties \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qscrollerproperties.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/QMetaType \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qshortcut.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsizegrip.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qspinbox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsplashscreen.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsplitter.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstackedlayout.h \
@@ -7661,14 +7615,6 @@ debug/subjectinputform.o: ../Kursova/EducationProgressForms/InputForms/subjectin
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlresult.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qtsqlversion.h \
 		ui_subjectinputform.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QScrollArea \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpinBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		../Kursova/EducationProgressForms/adddatawindow.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMainWindow
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\subjectinputform.o ..\Kursova\EducationProgressForms\InputForms\subjectinputform.cpp
@@ -8150,14 +8096,6 @@ debug/departmentsinputform.o: ../Kursova/EducationProgressForms/InputForms/depar
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlresult.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qtsqlversion.h \
 		ui_departmentsinputform.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QScrollArea \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpinBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		../Kursova/EducationProgressForms/adddatawindow.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMainWindow
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\departmentsinputform.o ..\Kursova\EducationProgressForms\InputForms\departmentsinputform.cpp
@@ -8416,42 +8354,19 @@ debug/groupinputform.o: ../Kursova/EducationProgressForms/InputForms/groupinputf
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlresult.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qtsqlversion.h \
 		ui_groupinputform.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QComboBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLineEdit \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpinBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qspinbox.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QtWidgets \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QtWidgetsDepends \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/QtGui \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/QtGuiDepends \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qabstracttextdocumentlayout.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextlayout.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qglyphrun.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qrawfont.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qfontdatabase.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextdocument.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qaccessible.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qaccessiblebridge.h \
@@ -8471,6 +8386,8 @@ debug/groupinputform.o: ../Kursova/EducationProgressForms/InputForms/groupinputf
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qgenericmatrix.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qgenericplugin.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qgenericpluginfactory.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qiconengine.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qiconengineplugin.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qimageiohandler.h \
@@ -8543,9 +8460,16 @@ debug/groupinputform.o: ../Kursova/EducationProgressForms/InputForms/groupinputf
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextlist.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtexttable.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtguiversion.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qaccessiblewidget.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qbuttongroup.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcalendarwidget.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
@@ -8554,6 +8478,7 @@ debug/groupinputform.o: ../Kursova/EducationProgressForms/InputForms/groupinputf
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcolormap.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcolumnview.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcommandlinkbutton.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcommonstyle.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcompleter.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdatawidgetmapper.h \
@@ -8593,9 +8518,11 @@ debug/groupinputform.o: ../Kursova/EducationProgressForms/InputForms/groupinputf
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgroupbox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qheaderview.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qinputdialog.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qitemeditorfactory.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qkeyeventtransition.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qkeysequenceedit.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlcdnumber.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistwidget.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmainwindow.h \
@@ -8619,8 +8546,10 @@ debug/groupinputform.o: ../Kursova/EducationProgressForms/InputForms/groupinputf
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QScrollerProperties \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qscrollerproperties.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/QMetaType \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qshortcut.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsizegrip.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qspinbox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsplashscreen.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsplitter.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstackedlayout.h \
@@ -8907,42 +8836,19 @@ debug/specialiyinputform.o: ../Kursova/EducationProgressForms/InputForms/special
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlresult.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qtsqlversion.h \
 		ui_specialiyinputform.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QComboBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLineEdit \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpinBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qspinbox.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QtWidgets \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QtWidgetsDepends \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/QtGui \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/QtGuiDepends \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qabstracttextdocumentlayout.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextlayout.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qglyphrun.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qrawfont.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qfontdatabase.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextdocument.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qaccessible.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qaccessiblebridge.h \
@@ -8962,6 +8868,8 @@ debug/specialiyinputform.o: ../Kursova/EducationProgressForms/InputForms/special
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qgenericmatrix.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qgenericplugin.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qgenericpluginfactory.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qiconengine.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qiconengineplugin.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qimageiohandler.h \
@@ -9034,9 +8942,16 @@ debug/specialiyinputform.o: ../Kursova/EducationProgressForms/InputForms/special
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextlist.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtexttable.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtguiversion.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qaccessiblewidget.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qbuttongroup.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcalendarwidget.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
@@ -9045,6 +8960,7 @@ debug/specialiyinputform.o: ../Kursova/EducationProgressForms/InputForms/special
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcolormap.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcolumnview.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcommandlinkbutton.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcommonstyle.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcompleter.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdatawidgetmapper.h \
@@ -9084,9 +9000,11 @@ debug/specialiyinputform.o: ../Kursova/EducationProgressForms/InputForms/special
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgroupbox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qheaderview.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qinputdialog.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qitemeditorfactory.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qkeyeventtransition.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qkeysequenceedit.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlcdnumber.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistwidget.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmainwindow.h \
@@ -9110,8 +9028,10 @@ debug/specialiyinputform.o: ../Kursova/EducationProgressForms/InputForms/special
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QScrollerProperties \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qscrollerproperties.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/QMetaType \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qshortcut.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsizegrip.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qspinbox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsplashscreen.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsplitter.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstackedlayout.h \
@@ -9403,24 +9323,6 @@ debug/markinputform.o: ../Kursova/EducationProgressForms/InputForms/markinputfor
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/QPair \
 		ui_markinputform.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QComboBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QScrollArea \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qscrollarea.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlQuery \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
@@ -9457,6 +9359,8 @@ debug/markinputform.o: ../Kursova/EducationProgressForms/InputForms/markinputfor
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qgenericmatrix.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qgenericplugin.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qgenericpluginfactory.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qiconengine.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qiconengineplugin.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qimageiohandler.h \
@@ -9532,6 +9436,12 @@ debug/markinputform.o: ../Kursova/EducationProgressForms/InputForms/markinputfor
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qaccessiblewidget.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qbuttongroup.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcalendarwidget.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
@@ -9574,6 +9484,7 @@ debug/markinputform.o: ../Kursova/EducationProgressForms/InputForms/markinputfor
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgraphicstransform.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/QVector3D \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgraphicsview.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qscrollarea.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgroupbox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qheaderview.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qinputdialog.h \
@@ -9581,6 +9492,7 @@ debug/markinputform.o: ../Kursova/EducationProgressForms/InputForms/markinputfor
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qitemeditorfactory.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qkeyeventtransition.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qkeysequenceedit.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlcdnumber.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistwidget.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmainwindow.h \
@@ -9603,6 +9515,7 @@ debug/markinputform.o: ../Kursova/EducationProgressForms/InputForms/markinputfor
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QScrollerProperties \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qscrollerproperties.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/QMetaType \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qshortcut.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qsizegrip.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qspinbox.h \
@@ -9745,24 +9658,8 @@ debug/repairdatamainwindow.o: ../Kursova/EducationProgressForms/repairdatamainwi
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
 		ui_repairdatamainwindow.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		../Kursova/EducationProgressForms/RepairForms/departmentrepairform.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
 		../Kursova/databasehelper.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/QtSql \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/QtSqlDepends \
@@ -9770,6 +9667,7 @@ debug/repairdatamainwindow.o: ../Kursova/EducationProgressForms/repairdatamainwi
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/QtCoreDepends \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractanimation.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstracteventdispatcher.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractitemmodel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractnativeeventfilter.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractproxymodel.h \
@@ -9786,6 +9684,7 @@ debug/repairdatamainwindow.o: ../Kursova/EducationProgressForms/repairdatamainwi
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcollator.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcommandlineoption.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcommandlineparser.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcryptographichash.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qdatetime.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qdeadlinetimer.h \
@@ -10169,31 +10068,6 @@ debug/departmentrepairform.o: ../Kursova/EducationProgressForms/RepairForms/depa
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlresult.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qtsqlversion.h \
 		ui_departmentrepairform.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QFontComboBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qfontcombobox.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qfontdatabase.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLineEdit \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlQuery \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
@@ -10456,32 +10330,6 @@ debug/specialityrepairform.o: ../Kursova/EducationProgressForms/RepairForms/spec
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlresult.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qtsqlversion.h \
 		ui_specialityrepairform.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QComboBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QFontComboBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qfontcombobox.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qfontdatabase.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLineEdit \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlQuery \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
@@ -10595,51 +10443,6 @@ debug/grouprepairform.o: ../Kursova/EducationProgressForms/RepairForms/grouprepa
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qvector2d.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h \
 		ui_grouprepairform.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QComboBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcombobox.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyleoption.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractspinbox.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qvalidator.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/qregularexpression.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qslider.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractslider.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyle.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabbar.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qrubberband.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractitemmodel.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QFontComboBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qfontcombobox.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qfontdatabase.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLineEdit \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/QSqlQuery \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlquery.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qtsqlglobal.h \
@@ -10651,6 +10454,8 @@ debug/grouprepairform.o: ../Kursova/EducationProgressForms/RepairForms/grouprepa
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/QtCoreDepends \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractanimation.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstracteventdispatcher.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractitemmodel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractnativeeventfilter.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractproxymodel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractstate.h \
@@ -10666,6 +10471,7 @@ debug/grouprepairform.o: ../Kursova/EducationProgressForms/RepairForms/grouprepa
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcollator.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcommandlineoption.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcommandlineparser.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcryptographichash.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qdatetime.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qdeadlinetimer.h \
@@ -10722,6 +10528,7 @@ debug/grouprepairform.o: ../Kursova/EducationProgressForms/RepairForms/grouprepa
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qqueue.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qrandom.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qreadwritelock.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/qregularexpression.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qresource.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qsavefile.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qscopedvaluerollback.h \
@@ -10766,9 +10573,22 @@ debug/grouprepairform.o: ../Kursova/EducationProgressForms/RepairForms/grouprepa
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlquerymodel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlrelationaldelegate.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qitemdelegate.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyleoption.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractspinbox.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qvalidator.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qslider.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractslider.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyle.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabbar.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qrubberband.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistview.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemview.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcombobox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlrelationaltablemodel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqltablemodel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlresult.h \
@@ -11034,36 +10854,6 @@ debug/studentrepairform.o: ../Kursova/EducationProgressForms/RepairForms/student
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlresult.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qtsqlversion.h \
 		ui_studentrepairform.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QCheckBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcheckbox.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QComboBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QFontComboBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qfontcombobox.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qfontdatabase.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLineEdit \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdialog.h \
@@ -11176,50 +10966,6 @@ debug/lecturerrepairform.o: ../Kursova/EducationProgressForms/RepairForms/lectur
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qvector2d.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h \
 		ui_lecturerrepairform.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QFontComboBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qfontcombobox.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcombobox.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyleoption.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractspinbox.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qvalidator.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/qregularexpression.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qslider.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractslider.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyle.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabbar.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qrubberband.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractitemmodel.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qfontdatabase.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLineEdit \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		../Kursova/databasehelper.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/QtSql \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/QtSqlDepends \
@@ -11227,6 +10973,8 @@ debug/lecturerrepairform.o: ../Kursova/EducationProgressForms/RepairForms/lectur
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/QtCoreDepends \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractanimation.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstracteventdispatcher.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractitemmodel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractnativeeventfilter.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractproxymodel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractstate.h \
@@ -11242,6 +10990,7 @@ debug/lecturerrepairform.o: ../Kursova/EducationProgressForms/RepairForms/lectur
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcollator.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcommandlineoption.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcommandlineparser.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcryptographichash.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qdatetime.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qdeadlinetimer.h \
@@ -11298,6 +11047,7 @@ debug/lecturerrepairform.o: ../Kursova/EducationProgressForms/RepairForms/lectur
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qqueue.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qrandom.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qreadwritelock.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/qregularexpression.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qresource.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qsavefile.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qscopedvaluerollback.h \
@@ -11345,9 +11095,22 @@ debug/lecturerrepairform.o: ../Kursova/EducationProgressForms/RepairForms/lectur
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlquerymodel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlrelationaldelegate.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qitemdelegate.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyleoption.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractspinbox.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qvalidator.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qslider.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractslider.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyle.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabbar.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qrubberband.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistview.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemview.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcombobox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlrelationaltablemodel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqltablemodel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlresult.h \
@@ -11464,48 +11227,6 @@ debug/subjectrepairform.o: ../Kursova/EducationProgressForms/RepairForms/subject
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qvector2d.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h \
 		ui_subjectrepairform.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QFontComboBox \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qfontcombobox.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcombobox.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyleoption.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractspinbox.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qvalidator.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/qregularexpression.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qslider.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractslider.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyle.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabbar.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qrubberband.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractitemmodel.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qfontdatabase.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QHBoxLayout \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qboxlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlayoutitem.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qgridlayout.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QLineEdit \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlineedit.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextcursor.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QSpacerItem \
-		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
 		../Kursova/databasehelper.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/QtSql \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/QtSqlDepends \
@@ -11513,6 +11234,8 @@ debug/subjectrepairform.o: ../Kursova/EducationProgressForms/RepairForms/subject
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/QtCoreDepends \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractanimation.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstracteventdispatcher.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractitemmodel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractnativeeventfilter.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractproxymodel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qabstractstate.h \
@@ -11528,6 +11251,7 @@ debug/subjectrepairform.o: ../Kursova/EducationProgressForms/RepairForms/subject
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcollator.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcommandlineoption.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcommandlineparser.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qcryptographichash.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qdatetime.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qdeadlinetimer.h \
@@ -11584,6 +11308,7 @@ debug/subjectrepairform.o: ../Kursova/EducationProgressForms/RepairForms/subject
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qqueue.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qrandom.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qreadwritelock.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtCore/qregularexpression.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qresource.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qsavefile.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtCore/qscopedvaluerollback.h \
@@ -11631,9 +11356,22 @@ debug/subjectrepairform.o: ../Kursova/EducationProgressForms/RepairForms/subject
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlquerymodel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlrelationaldelegate.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qitemdelegate.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyleoption.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractspinbox.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qvalidator.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtGui/qicon.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qslider.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractslider.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qstyle.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabbar.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qtabwidget.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qrubberband.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qlistview.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemview.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractscrollarea.h \
+		E:/Qt/5.11.2/mingw53_32/include/QtWidgets/qcombobox.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlrelationaltablemodel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqltablemodel.h \
 		E:/Qt/5.11.2/mingw53_32/include/QtSql/qsqlresult.h \

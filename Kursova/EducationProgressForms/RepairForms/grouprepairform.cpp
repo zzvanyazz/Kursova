@@ -13,6 +13,7 @@ GroupRepairForm::GroupRepairForm(QWidget *parent) :
     connect(ui->btn_ok, &QPushButton::pressed, this, &GroupRepairForm::completed);
     connect(ui->ButtonDelete, &QPushButton::pressed, this, &GroupRepairForm::deleteDepartment );
     connect(ui->btn_cancel, &QPushButton::pressed, this, &GroupRepairForm::cancel );
+        ui->groupNumber->setValidator( new QIntValidator);
     setGroup();
 }
 

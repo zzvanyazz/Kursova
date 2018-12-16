@@ -8,6 +8,10 @@ LecturerRepairForm::LecturerRepairForm(QWidget *parent) :
     ui(new Ui::LecturerRepairForm)
 {
     ui->setupUi(this);
+    connect(ui->btn_ok, &QPushButton::pressed, this, &LecturerRepairForm::completed);
+    connect(ui->ButtonDelete, &QPushButton::pressed, this, &LecturerRepairForm::deleteDepartment );
+    connect(ui->btn_cancel, &QPushButton::pressed, this, &LecturerRepairForm::cancel );
+    setLecturer();
 }
 
 void LecturerRepairForm::setLecturer(){

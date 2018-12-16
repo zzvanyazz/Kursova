@@ -64,10 +64,12 @@ void EducationProgressMainWindow::showTable(int GroupID){
     QSqlQuery *group = dbHelper.getGroup("ID = "+ QString().number(GroupID));
     group->first();
 
-    ui->name_grup->setText(group->value((int)DatabaseHelper::ColumnsOfGroup::name).toString());
+    ui->name_grup->setText(group->value((int)DatabaseHelper::ColumnsOfGroup::name).toString()+ " - "+group->value((int)DatabaseHelper::ColumnsOfGroup::number).toString());
     QSqlQuery *lecturer = dbHelper.getLecturer("ID = "+ QString().number(group->value((int)DatabaseHelper::ColumnsOfGroup::curator).toInt()));
     lecturer->first();
-    ui->name_curator->setText(lecturer->value((int)DatabaseHelper::ColumsOfLecturers::name).toString());
+    ui->name_curator->setText(lecturer->value((int)DatabaseHelper::ColumsOfLecturers::surname).toString() + " "+
+                              lecturer->value((int)DatabaseHelper::ColumsOfLecturers::name).toString() + " "+
+                              lecturer->value((int)DatabaseHelper::ColumsOfLecturers::lastname).toString());
 
 
     currentGroup = GroupID;

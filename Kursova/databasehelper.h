@@ -8,10 +8,10 @@ static class DatabaseHelper
 
 
     void chek(QSqlQuery*);
-
+QSqlDatabase db ;
 public:
 
- QSqlDatabase db ;
+
 
 
 

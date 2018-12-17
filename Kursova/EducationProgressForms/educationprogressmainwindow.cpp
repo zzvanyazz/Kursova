@@ -52,6 +52,7 @@ void EducationProgressMainWindow::showMarkInputForm(){
     QMainWindow  *w = new QMainWindow(this);
 
     MarkInputForm *m = new MarkInputForm();
+    w->setWindowTitle("Введення оцінок");
     w->setCentralWidget(m);
     w->show();
 

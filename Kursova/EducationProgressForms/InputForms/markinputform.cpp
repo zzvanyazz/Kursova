@@ -1,4 +1,4 @@
-#include "markinputform.h"
+ #include "markinputform.h"
 #include "ui_markinputform.h"
 #include <QSqlQuery>
 #include <QMessageBox>
@@ -88,7 +88,7 @@ void MarkInputForm::completed(){
     for(QPair<QLineEdit*, int> l : lines){
         if(!l.first->text().isEmpty()){
             dbHelper.addMark(ui->studentscomboBox->currentData().toInt(), currentGroup, ui->comboBoxSemester->currentIndex(), l.second, l.first->text().toInt());
-            l.first->clear();
+
         }
     }
 }

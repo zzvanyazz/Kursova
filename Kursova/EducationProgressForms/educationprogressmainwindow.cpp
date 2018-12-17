@@ -110,6 +110,10 @@ void EducationProgressMainWindow::showTable(int GroupID){
             QLabel *name = new QLabel;
             name->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum );
             name->setStyleSheet("background-color: rgb(200, 185, 255);");
+            QFont f = name->font();
+            f.setPointSize(10);
+            name->setFont(f);
+
             if(!students->value((int)DatabaseHelper::ColumnsOfStudent::form_of_education).toBool()&&ui->CheckFormOfEducation->isChecked())continue;
             name->setText(students->value((int)DatabaseHelper::ColumnsOfStudent::surname).toString()+" "+students->value((int)DatabaseHelper::ColumnsOfStudent::name).toString());
             Table->addWidget(name, i, j);
@@ -120,6 +124,9 @@ void EducationProgressMainWindow::showTable(int GroupID){
                 data->exec("SELECT mark from education_progress WHERE student = "+students->value((int)DatabaseHelper::ColumnsOfStudent::ID).toString()
                            +" AND subject = "+subjects->value(0).toString()+" AND semester = "+QString().number(ui->comboBoxSemester->currentIndex()));
                 QLabel *mark = new QLabel;
+                QFont f = mark->font();
+                f.setPointSize(10);
+                mark->setFont(f);
 
                 mark->setSizePolicy(QSizePolicy::Minimum, QSizePolicy::Maximum );
                 mark->setStyleSheet("background-color: rgb(203, 250, 255)");
@@ -127,7 +134,7 @@ void EducationProgressMainWindow::showTable(int GroupID){
                     mark->setText(data->value(0).toString());
                     Table->addWidget(mark, i , j);
                 }else {
-                    mark->setText("/");
+                    mark->setText("-");
                     Table->addWidget(mark, i , j);
                 }
 
